@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://memo-github-issue.justwe.uk/2026-01-02-tkinter-selecting-multiple-using-arrowsshift-or-ctrl/">
+        <link rel="canonical" href="https://memo-github-issue.justwe.uk/2026-01-02-is-it-possible-to-twist-the-xmletreeelementtree-parser-to-accept-webforms-aspx-syntax/">
       
       
-        <link rel="prev" href="../2026-01-02-is-it-possible-to-twist-the-xmletreeelementtree-parser-to-accept-webforms-aspx-syntax/">
+        <link rel="prev" href="../2026-01-02-how-to-write-binary-bytes-to-file-not-ascii/">
       
+      
+        <link rel="next" href="../2026-01-02-tkinter-selecting-multiple-using-arrowsshift-or-ctrl/">
       
       
         
@@ -23,7 +25,7 @@
     
     
       
-        <title>Selecting Multiple Entries in Tkinter GUI using Arrows+Shift (or Ctrl) - ISSUE WEB SEARCH</title>
+        <title>Parsing WebForms ASP.NET Syntax with xml.etree.ElementTree - ISSUE WEB SEARCH</title>
       
     
     
@@ -79,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#selecting-multiple-entries-in-tkinter-gui-using-arrowsshift-or-ctrl" class="md-skip">
+        <a href="#parsing-webforms-aspnet-syntax-with-xmletreeelementtree" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Selecting Multiple Entries in Tkinter GUI using Arrows+Shift (or Ctrl)
+              Parsing WebForms ASP.NET Syntax with xml.etree.ElementTree
             
           </span>
         </div>
@@ -290,33 +292,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../2026-01-02-is-it-possible-to-twist-the-xmletreeelementtree-parser-to-accept-webforms-aspx-syntax/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Parsing WebForms ASP.NET Syntax with xml.etree.ElementTree
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -336,7 +311,7 @@
   <span class="md-ellipsis">
     
   
-    Selecting Multiple Entries in Tkinter GUI using Arrows+Shift (or Ctrl)
+    Parsing WebForms ASP.NET Syntax with xml.etree.ElementTree
   
 
     
@@ -354,7 +329,7 @@
   <span class="md-ellipsis">
     
   
-    Selecting Multiple Entries in Tkinter GUI using Arrows+Shift (or Ctrl)
+    Parsing WebForms ASP.NET Syntax with xml.etree.ElementTree
   
 
     
@@ -416,6 +391,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-02-tkinter-selecting-multiple-using-arrowsshift-or-ctrl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selecting Multiple Entries in Tkinter GUI using Arrows+Shift (or Ctrl)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -500,67 +502,67 @@
       
       
       
-        <span class="md-tag">extended mode</span>
+        <span class="md-tag">WebForms ASP.NET syntax</span>
       
     
       
       
       
       
-        <span class="md-tag">selectmode</span>
-      
-    
-      
-      
-      
-      
-        <span class="md-tag">tkinter</span>
+        <span class="md-tag">xml.etree.ElementTree</span>
       
     
   </nav>
 
 
 
-<h1 id="selecting-multiple-entries-in-tkinter-gui-using-arrowsshift-or-ctrl">Selecting Multiple Entries in Tkinter GUI using Arrows+Shift (or Ctrl)</h1>
+<h1 id="parsing-webforms-aspnet-syntax-with-xmletreeelementtree">Parsing WebForms ASP.NET Syntax with xml.etree.ElementTree</h1>
 <h2 id="core-problem">Core Problem</h2>
-<p>When using a Tkinter GUI, selecting multiple entries is not as straightforward as it is in file explorers or other applications. The user can select multiple entries using shift+click and ctrl+click, but the same functionality is not achieved with arrows+shift (or ctrl) key combinations.</p>
+<p>The <code>xml.etree.ElementTree</code> parser in Python cannot directly parse the syntax used in WebForms ASP.NET files, which include directives like <code>&lt;%@</code> and single quoted expressions like <code>Text='%# FormatHtmlDetail(Eval("custcode")) %'</code>. This limits its ability to extract information from these files.</p>
 <h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To achieve this functionality, we need to configure the <code>selectmode</code> option of the Tkinter widget that contains the list or treeview. The <code>extended</code> mode allows multiple selections using shift+click and ctrl+click, but does not work with arrows+shift (or ctrl) key combinations.</p>
-<p>Here is an example code snippet that demonstrates how to select multiple entries using arrows+shift (or ctrl) key combinations:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">tkinter</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tk</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Create a Tkinter window</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">root</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># Create a listbox widget with extended mode for multi-select functionality</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">listbox</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Listbox</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">selectmode</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">EXTENDED</span><span class="p">)</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">listbox</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Entry </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># Bind arrow keys to the shift+arrow key combinations</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">select_item</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">index</span> <span class="o">=</span> <span class="n">listbox</span><span class="o">.</span><span class="n">curselection</span><span class="p">()</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="k">return</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="n">new_index</span> <span class="o">=</span> <span class="kc">None</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">index</span><span class="p">))):</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="k">if</span> <span class="n">index</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="n">index</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">listbox</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">!=</span> <span class="n">listbox</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">index</span><span class="p">[</span><span class="n">i</span><span class="p">])):</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>            <span class="n">new_index</span> <span class="o">=</span> <span class="n">index</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="k">break</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="n">listbox</span><span class="o">.</span><span class="n">selection_clear</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tk</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="n">listbox</span><span class="o">.</span><span class="n">selection_add</span><span class="p">(</span><span class="n">new_index</span><span class="p">)</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="n">listbox</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;&lt;Key&gt;&quot;</span><span class="p">,</span> <span class="n">select_item</span><span class="p">)</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="c1"># Pack the listbox widget into the window</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="n">listbox</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">fill</span><span class="o">=</span><span class="n">tk</span><span class="o">.</span><span class="n">BOTH</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="c1"># Run the Tkinter event loop</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+<p>To overcome this limitation, we can use a combination of string manipulation and regular expression matching to parse the WebForms syntax. Here's an example code snippet that demonstrates how to achieve this:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">xml.etree</span><span class="w"> </span><span class="kn">import</span> <span class="n">ElementTree</span> <span class="k">as</span> <span class="n">ET</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">parse_aspx</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="c1"># Read the file content</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="n">content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="c1"># Use regular expression to extract directives and expressions</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">directives</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&lt;%@.*?%&gt;&#39;</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">expressions</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Text=&#39;&#39;%#.*?%&#39;&#39;&#39;</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="c1"># Parse the extracted directives and expressions</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="k">for</span> <span class="n">directive</span> <span class="ow">in</span> <span class="n">directives</span><span class="p">:</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="c1"># Remove the &lt;%@ symbol and any whitespace</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="n">directive</span> <span class="o">=</span> <span class="n">directive</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&lt;%@ &#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="c1"># Use xml.etree.ElementTree to parse the directive as XML</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="n">root</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">directive</span><span class="p">)</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Directive:&quot;</span><span class="p">)</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">ET</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;unicode&#39;</span><span class="p">))</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="k">for</span> <span class="n">expression</span> <span class="ow">in</span> <span class="n">expressions</span><span class="p">:</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        <span class="c1"># Remove the Text= and &#39;&#39; single quotes</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="n">expression</span> <span class="o">=</span> <span class="n">expression</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Text=&#39;&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">)</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        <span class="c1"># Use regular expression to extract the Eval expression inside the single quotes</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        <span class="n">eval_expression</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;%#.*?%&#39;</span><span class="p">,</span> <span class="n">expression</span><span class="p">)</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>        <span class="k">if</span> <span class="n">eval_expression</span><span class="p">:</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>            <span class="c1"># Extract the Eval expression</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>            <span class="n">eval_expr</span> <span class="o">=</span> <span class="n">eval_expression</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%# &#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>            <span class="c1"># Use xml.etree.ElementTree to parse the Eval expression as XML</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>            <span class="n">root</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">eval_expr</span><span class="p">)</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eval Expression:&quot;</span><span class="p">)</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>            <span class="nb">print</span><span class="p">(</span><span class="n">ET</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;unicode&#39;</span><span class="p">))</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="c1"># Test the function</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="n">parse_aspx</span><span class="p">(</span><span class="s1">&#39;path_to_your_file.aspx&#39;</span><span class="p">)</span>
 </span></code></pre></div>
 <h2 id="conclusion">Conclusion</h2>
-<p>In this example, we used the <code>tk.EXTENDED</code> mode for multi-select functionality in a <code>Listbox</code> widget. We bound arrow keys to shift+arrow key combinations using the <code>bind</code> method. This allows users to select multiple entries by pressing arrows while holding down the shift key.</p>
-<p>By configuring the <code>selectmode</code> option and binding arrow keys to shift+arrow key combinations, we can achieve multi-select functionality in a Tkinter GUI that is similar to file explorers or other applications.</p>
+<p>While <code>xml.etree.ElementTree</code> cannot directly parse WebForms syntax, we can use string manipulation and regular expression matching to extract the required information. This approach allows us to generate new versions of the file with added attributes and extract some information programmatically.</p>
 
 
 
