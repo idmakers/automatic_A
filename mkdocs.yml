@@ -8,9 +8,6 @@ theme:
   name: material
   custom_dir: docs/overrides
   features:
-
-extra:
-  adsense_id: ca-pub-XXXXXXXXXXXXXXXX # Replace with your ID
     - navigation.indexes
     - search.suggest
     - search.highlight
@@ -47,5 +44,8 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - pymdownx.details
+
+extra:
+  adsense_id: ca-pub-XXXXXXXXXXXXXXXX # Replace with your ID
 
 
