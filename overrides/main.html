@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config.extra.adsense_id }}" crossorigin="anonymous"></script>
+  <!-- End Google AdSense -->
+  {{ super() }}
+{% endblock %}
