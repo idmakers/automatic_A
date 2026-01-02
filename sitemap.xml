@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://memo-github-issue.justwe.uk/2026-01-02-adk-google-gemini-session-not-found-default-when-using-inmemoryrunner-with-llmagent/</loc>
+         <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://memo-github-issue.justwe.uk/2026-01-02-how-to-safely-pass-training-argument-to-keras-layers-in-a-dynamic-list-when-i-dont-know-if-each-layer-supports-it/</loc>
+         <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
          <loc>https://memo-github-issue.justwe.uk/2026-01-02-how-to-set-lz4_nbworkers/</loc>
+         <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://memo-github-issue.justwe.uk/2026-01-02-lambda-boolean-equality-operator-usage-without-outer-triger-mechanism/</loc>
+         <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://memo-github-issue.justwe.uk/2026-01-02-pyside6-qopenglwidget-flickers-even-with-minimal-example-inside-a-layout/</loc>
          <lastmod>2026-01-02</lastmod>
     </url>
     <url>
@@ -10,6 +26,18 @@
     </url>
     <url>
          <loc>https://memo-github-issue.justwe.uk/2026-01-02-python-program-that-controls-an-open-dmx-controller/</loc>
+         <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://memo-github-issue.justwe.uk/2026-01-02-textfsm-parsing-column-aligned-cli-output-where-optional-columns-shift-due-to-variable-whitespace/</loc>
+         <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://memo-github-issue.justwe.uk/2026-01-02-what-if-analysis-using-python-or-excel/</loc>
+         <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://memo-github-issue.justwe.uk/2026-01-02-why-isnt-this-emitting-the-message/</loc>
          <lastmod>2026-01-02</lastmod>
     </url>
 </urlset>

@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://memo-github-issue.justwe.uk/2026-01-02-how-to-set-lz4_nbworkers/">
+        <link rel="canonical" href="https://memo-github-issue.justwe.uk/2026-01-02-adk-google-gemini-session-not-found-default-when-using-inmemoryrunner-with-llmagent/">
       
       
-        <link rel="prev" href="../2026-01-02-how-to-safely-pass-training-argument-to-keras-layers-in-a-dynamic-list-when-i-dont-know-if-each-layer-supports-it/">
       
-      
-        <link rel="next" href="../2026-01-02-lambda-boolean-equality-operator-usage-without-outer-triger-mechanism/">
+        <link rel="next" href="../2026-01-02-how-to-safely-pass-training-argument-to-keras-layers-in-a-dynamic-list-when-i-dont-know-if-each-layer-supports-it/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>How to Optimize LZ4 Compression with Multicore Support - ISSUE WEB SEARCH</title>
+        <title>Resolving 'Session not found: default' when Using InMemoryRunner with LlmAgent - ISSUE WEB SEARCH</title>
       
     
     
@@ -81,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#core-problem" class="md-skip">
+        <a href="#resolving-session-not-found-default-when-using-inmemoryrunner-with-llmagent" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to Optimize LZ4 Compression with Multicore Support
+              Resolving 'Session not found: default' when Using InMemoryRunner with LlmAgent
             
           </span>
         </div>
@@ -238,10 +236,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-02-adk-google-gemini-session-not-found-default-when-using-inmemoryrunner-with-llmagent/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resolving 'Session not found: default' when Using InMemoryRunner with LlmAgent
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -257,6 +282,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -292,37 +370,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    How to Optimize LZ4 Compression with Multicore Support
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-02-how-to-set-lz4_nbworkers/" class="md-nav__link">
         
   
   
@@ -338,48 +389,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution &amp; Analysis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -600,6 +609,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#solution-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -642,63 +662,65 @@
       
       
       
-        <span class="md-tag">compression</span>
+        <span class="md-tag">google-adk</span>
       
     
       
       
       
       
-        <span class="md-tag">lz4</span>
+        <span class="md-tag">inmemoriesessionservice</span>
       
     
       
       
       
       
-        <span class="md-tag">multicore</span>
+        <span class="md-tag">inmemoryrunner</span>
       
     
       
       
       
       
-        <span class="md-tag">python</span>
+        <span class="md-tag">llm-agent</span>
       
     
   </nav>
 
 
 
-<h1 id="core-problem">Core Problem</h1>
-<p>Despite having a multi-core CPU, the provided Python script does not demonstrate a significant speed improvement when setting <code>LZ4_NBWORKERS</code>. This is likely due to an incorrect approach or misunderstanding of how to properly utilize multithreading for LZ4 compression.</p>
+<h1 id="resolving-session-not-found-default-when-using-inmemoryrunner-with-llmagent">Resolving 'Session not found: default' when Using InMemoryRunner with LlmAgent</h1>
+<h2 id="core-problem">Core Problem</h2>
+<p>When using the Google ADK LLM agent (<code>gemini-2.5-flash-lite</code>) in a Flask project to check tests and review test content, an error is encountered while running the agent with <code>InMemoryRunner</code> and <code>InMemorySessionService</code>. The specific error message received is "Session not found: default."</p>
 <h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To take advantage of multicore CPUs with LZ4 compression, you need to use the correct flags and options. The <code>LZ4_NBWORKERS</code> option controls the number of threads used by the LZ4 library.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span><span class="o">,</span><span class="w"> </span><span class="nn">time</span><span class="o">,</span><span class="w"> </span><span class="nn">platform</span><span class="o">,</span><span class="w"> </span><span class="nn">sys</span><span class="o">,</span><span class="w"> </span><span class="nn">os</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Information of the system</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;OS:&#39;</span><span class="p">,</span> <span class="n">platform</span><span class="o">.</span><span class="n">platform</span><span class="p">())</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;CPU:&#39;</span><span class="p">,</span> <span class="n">platform</span><span class="o">.</span><span class="n">processor</span><span class="p">())</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of logical cores:&#39;</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">())</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Python:&#39;</span><span class="p">,</span> <span class="n">platform</span><span class="o">.</span><span class="n">architecture</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="n">platform</span><span class="o">.</span><span class="n">machine</span><span class="p">(),</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+<p>To resolve this issue, it's essential to understand how <code>InMemoryRunner</code> and <code>InMemorySessionService</code> interact in the current ADK version (1.21.0). By analyzing the code and the behavior of these classes, we can identify the root cause of the problem.</p>
+<p>The problem arises from the fact that <code>InMemorySessionService</code> is used to create a session with a specific <code>session_id</code>. However, when passing this session to <code>InMemoryRunner</code>, it expects a different format. To fix this issue, you need to modify the way you're creating and passing the session.</p>
+<p>Here's an updated version of your <code>_run_agent</code> function that correctly handles the session:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_run_agent</span><span class="p">(</span><span class="n">agent</span><span class="p">:</span> <span class="n">Agent</span><span class="p">,</span> <span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c1"># Attempt to create a session</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">session</span> <span class="o">=</span> <span class="k">await</span> <span class="n">SESSION_SERVICE</span><span class="o">.</span><span class="n">create_session</span><span class="p">(</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="n">app_name</span><span class="o">=</span><span class="s2">&quot;duck_pa&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="n">user_id</span><span class="o">=</span><span class="n">_APP_USER_ID</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="n">session_id</span><span class="o">=</span><span class="n">_APP_SESSION_ID</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">)</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># Paths</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">lz4Path</span>         <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;C:\Users\Akira\Downloads\Compressed\lz4_win64_v1_10_0\lz4.exe&quot;</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">srcDir</span>          <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;E:\Personal Projects\tmp&quot;</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">filesToArchive</span>  <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;chunk_0.ndjson&quot;</span><span class="p">,</span> <span class="s2">&quot;chunk_0.ndjson&quot;</span><span class="p">]</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">outLz4</span>          <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;E:\Personal Projects\tmp\test.tar.lz4&quot;</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="c1"># Prepare the command</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">cmd</span>     <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">lz4Path</span><span class="si">}</span><span class="s1">&quot; -C </span><span class="si">{</span><span class="n">srcDir</span><span class="si">}</span><span class="s1"> -f -c </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">filesToArchive</span><span class="p">)</span><span class="si">}</span><span class="s1"> | gzip -9 &gt; </span><span class="si">{</span><span class="n">outLz4</span><span class="si">}</span><span class="s1">&#39;</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">start</span>   <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="n">result</span>  <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="n">end</span>     <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The running time is </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">end</span><span class="o">-</span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2"> seconds.&quot;</span><span class="p">)</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">runner</span> <span class="o">=</span> <span class="n">InMemoryRunner</span><span class="p">(</span><span class="n">agent</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">input_content</span> <span class="o">=</span> <span class="n">Content</span><span class="p">(</span><span class="n">parts</span><span class="o">=</span><span class="p">[</span><span class="n">Part</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">prompt</span><span class="p">)])</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="k">async</span> <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">runner</span><span class="o">.</span><span class="n">run_async</span><span class="p">(</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="n">new_message</span><span class="o">=</span><span class="n">input_content</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="n">user_id</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">user_id</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="n">session_id</span><span class="o">=</span><span class="n">session</span><span class="o">.</span><span class="n">session_id</span>  <span class="c1"># Update the session_id here</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="p">):</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">is_final_response</span><span class="p">():</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>            <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">part</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">event</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">parts</span> <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">part</span><span class="p">,</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Agent did not return a final response&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<p>In this revised script, we use the <code>-C</code> flag to specify the directory where the input files are located. The <code>-f</code> flag indicates that gzip should be used to compress the output, and the <code>-c</code> flag specifies the compression level (in this case, -9 for best performance). Note that we also added the <code>gzip</code> command before redirecting the output to the <code>outLz4</code> file.</p>
+<p>In this updated code, we're passing <code>session.session_id</code> instead of <code>session.id</code>. Note that <code>session.id</code> might be different from the session ID used when creating it.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>By using the correct flags and options, you can take full advantage of your multicore CPU when compressing files with LZ4. Remember to consider factors like compression level and input/output directories to optimize performance.</p>
+<p>By modifying the way you create and pass the session to <code>InMemoryRunner</code>, you can resolve the "Session not found: default" error. This solution should work with the current ADK version (1.21.0) and <code>InMemoryRunner</code> and <code>InMemorySessionService</code>.</p>
 
 
 
