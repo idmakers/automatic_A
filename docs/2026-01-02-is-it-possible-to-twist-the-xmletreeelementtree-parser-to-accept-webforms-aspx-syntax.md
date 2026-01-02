@@ -1,6 +1,12 @@
 ---
 title: Parsing ASP.NET WebForms XML with xml.etree.ElementTree
-tags: python, xml, elementtree, aspnet, webforms
+
+tags:
+  - python
+  - xml
+  - elementtree
+  - aspnet
+  - webforms
 ---
 
 # Parsing ASP.NET WebForms XML with xml.etree.ElementTree

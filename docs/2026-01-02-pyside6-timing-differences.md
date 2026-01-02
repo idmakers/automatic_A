@@ -1,6 +1,12 @@
 ---
 title: "The Great Timing Dilemma: Unraveling the Mystery of PySide6's Execution Speed"
-tags: performance optimization, PySide6, Qt, C++, Python
+
+tags:
+  - performance optimization
+  - PySide6
+  - Qt
+  - C++
+  - Python
 
 # The Great Timing Dilemma
 

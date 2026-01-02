@@ -1,6 +1,11 @@
 ---
 title: "Understanding Binary Bytes and Writing to Files in Python"
-tags: binary bytes, python, file writing, struct.pack()
+
+tags:
+  - binary bytes
+  - python
+  - file writing
+  - struct.pack()
 ---
 
 # Understanding Binary Bytes and Writing to Files in Python

@@ -1,6 +1,12 @@
 ---
 title: "Logging Configuration Propagation in Multi-Module Python Projects"
-tags: logging, python, propagation, configuration, multi-module
+
+tags:
+  - logging
+  - python
+  - propagation
+  - configuration
+  - multi-module
 
 ## Core Problem
 The issue arises when using a single logger instance across multiple modules in a Python project. In this scenario, the logger's configuration is set up in one module but not propagated to other modules, resulting in logs being written to separate files or not at all.

@@ -1,6 +1,12 @@
 ---
 title: "Building Docker Images with Micromamba: A Deep Dive into YAML Errors"
-tags: build, docker, micromamba, yaml, errors
+
+tags:
+  - build
+  - docker
+  - micromamba
+  - yaml
+  - errors
 
 ---
 # Building Docker Images with Micromamba: A Deep Dive into YAML Errors

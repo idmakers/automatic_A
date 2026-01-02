@@ -1,6 +1,11 @@
 ---
 title: "Unraveling the Anagram Conundrum: Counter vs Sorted()
-tags: python, anagrams, performance, comparison
+
+tags:
+  - python
+  - anagrams
+  - performance
+  - comparison
 ---
 
 ## Core Problem

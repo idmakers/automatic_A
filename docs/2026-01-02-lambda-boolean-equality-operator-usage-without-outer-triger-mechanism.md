@@ -1,6 +1,11 @@
 ---
 title: "Unlocking the Power of Boolean Lambda Functions in Python"
-tags: lambda, boolean equality operator, self-contained functions, python programming
+
+tags:
+  - lambda
+  - boolean equality operator
+  - self-contained functions
+  - python programming
 ---
 ## Core Problem
 

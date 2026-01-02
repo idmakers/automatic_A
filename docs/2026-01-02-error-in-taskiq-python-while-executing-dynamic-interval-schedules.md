@@ -1,6 +1,14 @@
 ---
 title: Taskiq Python Error in Dynamic Interval Schedules
-tags: taskiq, python, aiogram, redis, redis.exceptions.ResponseError, NOGROUP, consumer group 'taskiq'
+
+tags:
+  - taskiq
+  - python
+  - aiogram
+  - redis
+  - redis.exceptions.ResponseError
+  - NOGROUP
+  - consumer group 'taskiq'
 
 ## Core Problem
 I have an aiogram bot with taskiq worker and scheduler (taskiq redis with taskiq_aiogram), but after some time (30-40 minutes), I'm getting a `redis.exceptions.ResponseError: NOGROUP No such key 'taskiq' or consumer group 'taskiq' in XREADGROUP with GROUP option`. This error occurs when running dynamic interval scheduled tasks, while static interval scheduled tasks work without errors.

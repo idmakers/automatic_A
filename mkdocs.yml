@@ -1,7 +1,7 @@
 site_name: AI Automated Money Printer
 site_url: https://memo.justwe.uk
-repo_url: https://github.com/idmakers/automated_factory
-repo_name: idmakers/automated_factory
+repo_url: https://github.com/idmakers/automatic_A
+repo_name: idmakers/automatic_A
 edit_uri: ""
 
 theme:
@@ -44,7 +44,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
-nav:
-  - Home: index.md
-  - Archive: 
-    - Daily Notes: .
+

@@ -1,6 +1,12 @@
 ---
 title: What-if Analysis Using Python and Excel for Banking Projects
-tags: Python, Excel, What-if Analysis, Banking Project, Revenue Calculation
+
+tags:
+  - Python
+  - Excel
+  - What-if Analysis
+  - Banking Project
+  - Revenue Calculation
 
 # Core Problem
 

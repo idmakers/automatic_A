@@ -1,6 +1,11 @@
 ---
 title: Controlling an Open DMX Controller with Python
-tags: python, open-dmx, dmx-control, automation
+
+tags:
+  - python
+  - open-dmx
+  - dmx-control
+  - automation
 
 ## Core Problem
 The problem lies in the fact that the `OpenDMXController` object does not have a `set_channel` method, which is necessary for sending commands to the DMX controller. This error occurs when trying to select a target.

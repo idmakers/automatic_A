@@ -1,6 +1,12 @@
 ---
 title: Understanding YouTube Video Property Updates
-tags: python, youtube, api, update, video properties
+
+tags:
+  - python
+  - youtube
+  - api
+  - update
+  - video properties
 
 ---
 # Core Problem

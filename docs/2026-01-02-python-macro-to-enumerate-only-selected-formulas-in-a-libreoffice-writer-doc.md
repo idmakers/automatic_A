@@ -1,6 +1,13 @@
 ---
 title: "Python Macro to Enumerate Only Selected Formulas in LibreOffice Writer Doc"
-tags: python, libreoffice, writer, macro, formulas, selection
+
+tags:
+  - python
+  - libreoffice
+  - writer
+  - macro
+  - formulas
+  - selection
 ---
 
 ## Core Problem

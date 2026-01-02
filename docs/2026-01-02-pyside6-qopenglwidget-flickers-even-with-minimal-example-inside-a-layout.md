@@ -1,6 +1,12 @@
 ---
 title: PySide6 QOpenGLWidget Flickering Issue
-tags: PySide6, QOpenGLWidget, flickering, OpenGL, PyQt6
+
+tags:
+  - PySide6
+  - QOpenGLWidget
+  - flickering
+  - OpenGL
+  - PyQt6
 ---
 
 ## Core Problem

@@ -1,6 +1,10 @@
 ---
 title: Parsing Column-Aligned CLI Output with Variable Whitespace
-tags: textfsm, python, cli parsing
+
+tags:
+  - textfsm
+  - python
+  - cli parsing
 ---
  
 ## Core Problem

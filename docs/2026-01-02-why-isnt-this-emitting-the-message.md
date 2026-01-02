@@ -1,6 +1,11 @@
 ---
 title: "Socketio Emission Not Receiving Message: A Flask and JavaScript Solution"
-tags: Flask, Socketio, JavaScript, Real-time Communication
+
+tags:
+  - Flask
+  - Socketio
+  - JavaScript
+  - Real-time Communication
 
 ## Core Problem
 When using Flask and Socketio for real-time communication, emitting a message from the server may not be received by the client-side JavaScript code. This can occur due to various reasons such as incorrect namespace configuration, session issues, or JavaScript errors.

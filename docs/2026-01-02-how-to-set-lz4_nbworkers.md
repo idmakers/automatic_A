@@ -1,6 +1,12 @@
 ---
 title: Optimizing LZ4 Compression with Multiple CPU Cores
-tags: Python, LZ4, compression, multi-core CPUs, performance optimization
+
+tags:
+  - Python
+  - LZ4
+  - compression
+  - multi-core CPUs
+  - performance optimization
 ---
 
 ## Core Problem

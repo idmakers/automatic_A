@@ -1,6 +1,11 @@
 ---
 title: "The Keras Build Method: Deferring Sub-Layer Creation"
-tags: "Keras, Keras layers, build method, sub-layer creation"
+
+tags:
+  - "Keras
+  - Keras layers
+  - build method
+  - sub-layer creation"
 
 # The Keras Build Method: Deferring Sub-Layer Creation
 

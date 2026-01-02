@@ -1,6 +1,12 @@
 ---
 title: "Resolving 'Session not found: default' Error when Using InMemoryRunner with LLMAgent in Google ADK"
-tags: debugging, google adk, llm agent, inmemoryrunner, sessionservice
+
+tags:
+  - debugging
+  - google adk
+  - llm agent
+  - inmemoryrunner
+  - sessionservice
 ---
 
 ## Core Problem

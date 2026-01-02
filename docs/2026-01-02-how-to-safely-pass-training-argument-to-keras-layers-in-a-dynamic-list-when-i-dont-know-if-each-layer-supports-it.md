@@ -1,6 +1,10 @@
 ---
 title: "Dynamically Handling Training Arguments in Keras Layers"
-tags: "dynamic training arguments, keras layers, layer support detection"
+
+tags:
+  - "dynamic training arguments
+  - keras layers
+  - layer support detection"
 
 ## Core Problem
 
