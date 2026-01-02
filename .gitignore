@@ -1,0 +1,6 @@
+# Ignore everything
+*
+# Except docs and config
+!docs/
+!mkdocs.yml
+!.gitignore
