@@ -1,6 +1,6 @@
-# Ignore everything
-*
+# Ignore everything in root
+/*
 # Except docs and config
-!docs/
-!mkdocs.yml
-!.gitignore
+!/docs
+!/mkdocs.yml
+!/.gitignore
