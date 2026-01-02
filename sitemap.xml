@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://memo-github-issue.justwe.uk/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-django-model-with-foreign-key-onto-settingsauth_user_model-fails-when-app-is-incorporated-into-other-app-using-postgres/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-how-to-auto-scale-point-image-markers-when-the-window-is-resized/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-how-to-serialize-and-deserialize-a-keras-layer-when-a-submodule-is-passed-as-a-class/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-llm-inference-returns-non-deterministic-output-despite-fixed-seed-and-temperature-during-production-runs-closed/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-ovr-classification-not-working-on-mnist-dataset-closed/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-pandas-last-3-weeks-same-day-average-in-groups/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-polars-list-aggregation-what-are-aggregation-expression/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-python-lz4-how-to-configure-the-number-of-threads/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://memo-github-issue.justwe.uk/2026-01-02-select-the-associated-bill-number-or-bill-type-closed/</loc>
+         <loc>https://memo-github-issue.justwe.uk/2026-01-02-tkinter-selecting-multiple-using-arrowsshift-or-ctrl/</loc>
          <lastmod>2026-01-02</lastmod>
     </url>
 </urlset>
