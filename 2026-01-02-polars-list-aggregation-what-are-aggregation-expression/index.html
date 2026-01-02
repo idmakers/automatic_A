@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://idmakers.github.io/automatic_A/">
+        <link rel="canonical" href="https://idmakers.github.io/automatic_A/2026-01-02-polars-list-aggregation-what-are-aggregation-expression/">
       
       
+        <link rel="prev" href="../2026-01-02-pandas-last-3-weeks-same-day-average-in-groups/">
       
-        <link rel="next" href="2026-01-02-django-model-with-foreign-key-onto-settingsauth_user_model-fails-when-app-is-incorporated-into-other-app-using-postgres/">
+      
+        <link rel="next" href="../2026-01-02-python-lz4-how-to-configure-the-number-of-threads/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Home - ISSUE WEB SEARCH</title>
+        <title>Unlocking Polars List Aggregation with Custom Aggregation Expressions - ISSUE WEB SEARCH</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-issue-web-search" class="md-skip">
+        <a href="#core-problem" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="ISSUE WEB SEARCH" class="md-header__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
+    <a href=".." title="ISSUE WEB SEARCH" class="md-header__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Unlocking Polars List Aggregation with Custom Aggregation Expressions
             
           </span>
         </div>
@@ -228,7 +230,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="ISSUE WEB SEARCH" class="md-nav__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
+    <a href=".." title="ISSUE WEB SEARCH" class="md-nav__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -255,37 +257,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -301,37 +276,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#latest-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Latest Updates
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -343,7 +287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-02-django-model-with-foreign-key-onto-settingsauth_user_model-fails-when-app-is-incorporated-into-other-app-using-postgres/" class="md-nav__link">
+      <a href="../2026-01-02-django-model-with-foreign-key-onto-settingsauth_user_model-fails-when-app-is-incorporated-into-other-app-using-postgres/" class="md-nav__link">
         
   
   
@@ -370,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-02-how-to-auto-scale-point-image-markers-when-the-window-is-resized/" class="md-nav__link">
+      <a href="../2026-01-02-how-to-auto-scale-point-image-markers-when-the-window-is-resized/" class="md-nav__link">
         
   
   
@@ -397,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-02-llm-inference-returns-non-deterministic-output-despite-fixed-seed-and-temperature-during-production-runs-closed/" class="md-nav__link">
+      <a href="../2026-01-02-llm-inference-returns-non-deterministic-output-despite-fixed-seed-and-temperature-during-production-runs-closed/" class="md-nav__link">
         
   
   
@@ -424,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-02-ovr-classification-not-working-on-mnist-dataset-closed/" class="md-nav__link">
+      <a href="../2026-01-02-ovr-classification-not-working-on-mnist-dataset-closed/" class="md-nav__link">
         
   
   
@@ -451,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-02-pandas-last-3-weeks-same-day-average-in-groups/" class="md-nav__link">
+      <a href="../2026-01-02-pandas-last-3-weeks-same-day-average-in-groups/" class="md-nav__link">
         
   
   
@@ -475,10 +419,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="2026-01-02-polars-list-aggregation-what-are-aggregation-expression/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unlocking Polars List Aggregation with Custom Aggregation Expressions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -494,6 +463,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -505,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-02-python-lz4-how-to-configure-the-number-of-threads/" class="md-nav__link">
+      <a href="../2026-01-02-python-lz4-how-to-configure-the-number-of-threads/" class="md-nav__link">
         
   
   
@@ -532,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-02-select-the-associated-bill-number-or-bill-type-closed/" class="md-nav__link">
+      <a href="../2026-01-02-select-the-associated-bill-number-or-bill-type-closed/" class="md-nav__link">
         
   
   
@@ -569,8 +589,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -579,10 +597,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#latest-updates" class="md-nav__link">
+  <a href="#core-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Latest Updates
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
       
     </span>
   </a>
@@ -604,13 +644,63 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">aggregation-expression</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">list-aggregation</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">polars</span>
+      
+    
+  </nav>
 
 
-<h1 id="welcome-to-issue-web-search">Welcome to ISSUE WEB SEARCH</h1>
-<p>This site collects technical notes and trending topics automatically generated by our AI agent.</p>
-<h2 id="latest-updates">Latest Updates</h2>
-<p>Check the sidebar for the latest generated content.</p>
-<p><em>Last updated: 2026-01-02</em></p>
+
+  <h1>Unlocking Polars List Aggregation with Custom Aggregation Expressions</h1>
+
+<h2 id="core-problem">Core Problem</h2>
+<p>When working with lists in Polars, it's often necessary to perform aggregations on the elements within those lists. However, the official documentation for <code>polars.Expr.list.agg</code> seems to imply that the aggregation expressions are limited to a specific set of built-in functions. This limitation can lead to confusion and frustration when trying to achieve complex aggregations.</p>
+<h2 id="solution-analysis">Solution &amp; Analysis</h2>
+<p>To understand what "aggregation expressions" truly are in Polars, we need to delve into the documentation and explore the possibilities. While the official documentation does list some built-in aggregation functions, it's clear that these are just a starting point.</p>
+<p>One way to uncover more aggregation expressions is to examine the examples provided by Polars. Let's take a closer look at the <code>no_nulls</code> example:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">df</span><span class="o">.</span><span class="n">with_columns</span><span class="p">(</span><span class="n">no_nulls</span><span class="o">=</span><span class="n">pl</span><span class="o">.</span><span class="n">col</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">list</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">pl</span><span class="o">.</span><span class="n">element</span><span class="p">()</span><span class="o">.</span><span class="n">drop_nulls</span><span class="p">()))</span>
+</span></code></pre></div>
+<p>In this example, we're using the <code>drop_nulls</code> function as an aggregation expression. This might seem counterintuitive, but it's a great way to demonstrate that custom functions can be used as aggregation expressions.</p>
+<p>So, where can you find more information on aggregation expressions in Polars? The answer lies in the <code>Expression - Aggregation</code> section of the documentation. Here, you'll find a list of built-in aggregation functions, as well as some examples of how to use them.</p>
+<p>However, it's essential to note that this is not an exhaustive list. By using the <code>pl.element()</code> function, you can create custom aggregation expressions from any Python function. This means that the possibilities are truly endless!</p>
+<p>Let's illustrate this with an example:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">polars</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Define a custom aggregation expression</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">my_aggregation</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Create a sample list column</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># Use the custom aggregation expression</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">result</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">with_columns</span><span class="p">(</span><span class="n">my_list_agg</span><span class="o">=</span><span class="n">my_aggregation</span><span class="p">())</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></code></pre></div>
+<p>In this example, we define a custom aggregation function <code>my_aggregation</code> and use it as an aggregation expression. The result is a new column with the mean value of each list element.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Polars list aggregations are more flexible than you might initially think. By understanding what "aggregation expressions" truly are, you can unlock a world of possibilities for working with lists in Polars. Remember to explore the documentation and examples provided by Polars, as well as to use the <code>pl.element()</code> function to create custom aggregation expressions from any Python function.</p>
 
 
 
@@ -663,10 +753,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
