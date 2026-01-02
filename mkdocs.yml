@@ -1,0 +1,50 @@
+site_name: AI Automated Money Printer
+site_url: https://memo.justwe.uk
+repo_url: https://github.com/idmakers/automated_factory
+repo_name: idmakers/automated_factory
+edit_uri: ""
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    # Slate (Dark mode)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - Archive: 
+    - Daily Notes: .
