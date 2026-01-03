@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-03-doc-explain-how-to-load-data-in-google-colab/">
       
       
+        <link rel="prev" href="../2026-01-03-default-storage-class-for-rwo-vs-rwm/">
       
-        <link rel="next" href="2026-01-03-bug-actqueue-forever-growing-in-react-1900/">
+      
+        <link rel="next" href="../2026-01-03-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>ISSUE WEB SEARCH</title>
+        <title>Loading Data in Google Colab with pandas - ISSUE WEB SEARCH</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-issue-web-search" class="md-skip">
+        <a href="#loading-data-in-google-colab-with-pandas" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +98,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="ISSUE WEB SEARCH" class="md-header__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
+    <a href=".." title="ISSUE WEB SEARCH" class="md-header__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to ISSUE WEB SEARCH
+              Loading Data in Google Colab with pandas
             
           </span>
         </div>
@@ -222,7 +224,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="ISSUE WEB SEARCH" class="md-nav__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
+    <a href=".." title="ISSUE WEB SEARCH" class="md-nav__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -237,37 +239,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Welcome to ISSUE WEB SEARCH
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -283,37 +258,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#latest-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Latest Updates
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -325,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-bug-actqueue-forever-growing-in-react-1900/" class="md-nav__link">
+      <a href="../2026-01-03-bug-actqueue-forever-growing-in-react-1900/" class="md-nav__link">
         
   
   
@@ -352,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-default-storage-class-for-rwo-vs-rwm/" class="md-nav__link">
+      <a href="../2026-01-03-default-storage-class-for-rwo-vs-rwm/" class="md-nav__link">
         
   
   
@@ -376,10 +320,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="2026-01-03-doc-explain-how-to-load-data-in-google-colab/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loading Data in Google Colab with pandas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -395,6 +366,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-loading-data-from-a-csv-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Loading Data from a CSV File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-loading-data-from-a-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Loading Data from a JSON File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-loading-data-from-a-excel-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Loading Data from a Excel File
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -406,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0/" class="md-nav__link">
+      <a href="../2026-01-03-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0/" class="md-nav__link">
         
   
   
@@ -433,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2/" class="md-nav__link">
+      <a href="../2026-01-03-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2/" class="md-nav__link">
         
   
   
@@ -460,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures/" class="md-nav__link">
+      <a href="../2026-01-03-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures/" class="md-nav__link">
         
   
   
@@ -487,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/" class="md-nav__link">
+      <a href="../2026-01-03-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/" class="md-nav__link">
         
   
   
@@ -514,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-pulling-manifest-error/" class="md-nav__link">
+      <a href="../2026-01-03-pulling-manifest-error/" class="md-nav__link">
         
   
   
@@ -541,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-support-for-multiple-images-in-chat-endpoint/" class="md-nav__link">
+      <a href="../2026-01-03-support-for-multiple-images-in-chat-endpoint/" class="md-nav__link">
         
   
   
@@ -568,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/" class="md-nav__link">
+      <a href="../2026-01-03-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/" class="md-nav__link">
         
   
   
@@ -595,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-tracking-issue-for-rfc-2045-improving-target_feature/" class="md-nav__link">
+      <a href="../2026-01-03-tracking-issue-for-rfc-2045-improving-target_feature/" class="md-nav__link">
         
   
   
@@ -642,10 +705,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#latest-updates" class="md-nav__link">
+  <a href="#core-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Latest Updates
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-loading-data-from-a-csv-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Loading Data from a CSV File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-loading-data-from-a-json-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Loading Data from a JSON File
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-loading-data-from-a-excel-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Loading Data from a Excel File
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
       
     </span>
   </a>
@@ -667,12 +791,61 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">data-loading</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">google-colab</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">pandas</span>
+      
+    
+  </nav>
 
 
-<h1 id="welcome-to-issue-web-search">Welcome to ISSUE WEB SEARCH</h1>
-<p>Tracking the latest GitHub issues and StackOverflow trends in Python.</p>
-<h2 id="latest-updates">Latest Updates</h2>
-<p>Please check the navigation menu on the left for the latest articles and issue analyses.</p>
+
+<h1 id="loading-data-in-google-colab-with-pandas">Loading Data in Google Colab with pandas</h1>
+<h2 id="core-problem">Core Problem</h2>
+<p>Google Colab is a popular environment for data science and scientific computing, but there is no official cohesive explanation on how to load data into pandas within this environment. This makes it difficult for users to get started with loading data from various sources.</p>
+<h2 id="solution-analysis">Solution &amp; Analysis</h2>
+<p>To load data in Google Colab using pandas, we can use the following methods:</p>
+<h3 id="1-loading-data-from-a-csv-file">1. Loading Data from a CSV File</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Load data from a CSV file</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>You can also specify additional parameters such as <code>header=None</code> to indicate that the first row is not a header, or <code>sep='\t'</code> to specify a different separator.</p>
+<h3 id="2-loading-data-from-a-json-file">2. Loading Data from a JSON File</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Load data from a JSON file</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">&#39;data.json&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>You can also use the <code>orient</code> parameter to specify the orientation of the JSON data, such as <code>records</code>.</p>
+<h3 id="3-loading-data-from-a-excel-file">3. Loading Data from a Excel File</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># Load data from an Excel file</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;data.xlsx&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>You can also specify additional parameters such as <code>sheet_name</code> to indicate which sheet to load.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Loading data in Google Colab with pandas is straightforward using the methods mentioned above. By following these steps, users can easily load their data into pandas and start working with it.</p>
 
 
 
@@ -725,10 +898,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-03-pulling-manifest-error/">
       
       
+        <link rel="prev" href="../2026-01-03-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/">
       
-        <link rel="next" href="2026-01-03-bug-actqueue-forever-growing-in-react-1900/">
+      
+        <link rel="next" href="../2026-01-03-support-for-multiple-images-in-chat-endpoint/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>ISSUE WEB SEARCH</title>
+        <title>Pulling Manifest Error in Ollama - ISSUE WEB SEARCH</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-issue-web-search" class="md-skip">
+        <a href="#pulling-manifest-error-in-ollama" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +98,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="ISSUE WEB SEARCH" class="md-header__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
+    <a href=".." title="ISSUE WEB SEARCH" class="md-header__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -116,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to ISSUE WEB SEARCH
+              Pulling Manifest Error in Ollama
             
           </span>
         </div>
@@ -222,7 +224,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="ISSUE WEB SEARCH" class="md-nav__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
+    <a href=".." title="ISSUE WEB SEARCH" class="md-nav__button md-logo" aria-label="ISSUE WEB SEARCH" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -237,37 +239,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Welcome to ISSUE WEB SEARCH
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -283,37 +258,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#latest-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Latest Updates
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -325,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-bug-actqueue-forever-growing-in-react-1900/" class="md-nav__link">
+      <a href="../2026-01-03-bug-actqueue-forever-growing-in-react-1900/" class="md-nav__link">
         
   
   
@@ -352,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-default-storage-class-for-rwo-vs-rwm/" class="md-nav__link">
+      <a href="../2026-01-03-default-storage-class-for-rwo-vs-rwm/" class="md-nav__link">
         
   
   
@@ -379,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-doc-explain-how-to-load-data-in-google-colab/" class="md-nav__link">
+      <a href="../2026-01-03-doc-explain-how-to-load-data-in-google-colab/" class="md-nav__link">
         
   
   
@@ -406,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0/" class="md-nav__link">
+      <a href="../2026-01-03-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0/" class="md-nav__link">
         
   
   
@@ -433,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2/" class="md-nav__link">
+      <a href="../2026-01-03-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2/" class="md-nav__link">
         
   
   
@@ -460,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures/" class="md-nav__link">
+      <a href="../2026-01-03-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures/" class="md-nav__link">
         
   
   
@@ -487,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/" class="md-nav__link">
+      <a href="../2026-01-03-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/" class="md-nav__link">
         
   
   
@@ -511,10 +455,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="2026-01-03-pulling-manifest-error/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pulling Manifest Error in Ollama
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -530,6 +501,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -541,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-support-for-multiple-images-in-chat-endpoint/" class="md-nav__link">
+      <a href="../2026-01-03-support-for-multiple-images-in-chat-endpoint/" class="md-nav__link">
         
   
   
@@ -568,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/" class="md-nav__link">
+      <a href="../2026-01-03-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/" class="md-nav__link">
         
   
   
@@ -595,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2026-01-03-tracking-issue-for-rfc-2045-improving-target_feature/" class="md-nav__link">
+      <a href="../2026-01-03-tracking-issue-for-rfc-2045-improving-target_feature/" class="md-nav__link">
         
   
   
@@ -642,10 +666,32 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#latest-updates" class="md-nav__link">
+  <a href="#core-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Latest Updates
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
       
     </span>
   </a>
@@ -667,12 +713,68 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">dolphin-mixtral</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">manifest error</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">ollama</span>
+      
+    
+  </nav>
 
 
-<h1 id="welcome-to-issue-web-search">Welcome to ISSUE WEB SEARCH</h1>
-<p>Tracking the latest GitHub issues and StackOverflow trends in Python.</p>
-<h2 id="latest-updates">Latest Updates</h2>
-<p>Please check the navigation menu on the left for the latest articles and issue analyses.</p>
+
+<h1 id="pulling-manifest-error-in-ollama">Pulling Manifest Error in Ollama</h1>
+<h2 id="core-problem">Core Problem</h2>
+<p>When running "ollama run dolphin-mixtral:latest" for the first time, users may encounter an "Error: max retries exceeded: unexpected EOF" and are unable to restart the download with the error message "Error: pull model manifest: file does not exist".</p>
+<h2 id="solution-analysis">Solution &amp; Analysis</h2>
+<p>To resolve this issue, it is recommended to ensure sufficient system resources. Specifically:</p>
+<ul>
+<li><strong>CPU:</strong> A minimum of 2-4 cores for optimal performance.</li>
+<li><strong>GPU:</strong> A dedicated graphics card for rendering and inference tasks.</li>
+</ul>
+<p>It's also crucial to have enough free space on the hard drive.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Check available disk space</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>df<span class="w"> </span>-h
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Ensure sufficient disk space (at least 32GB recommended)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># For Mac users:</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># sudo diskutil diskUsageDisk /dev/disk0s2</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># For Linux users:</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># df -h | grep /</span>
+</span></code></pre></div>
+<p>Additionally, consider the following troubleshooting steps:</p>
+<ul>
+<li>Update Ollama to the latest version using <code>ollama update</code>.</li>
+<li>Verify that the dolphin-mixtral model is correctly installed and configured.</li>
+<li>Check the system logs for any error messages related to the manifest file.</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Display system logs</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>journalctl<span class="w"> </span>-u<span class="w"> </span>ollama
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># View Ollama configuration files</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nb">cd</span><span class="w"> </span>~/ollama_config
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>ls
+</span></code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>By ensuring sufficient system resources, checking disk space, and following the suggested troubleshooting steps, users should be able to resolve the pulling manifest error in Ollama.</p>
 
 
 
@@ -725,10 +827,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
