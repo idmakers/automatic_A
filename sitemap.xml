@@ -9,6 +9,10 @@
          <lastmod>2026-01-03</lastmod>
     </url>
     <url>
+         <loc>https://justwe.uk/2026-01-04-bug-different-behaivor-between-usetransition-and-usedeferredvalue/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
          <loc>https://justwe.uk/2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc/</loc>
          <lastmod>2026-01-03</lastmod>
     </url>
@@ -45,11 +49,19 @@
          <lastmod>2026-01-03</lastmod>
     </url>
     <url>
+         <loc>https://justwe.uk/2026-01-04-reasoning-tokens-not-passing-through-from-openrouter-to-chatopenai/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
          <loc>https://justwe.uk/2026-01-04-scheduler-will-run-into-race-conditions-on-large-scale-clusters/</loc>
          <lastmod>2026-01-03</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-support-for-multiple-images-in-chat-endpoint/</loc>
+         <lastmod>2026-01-03</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/</loc>
          <lastmod>2026-01-03</lastmod>
     </url>
     <url>
