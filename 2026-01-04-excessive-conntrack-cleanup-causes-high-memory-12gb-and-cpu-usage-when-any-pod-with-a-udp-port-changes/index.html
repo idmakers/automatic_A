@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/">
       
       
-        <link rel="prev" href="../2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures/">
+        <link rel="prev" href="../2026-01-04-bug-actqueue-forever-growing-in-react-1900/">
       
       
-        <link rel="next" href="../2026-01-04-support-for-multiple-images-in-chat-endpoint/">
+        <link rel="next" href="../2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>AMD Memory Detection Routines Ignore Unified Memory on AMD APU - ISSUE WEB SEARCH</title>
+        <title>2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#amd-memory-detection-routines-ignore-unified-memory-on-amd-apu" class="md-skip">
+        <a href="#what-happened" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AMD Memory Detection Routines Ignore Unified Memory on AMD APU
+              2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes
             
           </span>
         </div>
@@ -671,10 +671,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -690,6 +715,156 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-happened" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Happened?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-did-you-expect-to-happen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Did You Expect to Happen?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-reproduce-it-as-minimally-and-precisely-as-possible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Can We Reproduce It (as Minimally and Precisely as Possible)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anything-else-we-need-to-know" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anything Else We Need to Know?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kubernetes Version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Provider
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OS Version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-runtime-cri-and-version-if-applicable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Runtime (CRI) and Version (if applicable)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-plugins-cni-csi-and-versions-if-applicable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Plugins (CNI, CSI, ...) and Versions (if applicable)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-solutioncomment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Top Solution/Comment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -779,37 +954,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AMD Memory Detection Routines Ignore Unified Memory on AMD APU
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/" class="md-nav__link">
         
   
   
@@ -825,59 +973,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Problem
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution &amp; Analysis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -953,8 +1048,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -963,10 +1056,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-problem" class="md-nav__link">
+  <a href="#what-happened" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Problem
+        What Happened?
       
     </span>
   </a>
@@ -974,10 +1067,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
+  <a href="#what-did-you-expect-to-happen" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Solution &amp; Analysis
+        What Did You Expect to Happen?
       
     </span>
   </a>
@@ -985,10 +1078,109 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#how-can-we-reproduce-it-as-minimally-and-precisely-as-possible" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Conclusion
+        How Can We Reproduce It (as Minimally and Precisely as Possible)?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anything-else-we-need-to-know" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anything Else We Need to Know?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubernetes-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kubernetes Version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Provider
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OS Version
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-runtime-cri-and-version-if-applicable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Container Runtime (CRI) and Version (if applicable)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-plugins-cni-csi-and-versions-if-applicable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Plugins (CNI, CSI, ...) and Versions (if applicable)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-solutioncomment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Top Solution/Comment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
       
     </span>
   </a>
@@ -1010,93 +1202,53 @@
                 
                   
 
-  <nav class="md-tags" >
-    
-      
-      
-      
-      
-        <span class="md-tag">AMD</span>
-      
-    
-      
-      
-      
-      
-        <span class="md-tag">Memory Detection</span>
-      
-    
-      
-      
-      
-      
-        <span class="md-tag">Ollama</span>
-      
-    
-  </nav>
 
 
+  <h1>2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes</h1>
 
-<h1 id="amd-memory-detection-routines-ignore-unified-memory-on-amd-apu">AMD Memory Detection Routines Ignore Unified Memory on AMD APU</h1>
-<h2 id="core-problem">Core Problem</h2>
-<p>The current implementation of memory detection routines in Ollama incorrectly identifies strict VRAM on AMD APUs even when unified RAM is used by ROCM and Vulkan runtimes.</p>
-<h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To resolve this issue, we need to modify the memory detection logic to account for the use of unified RAM. The new routine will need to take into account the actual available VRAM and ignore the shared RAM allocated by ROCM and Vulkan.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// MemoryDetection.go</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="s">&quot;fmt&quot;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kd">const</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nx">unifiedRAM_THRESHOLD</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="c1">// 20 GiB</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="c1">// ... other constants ...</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="kd">type</span><span class="w"> </span><span class="nx">Memory</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nx">total</span><span class="w">   </span><span class="kt">uint64</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">available</span><span class="w"> </span><span class="kt">uint64</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">}</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="kd">func</span><span class="w"> </span><span class="nx">detectMemory</span><span class="p">()</span><span class="w"> </span><span class="p">(</span><span class="kt">uint64</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="c1">// Get the total and available VRAM</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">vram</span><span class="w"> </span><span class="nx">Memory</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="nx">vram</span><span class="p">.</span><span class="nx">total</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">getVramTotal</span><span class="p">()</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="nx">vram</span><span class="p">.</span><span class="nx">available</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">getVramAvailable</span><span class="p">()</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="c1">// Check if unified RAM is used</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">vram</span><span class="p">.</span><span class="nx">available</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="nx">unifiedRAM_THRESHOLD</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;unified RAM is used&quot;</span><span class="p">)</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">vram</span><span class="p">.</span><span class="nx">available</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="p">}</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="nx">memory</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">detectMemory</span><span class="p">()</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Available VRAM: %d bytes\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">memory</span><span class="p">)</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="p">}</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="c1">// ... other functions to get total and available VRAM ...</span>
+<p><strong>Excessive conntrack Cleanup Causes High Memory and CPU Usage in Kubernetes</strong></p>
+<h3 id="what-happened">What Happened?</h3>
+<p>In Kubernetes 1.32, changes to Services or Pods that expose UDP ports trigger a full conntrack cleanup, leading to high resource consumption. This issue affects kube-proxy instances, causing them to consume up to 12 GB of memory and 1.5 CPU cores.</p>
+<h3 id="what-did-you-expect-to-happen">What Did You Expect to Happen?</h3>
+<p>We expected kube-proxy to handle conntrack cleanup in a more efficient and targeted way. Ideally, it should limit its cleanup to entries relevant to the specific changed UDP endpoint or provide a way to configure or disable this aggressive cleanup process.</p>
+<h3 id="how-can-we-reproduce-it-as-minimally-and-precisely-as-possible">How Can We Reproduce It (as Minimally and Precisely as Possible)?</h3>
+<ol>
+<li>Deploy multiple Pods that generate a high volume of DNS requests.</li>
+<li>Observe kube-proxy resource usage (memory and CPU) on the node.</li>
+<li>Delete or update the CoreDNS Pod, which also uses UDP DNS.</li>
+<li>Watch the logs and resource usage of kube-proxy closely, noting the surge in memory (potentially up to 12 GB) and CPU usage as it performs the conntrack cleanup.</li>
+</ol>
+<h3 id="anything-else-we-need-to-know">Anything Else We Need to Know?</h3>
+<h3 id="kubernetes-version">Kubernetes Version</h3>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>kubectl<span class="w"> </span>version
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">Client Version: v1.31.2</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="go">Kustomize Version: v5.4.2</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="go">Server Version: v1.32.0-eks-5ca49cb</span>
 </span></code></pre></div>
-<h2 id="conclusion">Conclusion</h2>
-<p>The updated memory detection routine will correctly identify the actual available VRAM on AMD APUs, even when unified RAM is used by ROCM and Vulkan. This fix ensures that Ollama accurately detects the memory constraints of the system, allowing for more efficient and effective model training.</p>
+<h3 id="cloud-provider">Cloud Provider</h3>
+<p>AWS</p>
+<h3 id="os-version">OS Version</h3>
+<div class="language-console highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp"># </span>On<span class="w"> </span>Linux:<span class="w"> </span>Amazon<span class="w"> </span>Linux<span class="w"> </span><span class="m">2</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="go">5.10.230-223.885.amzn2.aarch64</span>
+</span></code></pre></div>
+<h3 id="install-tools">Install Tools</h3>
+<p>EKS</p>
+<h3 id="container-runtime-cri-and-version-if-applicable">Container Runtime (CRI) and Version (if applicable)</h3>
+<p>containerd://1.7.23</p>
+<h3 id="related-plugins-cni-csi-and-versions-if-applicable">Related Plugins (CNI, CSI, ...) and Versions (if applicable)</h3>
+<p>kube-proxy:v1.32.0-minimal-eksbuild.2</p>
+<h3 id="top-solutioncomment">Top Solution/Comment</h3>
+<p>/sig network</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://github.com/kubernetes/kubernetes/issues/129982">Source</a></li>
+</ul>
 
 
 
 
 
 
-
-  
-  
 
 
 

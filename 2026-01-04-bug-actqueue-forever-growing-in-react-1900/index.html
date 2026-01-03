@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-04-bug-actqueue-forever-growing-in-react-1900/">
       
       
-        <link rel="prev" href="../2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures/">
+        <link rel="prev" href="../2026-01-03-tracking-issue-for-rfc-2045-improving-target_feature/">
       
       
-        <link rel="next" href="../2026-01-04-support-for-multiple-images-in-chat-endpoint/">
+        <link rel="next" href="../2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>AMD Memory Detection Routines Ignore Unified Memory on AMD APU - ISSUE WEB SEARCH</title>
+        <title>React 19.0.0 actQueue Infinite Growth Bug - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#amd-memory-detection-routines-ignore-unified-memory-on-amd-apu" class="md-skip">
+        <a href="#react-1900-actqueue-infinite-growth-bug" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AMD Memory Detection Routines Ignore Unified Memory on AMD APU
+              React 19.0.0 actQueue Infinite Growth Bug
             
           </span>
         </div>
@@ -644,10 +644,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-04-bug-actqueue-forever-growing-in-react-1900/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React 19.0.0 actQueue Infinite Growth Bug
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -663,6 +690,120 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-1-remove-setref-callsite-from-ref-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution 1: Remove setRef callsite from ref props
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-2-remove-suspense-and-reactlazy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution 2: Remove Suspense and react.lazy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-3-remove-usage-of-ref-state-from-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution 3: Remove usage of ref state from effect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -779,37 +920,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    AMD Memory Detection Routines Ignore Unified Memory on AMD APU
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/" class="md-nav__link">
         
   
   
@@ -825,59 +939,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Problem
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution &amp; Analysis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -982,6 +1043,56 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-1-remove-setref-callsite-from-ref-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution 1: Remove setRef callsite from ref props
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-2-remove-suspense-and-reactlazy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution 2: Remove Suspense and react.lazy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-3-remove-usage-of-ref-state-from-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution 3: Remove usage of ref state from effect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -989,6 +1100,17 @@
     <span class="md-ellipsis">
       
         Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
       
     </span>
   </a>
@@ -1016,78 +1138,67 @@
       
       
       
-        <span class="md-tag">AMD</span>
+        <span class="md-tag">React 19.0.0</span>
       
     
       
       
       
       
-        <span class="md-tag">Memory Detection</span>
+        <span class="md-tag">actQueue</span>
       
     
       
       
       
       
-        <span class="md-tag">Ollama</span>
+        <span class="md-tag">infinite growth</span>
       
     
   </nav>
 
 
 
-<h1 id="amd-memory-detection-routines-ignore-unified-memory-on-amd-apu">AMD Memory Detection Routines Ignore Unified Memory on AMD APU</h1>
+<h1 id="react-1900-actqueue-infinite-growth-bug">React 19.0.0 actQueue Infinite Growth Bug</h1>
 <h2 id="core-problem">Core Problem</h2>
-<p>The current implementation of memory detection routines in Ollama incorrectly identifies strict VRAM on AMD APUs even when unified RAM is used by ROCM and Vulkan runtimes.</p>
+<p>When migrating from React 18.3.1 to React 19.0.0, a unit test starts to fail due to an infinite loop in the <code>actQueue</code>. This issue is caused by the use of <code>&lt;Suspense /&gt;</code> and <code>react.lazy</code> along with a component that has a <code>const [ref, setRef] = useState(null)</code> pattern.</p>
 <h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To resolve this issue, we need to modify the memory detection logic to account for the use of unified RAM. The new routine will need to take into account the actual available VRAM and ignore the shared RAM allocated by ROCM and Vulkan.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// MemoryDetection.go</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="s">&quot;fmt&quot;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kd">const</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nx">unifiedRAM_THRESHOLD</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="c1">// 20 GiB</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="c1">// ... other constants ...</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="kd">type</span><span class="w"> </span><span class="nx">Memory</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nx">total</span><span class="w">   </span><span class="kt">uint64</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="nx">available</span><span class="w"> </span><span class="kt">uint64</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">}</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="kd">func</span><span class="w"> </span><span class="nx">detectMemory</span><span class="p">()</span><span class="w"> </span><span class="p">(</span><span class="kt">uint64</span><span class="p">,</span><span class="w"> </span><span class="kt">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="c1">// Get the total and available VRAM</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">vram</span><span class="w"> </span><span class="nx">Memory</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="nx">vram</span><span class="p">.</span><span class="nx">total</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">getVramTotal</span><span class="p">()</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="nx">vram</span><span class="p">.</span><span class="nx">available</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">getVramAvailable</span><span class="p">()</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="c1">// Check if unified RAM is used</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">vram</span><span class="p">.</span><span class="nx">available</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="nx">unifiedRAM_THRESHOLD</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Errorf</span><span class="p">(</span><span class="s">&quot;unified RAM is used&quot;</span><span class="p">)</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">vram</span><span class="p">.</span><span class="nx">available</span><span class="p">,</span><span class="w"> </span><span class="kc">nil</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="p">}</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="nx">memory</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">detectMemory</span><span class="p">()</span>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Available VRAM: %d bytes\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">memory</span><span class="p">)</span>
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="p">}</span>
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="c1">// ... other functions to get total and available VRAM ...</span>
+<p>To solve this issue, we need to identify the cause of the infinite loop. Based on the provided information, we can try the following solutions:</p>
+<h3 id="solution-1-remove-setref-callsite-from-ref-props">Solution 1: Remove <code>setRef</code> callsite from ref props</h3>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Before</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">ref</span><span class="o">=</span><span class="p">{(</span><span class="nx">ref</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setRef</span><span class="p">(</span><span class="nx">ref</span><span class="p">)}</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// After</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="p">/&gt;</span>
 </span></code></pre></div>
+<p>By removing the <code>setRef</code> callsite from the ref props, the test can finish.</p>
+<h3 id="solution-2-remove-suspense-and-reactlazy">Solution 2: Remove <code>Suspense</code> and <code>react.lazy</code></h3>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Before</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">Suspense</span><span class="w"> </span><span class="na">fallback</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">div</span><span class="p">&gt;</span><span class="nx">Loading</span><span class="p">...&lt;/</span><span class="nt">div</span><span class="p">&gt;}&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="p">&lt;</span><span class="nt">LazyComponent</span><span class="w"> </span><span class="p">/&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;/</span><span class="nt">Suspense</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1">// After</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">&lt;</span><span class="nt">LazyComponent</span><span class="w"> </span><span class="p">/&gt;</span>
+</span></code></pre></div>
+<p>By removing the <code>Suspense</code> and <code>react.lazy</code>, the test can finish.</p>
+<h3 id="solution-3-remove-usage-of-ref-state-from-effect">Solution 3: Remove usage of <code>ref</code> state from effect</h3>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Before</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">ref</span><span class="p">,</span><span class="w"> </span><span class="nx">setRef</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="c1">// code that uses ref as a dependency</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">ref</span><span class="p">])</span>
+</span></code></pre></div>
+<p>By removing the usage of <code>ref</code> state from the effect, the test still hangs.</p>
+<h3 id="additional-analysis">Additional Analysis</h3>
+<p>The <code>actQueue</code> is a mechanism used by React to batch and manage asynchronous effects. In this case, the infinite loop is caused by the use of <code>Suspense</code> and <code>react.lazy</code>, which creates an additional layer of complexity in the actQueue.</p>
+<p>To fix this issue, we need to refactor the component tree to avoid using <code>Suspense</code> and <code>react.lazy</code>. We can also try to optimize the effect by removing unnecessary dependencies or using a different approach to manage asynchronous effects.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>The updated memory detection routine will correctly identify the actual available VRAM on AMD APUs, even when unified RAM is used by ROCM and Vulkan. This fix ensures that Ollama accurately detects the memory constraints of the system, allowing for more efficient and effective model training.</p>
+<p>By analyzing the problem and providing potential solutions, we can help identify the root cause of the infinite loop in React 19.0.0. By avoiding the use of <code>Suspense</code> and <code>react.lazy</code>, as well as optimizing effects, we can potentially fix the issue and improve the overall performance of the application.</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://github.com/facebook/react/issues/34250">Source</a></li>
+</ul>
 
 
 
