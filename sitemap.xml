@@ -2,86 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://justwe.uk/</loc>
-         <lastmod>2026-01-02</lastmod>
+         <lastmod>2026-01-03</lastmod>
     </url>
     <url>
-         <loc>https://justwe.uk/2026-01-02-adk-google-gemini-session-not-found-default-when-using-inmemoryrunner-with-llmagent/</loc>
-         <lastmod>2026-01-02</lastmod>
+         <loc>https://justwe.uk/2026-01-03-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures/</loc>
+         <lastmod>2026-01-03</lastmod>
     </url>
     <url>
-         <loc>https://justwe.uk/2026-01-02-how-to-safely-pass-training-argument-to-keras-layers-in-a-dynamic-list-when-i-dont-know-if-each-layer-supports-it/</loc>
-         <lastmod>2026-01-02</lastmod>
+         <loc>https://justwe.uk/2026-01-03-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/</loc>
+         <lastmod>2026-01-03</lastmod>
     </url>
     <url>
-         <loc>https://justwe.uk/2026-01-02-how-to-set-lz4_nbworkers/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-02-lambda-boolean-equality-operator-usage-without-outer-triger-mechanism/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-02-pyside6-qopenglwidget-flickers-even-with-minimal-example-inside-a-layout/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-02-python-checking-string-anagrams-closed/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-02-python-program-that-controls-an-open-dmx-controller/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-02-textfsm-parsing-column-aligned-cli-output-where-optional-columns-shift-due-to-variable-whitespace/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-02-what-if-analysis-using-python-or-excel/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-02-why-isnt-this-emitting-the-message/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-get-the-hmenu-of-a-tk-menu-on-windows/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-how-to-consume-messages-routed-from-rabbitmq-mqtt-plugin-through-rabbitmq-streams/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-how-to-ergonomically-perform-matrix-multiplication-inside-polars-streaming-engine/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-i-cant-install-taiwind-css-in-my-django-project-duplicate/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-i-have-3-different-account-types-in-a-django-project-should-i-use-1-or-3-apps/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-langgraph-seems-to-ignore-tool-outputs-with-gemini-models/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-place-a-link-tag-in-the-html-head-tag/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-propagating-logginglogger-from-module-to-single-log-file-closed/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-retrieving-private-attributes-from-a-class-closed/</loc>
-         <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-         <loc>https://justwe.uk/2026-01-03-what-scipy-function-to-use-to-estimate-this-2d-problem-with-rotation-translation-and-scale/</loc>
-         <lastmod>2026-01-02</lastmod>
+         <loc>https://justwe.uk/2026-01-03-support-for-multiple-images-in-chat-endpoint/</loc>
+         <lastmod>2026-01-03</lastmod>
     </url>
 </urlset>
