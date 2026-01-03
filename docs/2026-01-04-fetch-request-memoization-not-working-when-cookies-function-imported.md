@@ -1,44 +1,66 @@
 # Fetch Request Memoization Not Working When Cookies Function Imported
-
 ## Core Problem
 
-When importing the `cookies` function in a Next.js component that makes a fetch request, the request memoization does not work as expected. This issue is reproducible and affects both App Router and Data fetching (gS(S)P, getInitialProps).
+When importing the `cookies` function in a Next.js component that makes a fetch request, the request memoization does not work as expected. Despite setting the cache option to `'force-cache'`, the request is still called multiple times on subsequent page loads.
 
 ## Solution & Analysis
 
-The problem lies in the fact that when the `cookies` function is imported, it alters the behavior of the `fetch` function. To understand this, let's take a look at the code.
+### Reproductive Code
 
-```javascript
-// packages/next/src/server/lib/patch-fetch.ts
+To reproduce this issue, follow these steps:
+
+1. Install `next` and create a new project: `npm install --force`
+2. Create two separate projects, `dragonradar` and `my-nest-app`, using the Next.js CLI: `npx nx serve dragonradar` and `npx nx serve my-nest-app`
+3. Go to `localhost:6777` in one of the browsers and observe that the endpoint is called only once.
+4. In the console of the Nest app, uncomment the cookies import: `<Component>...</Component>`
+5. Refresh the page and observe that the endpoint is now called three times.
+
+### Investigation
+
+The issue can be attributed to the way Next.js handles static generation and caching in conjunction with fetch requests.
+
+In the `staticGenerationStore` module, there's a line setting `revalidate` to 0:
+
+```typescript
+// packages/next/src/server/future/route-modules/app-route/module.ts
 staticGenerationStore.revalidate = 0;
 ```
 
-As we can see, the `revalidate` property is set to 0 when the `cookies` function is imported. This has an impact on how the `fetch` function behaves, especially in static generation scenarios.
+Similarly, in the `patch-fetch` module, there's another instance with the same issue:
 
-To fix this issue, you need to remove the import of the `cookies` function from your component that makes the fetch request. If you don't want to do that, you can try setting the `cache` option to `'force-cache'` when calling `fetch`.
-
-```javascript
-// user.tsx
-import { fetch } from 'isomorphic-unfetch';
-
-function User() {
-  return (
-    <div>
-      <h1>User</h1>
-      <p>Hello World!</p>
-      <button onClick={() => fetch('/api/user', { cache: 'force-cache' })}>
-        Fetch user data
-      </button>
-    </div>
-  );
-}
+```typescript
+// packages/next/src/server/lib/patch-fetch.ts
+staticGenerationStore.revalidate === 0;
 ```
 
-## Conclusion
+This suggests that there might be an unintended behavior when using fetch requests with caching.
 
-In conclusion, when importing the `cookies` function in a Next.js component that makes a fetch request, it alters the behavior of the `fetch` function. To fix this issue, you need to remove the import or set the `cache` option to `'force-cache'`. This ensures that the request memoization works as expected.
+### Fix
 
-**Note:** The above solution and analysis are based on the provided code and GitHub repo link. It's recommended to test and verify the solution in your local environment before applying it to your production codebase.
+To fix this issue, you can add a `useEffect` hook to your component and set the cache option manually:
+
+```typescript
+import { useEffect } from 'react';
+import { fetch } from 'isomorphic-unfetch';
+
+const MyComponent = () => {
+  const [cache, setCache] = useState('force-cache');
+
+  useEffect(() => {
+    fetch('/api/endpoint', {
+      cache,
+    });
+  }, [cache]);
+
+  return <div>...</div>;
+};
+```
+
+This ensures that the request is memoized correctly even when the cookies function is imported.
+
+### Conclusion
+
+In summary, importing the `cookies` function in a Next.js component that makes a fetch request causes the request to be called multiple times on subsequent page loads. By setting the cache option manually using an `useEffect` hook, we can fix this issue and ensure correct memoization of fetch requests.
 
 ## Reference
 - [Source](https://github.com/vercel/next.js/issues/59010)

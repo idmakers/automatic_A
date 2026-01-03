@@ -1,49 +1,61 @@
 ---
-title: "Unreliable Documentation: A Case Study of Pandas Series.sum()"
+title: "Pandas Series.sum() Misrepresentation in Documentation"
 tags:
   - pandas
-  - documentation
-  - accuracy
+  - series
+  - sum
 ---
 
-# Unreliable Documentation: A Case Study of Pandas Series.sum()
+# [Use the Title]
 
 ## Core Problem
-
-The pandas documentation for the `Series.sum()` method contains examples that do not accurately represent the actual results. This discrepancy raises questions about the reliability and trustworthiness of the documentation.
+The `Series.sum()` function in pandas has examples that don't accurately illustrate its actual results. The documentation provides hardcoded values, which can lead to confusion about the behavior of this function.
 
 ## Solution & Analysis
+To fix this issue, we need to rethink how the examples are created and presented in the documentation. There are two possible approaches:
+
+### Approach 1: Execute Code for Results
+
+Instead of providing hardcoded results, we could modify the documentation to execute the code and display the actual output. This would ensure that the examples accurately reflect the behavior of the function.
 
 ```python
-import pandas as pd
+>>> import pandas as pd
 
-# Create a sample MultiIndex
 idx = pd.MultiIndex.from_arrays(
     [["warm", "warm", "cold", "cold"], ["dog", "falcon", "fish", "spider"]],
     names=["blooded", "animal"],
 )
-
-# Create a sample Series with the MultiIndex and values
 s = pd.Series([4, 2, 0, 8], name="legs", index=idx)
 
-# Calculate the sum of the series using the pandas method
-pandas_sum = s.sum()
+# Execute the code and display the result
+result = s.sum()
+print(result)  # Output: 14
+```
 
-# Print the type of the result
-print(type(pandas_sum))  # Output: <class 'numpy.int64'>
+### Approach 2: Indicate Numpy Types
 
-# Create a new Series with the same values but with a specific dtype
-s_dtype = pd.Series([4,2,0,8], name="legs", index=idx, dtype="int64[pyarrow]")
+Another option is to indicate whether the function returns numpy types or python types. This would allow users to understand the behavior of the function and decide how to use it accordingly.
 
-# Calculate the sum of the series using the pandas method with a different backend
-backend_sum = s_dtype.sum()
+```python
+>>> import pandas as pd
 
-print(type(backend_sum))  # Output: <class 'numpy.int64'>
+idx = pd.MultiIndex.from_arrays(
+    [["warm", "warm", "cold", "cold"], ["dog", "falcon", "fish", "spider"]],
+    names=["blooded", "animal"],
+)
+s = pd.Series([4, 2, 0, 8], name="legs", index=idx)
+
+# Display the type of result
+result_type = s.sum().dtype
+print(result_type)  # Output: int64
+
+# Execute the code and display the result
+if result_type == 'int64':
+    print(s.sum())  # Output: 14
 ```
 
 ## Conclusion
-
-The documentation examples for `Series.sum()` do not accurately represent the actual results, depending on the specific backend used. This highlights the importance of verifying the accuracy of documentation examples and ensuring that they reflect the actual behavior of the library being documented.
+To ensure that the documentation for `Series.sum()` is accurate, we should consider modifying the examples to execute the code and display the actual output. Alternatively, we can indicate the type of result returned by the function, allowing users to understand its behavior.
 
 ## Reference
 - [Source](https://github.com/pandas-dev/pandas/issues/62966)

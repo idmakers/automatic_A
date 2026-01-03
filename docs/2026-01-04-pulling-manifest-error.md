@@ -1,34 +1,49 @@
 ---
-title: "Solving Ollama Pull Manifest Error"
+title: "Resolving 'max retries exceeded' and 'file does not exist' Errors When Pulling Manifest"
 tags:
   - ollama
-  - pull manifest error
+  - docker
+  - manifest
+  - errors
 ---
 
-# Solving Ollama Pull Manifest Error
+# Resolving 'max retries exceeded' and 'file does not exist' Errors When Pulling Manifest
 
 ## Core Problem
-The ollama run command is failing with an error message indicating that the maximum number of retries has been exceeded due to an unexpected EOF (End Of File), and subsequent attempts are failing with a "pull model manifest: file does not exist" error.
+The "ollama run" command fails with an error message indicating that the maximum number of retries has been exceeded due to an unexpected EOF (End Of File), followed by a failure to pull the model manifest, resulting in a file not existing error. This issue can be frustrating for users trying to deploy and train machine learning models.
 
 ## Solution & Analysis
-To resolve this issue, we need to ensure that the required system resources are available for the ollama run command. The suggested solution is to allocate sufficient memory on the system, particularly 32GB of RAM or more, as recommended by the developer who reported success with a similar setup.
+To resolve this issue, we need to ensure that the system has sufficient memory resources to handle the Docker container's requirements. The recommended minimum memory requirement for running ollama is 32GB of CPU and GPU memory on a Macstation. Additionally, it's crucial to have enough free space on the hard drive.
+
+### Solution Steps:
+
+1. **Check System Resources**:
+   * Check your system's CPU and GPU memory usage.
+   * Ensure you have at least 32GB of total memory available (CPU + GPU).
+2. **Update Docker and ollama Images**:
+   * Run `docker pull --update docker/ollama:latest` to update the ollama image.
+3. **Clear Download Directory**:
+   * Remove any existing download directory or cache files related to ollama.
+4.  **Increase Memory Allocation for Docker Container**:
+    * Run the command with increased memory allocation, e.g., `OLLAMA_MEMORY=64G ollama run dolphin-mixtral:latest`
+5.  **Check Disk Space Availability**:
+    * Ensure there is sufficient free space on your hard drive (at least a few GB).
+
+### Example Code:
 
 ```bash
-# Check available memory and free space
-free -m
-df -h
+# Increase memory allocation for Docker container
+OLLAMA_MEMORY=64G ollama run dolphin-mixtral:latest
 
-# Allocate sufficient memory for ollama run
-export OLLAMA_MEMORY=32G
+# Clear download directory
+rm -rf ~/.ollama/download/
 
-# Run ollama again with the updated configuration
-ollama run dolphin-mixtral:latest
+# Update Docker and ollama images
+docker pull --update docker/ollama:latest
 ```
 
-Additionally, ensure that there is enough free space on the hard drive to accommodate the download.
-
 ## Conclusion
-By allocating sufficient system resources and ensuring adequate free space on the hard drive, users can resolve the pull manifest error when running ollama with the `dolphin-mixtral:latest` image. Regularly check system performance and storage capacity to prevent similar issues in the future.
+By following these steps, you should be able to resolve the 'max retries exceeded' and 'file does not exist' errors when pulling manifest. Ensure your system has sufficient memory resources and disk space available for optimal performance.
 
 ## Reference
 - [Source](https://github.com/ollama/ollama/issues/1770)
