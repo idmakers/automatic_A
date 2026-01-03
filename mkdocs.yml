@@ -7,30 +7,42 @@ theme:
   custom_dir: docs/overrides
   features:
     - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
+    - toc.follow
+    - toc.integrate
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate
   palette:
     # Slate (Dark mode)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search
-  - tags
+  - tags:
+      tags_file: tags.md
 
 markdown_extensions:
   - pymdownx.highlight:
