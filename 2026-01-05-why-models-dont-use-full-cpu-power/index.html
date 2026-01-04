@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-05-why-models-dont-use-full-cpu-power/">
       
       
-        <link rel="prev" href="../2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results/">
+        <link rel="prev" href="../2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/">
       
       
-        <link rel="next" href="../2026-01-04-fetch-request-memoization-not-working-when-cookies-function-imported/">
+        <link rel="next" href="../tags/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes - ISSUE WEB SEARCH</title>
+        <title>Unlocking CPU Potential in Machine Learning Models - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-happened" class="md-skip">
+        <a href="#unlocking-cpu-potential-in-machine-learning-models" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes
+              Unlocking CPU Potential in Machine Learning Models
             
           </span>
         </div>
@@ -306,11 +306,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/" class="md-tabs__link">
         
   
   
@@ -726,9 +724,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../2026-01-05-why-models-dont-use-full-cpu-power/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -940,35 +940,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/" class="md-nav__link">
         
   
   
@@ -984,156 +959,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-happened" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Happened?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-did-you-expect-to-happen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Did You Expect to Happen?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-can-we-reproduce-it-as-minimally-and-precisely-as-possible" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How Can We Reproduce It (as Minimally and Precisely as Possible)?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anything-else-we-need-to-know" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Anything Else We Need to Know?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kubernetes-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Kubernetes Version
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Provider
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#os-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OS Version
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Tools
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#container-runtime-cri-and-version-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Container Runtime (CRI) and Version (if applicable)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-plugins-cni-csi-and-versions-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Plugins (CNI, CSI, ...) and Versions (if applicable)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#top-solutioncomment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Top Solution/Comment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1709,10 +1534,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-05-why-models-dont-use-full-cpu-power/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unlocking CPU Potential in Machine Learning Models
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1728,6 +1580,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-example-increasing-num_thread-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code Example: Increasing num_thread Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Tips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1782,46 +1726,48 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:cpu-utilization" class="md-tag">cpu utilization</a>
+      
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:deep-learning" class="md-tag">deep learning</a>
+      
+    
+  </nav>
 
 
-  <h1>2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes</h1>
 
-<p><strong>Excessive conntrack Cleanup Causes High Memory and CPU Usage in Kubernetes</strong></p>
-<h3 id="what-happened">What Happened?</h3>
-<p>In Kubernetes 1.32, changes to Services or Pods that expose UDP ports trigger a full conntrack cleanup, leading to high resource consumption. This issue affects kube-proxy instances, causing them to consume up to 12 GB of memory and 1.5 CPU cores.</p>
-<h3 id="what-did-you-expect-to-happen">What Did You Expect to Happen?</h3>
-<p>We expected kube-proxy to handle conntrack cleanup in a more efficient and targeted way. Ideally, it should limit its cleanup to entries relevant to the specific changed UDP endpoint or provide a way to configure or disable this aggressive cleanup process.</p>
-<h3 id="how-can-we-reproduce-it-as-minimally-and-precisely-as-possible">How Can We Reproduce It (as Minimally and Precisely as Possible)?</h3>
-<ol>
-<li>Deploy multiple Pods that generate a high volume of DNS requests.</li>
-<li>Observe kube-proxy resource usage (memory and CPU) on the node.</li>
-<li>Delete or update the CoreDNS Pod, which also uses UDP DNS.</li>
-<li>Watch the logs and resource usage of kube-proxy closely, noting the surge in memory (potentially up to 12 GB) and CPU usage as it performs the conntrack cleanup.</li>
-</ol>
-<h3 id="anything-else-we-need-to-know">Anything Else We Need to Know?</h3>
-<h3 id="kubernetes-version">Kubernetes Version</h3>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>kubectl<span class="w"> </span>version
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">Client Version: v1.31.2</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="go">Kustomize Version: v5.4.2</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="go">Server Version: v1.32.0-eks-5ca49cb</span>
+<h1 id="unlocking-cpu-potential-in-machine-learning-models">Unlocking CPU Potential in Machine Learning Models</h1>
+<h2 id="core-problem">Core Problem</h2>
+<p>Machine learning models often fall short of utilizing the full potential of their underlying CPUs, leaving significant computational resources unused. This issue is particularly prevalent in CPU-only use cases, where the lack of GPU acceleration means that the entire processing load must be handled by the CPU.</p>
+<h2 id="solution-analysis">Solution &amp; Analysis</h2>
+<p>To overcome this limitation, developers can leverage various techniques to optimize CPU utilization. One effective approach involves increasing the number of threads used by the model. By utilizing multiple cores simultaneously, models can take advantage of parallel processing and significantly boost their performance.</p>
+<h3 id="code-example-increasing-num_thread-options">Code Example: Increasing num_thread Options</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">ollama</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ll</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Create a new OLLAMA instance with increased num_threads</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">model</span> <span class="o">=</span> <span class="n">ll</span><span class="o">.</span><span class="n">create_model</span><span class="p">(</span><span class="n">num_threads</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
 </span></code></pre></div>
-<h3 id="cloud-provider">Cloud Provider</h3>
-<p>AWS</p>
-<h3 id="os-version">OS Version</h3>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp"># </span>On<span class="w"> </span>Linux:<span class="w"> </span>Amazon<span class="w"> </span>Linux<span class="w"> </span><span class="m">2</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="go">5.10.230-223.885.amzn2.aarch64</span>
-</span></code></pre></div>
-<h3 id="install-tools">Install Tools</h3>
-<p>EKS</p>
-<h3 id="container-runtime-cri-and-version-if-applicable">Container Runtime (CRI) and Version (if applicable)</h3>
-<p>containerd://1.7.23</p>
-<h3 id="related-plugins-cni-csi-and-versions-if-applicable">Related Plugins (CNI, CSI, ...) and Versions (if applicable)</h3>
-<p>kube-proxy:v1.32.0-minimal-eksbuild.2</p>
-<h3 id="top-solutioncomment">Top Solution/Comment</h3>
-<p>/sig network</p>
+<p>In this example, we create an OLLAMA model with 8 threads instead of the default 1. By doing so, the model can utilize multiple CPU cores, leading to improved performance and increased efficiency.</p>
+<h3 id="additional-tips">Additional Tips</h3>
+<ul>
+<li><strong>Monitor CPU Utilization</strong>: Keep a close eye on your system's CPU utilization to ensure that it remains within optimal ranges. Tools like <code>top</code> or <code>htop</code> can help you monitor this metric.</li>
+<li><strong>Optimize Model Architecture</strong>: Carefully design your model's architecture to minimize dependencies and maximize parallelism. This may involve reorganizing layers, using techniques like batch normalization, or employing more advanced optimization methods.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>By understanding the limitations of CPU-only machine learning models and implementing strategies to optimize their performance, developers can unlock the full potential of their systems. By leveraging tools like OLLAMA and carefully crafting model architectures, it's possible to create highly efficient and scalable solutions that make the most of available computational resources.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/kubernetes/kubernetes/issues/129982">Source</a></li>
+<li><a href="https://github.com/ollama/ollama/issues/6876">Source</a></li>
 </ul>
 
 
@@ -1829,6 +1775,9 @@
 
 
 
+
+  
+  
 
 
 

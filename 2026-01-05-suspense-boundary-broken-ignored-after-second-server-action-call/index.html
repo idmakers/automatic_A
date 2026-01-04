@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-05-suspense-boundary-broken-ignored-after-second-server-action-call/">
       
       
-        <link rel="prev" href="../2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results/">
+        <link rel="prev" href="../2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters/">
       
       
-        <link rel="next" href="../2026-01-04-fetch-request-memoization-not-working-when-cookies-function-imported/">
+        <link rel="next" href="../2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes - ISSUE WEB SEARCH</title>
+        <title>Suspense Boundary Broken: A Hidden Pitfall in Next.js - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-happened" class="md-skip">
+        <a href="#suspense-boundary-broken-a-hidden-pitfall-in-nextjs" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes
+              Suspense Boundary Broken: A Hidden Pitfall in Next.js
             
           </span>
         </div>
@@ -306,11 +306,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/" class="md-tabs__link">
         
   
   
@@ -688,9 +686,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../2026-01-05-suspense-boundary-broken-ignored-after-second-server-action-call/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -940,35 +940,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/" class="md-nav__link">
         
   
   
@@ -984,156 +959,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-happened" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Happened?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-did-you-expect-to-happen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Did You Expect to Happen?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-can-we-reproduce-it-as-minimally-and-precisely-as-possible" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How Can We Reproduce It (as Minimally and Precisely as Possible)?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anything-else-we-need-to-know" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Anything Else We Need to Know?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kubernetes-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Kubernetes Version
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Provider
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#os-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OS Version
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Tools
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#container-runtime-cri-and-version-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Container Runtime (CRI) and Version (if applicable)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-plugins-cni-csi-and-versions-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Plugins (CNI, CSI, ...) and Versions (if applicable)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#top-solutioncomment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Top Solution/Comment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1655,10 +1480,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-05-suspense-boundary-broken-ignored-after-second-server-action-call/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Suspense Boundary Broken: A Hidden Pitfall in Next.js
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1674,6 +1526,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1782,46 +1698,153 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:nextjs" class="md-tag">nextjs</a>
+      
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:performance" class="md-tag">performance</a>
+      
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:suspense" class="md-tag">suspense</a>
+      
+    
+  </nav>
 
 
-  <h1>2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes</h1>
 
-<p><strong>Excessive conntrack Cleanup Causes High Memory and CPU Usage in Kubernetes</strong></p>
-<h3 id="what-happened">What Happened?</h3>
-<p>In Kubernetes 1.32, changes to Services or Pods that expose UDP ports trigger a full conntrack cleanup, leading to high resource consumption. This issue affects kube-proxy instances, causing them to consume up to 12 GB of memory and 1.5 CPU cores.</p>
-<h3 id="what-did-you-expect-to-happen">What Did You Expect to Happen?</h3>
-<p>We expected kube-proxy to handle conntrack cleanup in a more efficient and targeted way. Ideally, it should limit its cleanup to entries relevant to the specific changed UDP endpoint or provide a way to configure or disable this aggressive cleanup process.</p>
-<h3 id="how-can-we-reproduce-it-as-minimally-and-precisely-as-possible">How Can We Reproduce It (as Minimally and Precisely as Possible)?</h3>
-<ol>
-<li>Deploy multiple Pods that generate a high volume of DNS requests.</li>
-<li>Observe kube-proxy resource usage (memory and CPU) on the node.</li>
-<li>Delete or update the CoreDNS Pod, which also uses UDP DNS.</li>
-<li>Watch the logs and resource usage of kube-proxy closely, noting the surge in memory (potentially up to 12 GB) and CPU usage as it performs the conntrack cleanup.</li>
-</ol>
-<h3 id="anything-else-we-need-to-know">Anything Else We Need to Know?</h3>
-<h3 id="kubernetes-version">Kubernetes Version</h3>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>kubectl<span class="w"> </span>version
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">Client Version: v1.31.2</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="go">Kustomize Version: v5.4.2</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="go">Server Version: v1.32.0-eks-5ca49cb</span>
+<h1 id="suspense-boundary-broken-a-hidden-pitfall-in-nextjs">Suspense Boundary Broken: A Hidden Pitfall in Next.js</h1>
+<h2 id="core-problem">Core Problem</h2>
+<p>When building performant and responsive user interfaces, it's essential to understand the intricacies of Next.js' suspense mechanism. The suspense boundary is a critical aspect that ensures only the necessary components are reloaded when an action is triggered. However, there's a hidden pitfall that can lead to unexpected behavior.</p>
+<p>After the second server action call, the suspense boundary becomes ignored, causing all server components to be returned at once after the last server component has finished rendering. This can result in poor user experience due to long-running API calls blocking the entire page update.</p>
+<h2 id="solution-analysis">Solution &amp; Analysis</h2>
+<p>The issue can be reproduced using the example code provided on GitHub: https://github.com/trieb-work/nextjs-broken-suspense-bug-example.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>//<span class="w"> </span>page.tsx
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>Suspense,<span class="w"> </span>useEffect<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>getSlowServerComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;../api&#39;</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>const<span class="w"> </span><span class="nv">Page</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span>const<span class="w"> </span><span class="o">[</span>loading,<span class="w"> </span>setLoading<span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>useState<span class="o">(</span><span class="nb">true</span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span>useEffect<span class="o">(()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">(</span>loading<span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span>setLoading<span class="o">(</span><span class="nb">false</span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="o">}</span>,<span class="w"> </span><span class="o">[])</span><span class="p">;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">(</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span>&lt;div&gt;
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="o">{</span>loading<span class="w"> </span>?<span class="w"> </span><span class="o">(</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span>&lt;p&gt;Page<span class="w"> </span>is<span class="w"> </span>loading...&lt;/p&gt;
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="o">)</span><span class="w"> </span>:<span class="w"> </span><span class="o">(</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span>&lt;&gt;
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">          </span>&lt;Suspense<span class="w"> </span><span class="nv">fallback</span><span class="o">={</span>&lt;p&gt;Slept<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000ms.<span class="w"> </span>Random<span class="w"> </span>digit<span class="w"> </span>X&lt;/p&gt;<span class="o">}</span>&gt;
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">            </span>&lt;SlowServerComponent<span class="w"> </span>/&gt;
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">          </span>&lt;/Suspense&gt;
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">          </span>&lt;button<span class="w"> </span><span class="nv">onClick</span><span class="o">={()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span>getSlowServerComponent<span class="o">()}</span>&gt;Run<span class="w"> </span>server<span class="w"> </span>action&lt;/button&gt;
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">          </span>&lt;Suspense<span class="w"> </span><span class="nv">fallback</span><span class="o">={</span>&lt;p&gt;Slept<span class="w"> </span><span class="k">for</span><span class="w"> </span>3000ms.<span class="w"> </span>Random<span class="w"> </span>digit<span class="w"> </span>X&lt;/p&gt;<span class="o">}</span>&gt;
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">            </span>&lt;SlowServerComponent<span class="w"> </span>/&gt;
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">          </span>&lt;/Suspense&gt;
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span>&lt;/&gt;
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">      </span><span class="o">)}</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span>&lt;/div&gt;
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">  </span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="o">}</span><span class="p">;</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="nb">export</span><span class="w"> </span>default<span class="w"> </span>Page<span class="p">;</span>
 </span></code></pre></div>
-<h3 id="cloud-provider">Cloud Provider</h3>
-<p>AWS</p>
-<h3 id="os-version">OS Version</h3>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp"># </span>On<span class="w"> </span>Linux:<span class="w"> </span>Amazon<span class="w"> </span>Linux<span class="w"> </span><span class="m">2</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="go">5.10.230-223.885.amzn2.aarch64</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>//<span class="w"> </span>SlowServerComponent.tsx
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>useState,<span class="w"> </span>useEffect<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>getSlowServerComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;../api&#39;</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>const<span class="w"> </span><span class="nv">SlowServerComponent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span>const<span class="w"> </span><span class="o">[</span>data,<span class="w"> </span>setData<span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>useState<span class="o">(</span>null<span class="o">)</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span>const<span class="w"> </span><span class="o">[</span>loading,<span class="w"> </span>setLoading<span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>useState<span class="o">(</span><span class="nb">true</span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span>useEffect<span class="o">(()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">(</span>loading<span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span>setLoading<span class="o">(</span><span class="nb">false</span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span>async<span class="w"> </span><span class="o">()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">      </span>await<span class="w"> </span>new<span class="w"> </span>Promise<span class="o">(</span><span class="nv">resolve</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span>setTimeout<span class="o">(</span>resolve,<span class="w"> </span><span class="m">3000</span><span class="o">))</span><span class="p">;</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span>setData<span class="o">(</span><span class="s1">&#39;Random digit X&#39;</span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="o">}</span><span class="p">;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span><span class="o">}</span>,<span class="w"> </span><span class="o">[])</span><span class="p">;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">(</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span>&lt;p&gt;
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">      </span>Slept<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="o">{</span>data<span class="w"> </span>?<span class="w"> </span>data.length<span class="w"> </span>:<span class="w"> </span><span class="s1">&#39;3000ms&#39;</span><span class="o">}</span>.
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">    </span>&lt;/p&gt;
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">  </span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="o">}</span><span class="p">;</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="nb">export</span><span class="w"> </span>default<span class="w"> </span>SlowServerComponent<span class="p">;</span>
 </span></code></pre></div>
-<h3 id="install-tools">Install Tools</h3>
-<p>EKS</p>
-<h3 id="container-runtime-cri-and-version-if-applicable">Container Runtime (CRI) and Version (if applicable)</h3>
-<p>containerd://1.7.23</p>
-<h3 id="related-plugins-cni-csi-and-versions-if-applicable">Related Plugins (CNI, CSI, ...) and Versions (if applicable)</h3>
-<p>kube-proxy:v1.32.0-minimal-eksbuild.2</p>
-<h3 id="top-solutioncomment">Top Solution/Comment</h3>
-<p>/sig network</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>//<span class="w"> </span>api.ts
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>getSlowServerComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;./SlowServerComponent&#39;</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>const<span class="w"> </span><span class="nv">getSlowServerComponent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>async<span class="w"> </span><span class="o">()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span>getSlowServerComponent<span class="o">()</span><span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="o">}</span><span class="p">;</span>
+</span></code></pre></div>
+<p>To fix this issue, you need to re-add the suspense boundary for each action. This can be achieved by wrapping each server component in a new <code>Suspense</code> component.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>//<span class="w"> </span>page.tsx<span class="w"> </span><span class="o">(</span>updated<span class="o">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>Suspense<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>import<span class="w"> </span><span class="o">{</span><span class="w"> </span>getSlowServerComponent<span class="w"> </span><span class="o">}</span><span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;../api&#39;</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>const<span class="w"> </span><span class="nv">Page</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span>const<span class="w"> </span><span class="o">[</span>loading,<span class="w"> </span>setLoading<span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>useState<span class="o">(</span><span class="nb">true</span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span>useEffect<span class="o">(()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">{</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">(</span>loading<span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span>setLoading<span class="o">(</span><span class="nb">false</span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="o">}</span>,<span class="w"> </span><span class="o">[])</span><span class="p">;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">(</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span>&lt;div&gt;
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">      </span><span class="o">{</span>loading<span class="w"> </span>?<span class="w"> </span><span class="o">(</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">        </span>&lt;p&gt;Page<span class="w"> </span>is<span class="w"> </span>loading...&lt;/p&gt;
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">      </span><span class="o">)</span><span class="w"> </span>:<span class="w"> </span><span class="o">(</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">        </span>&lt;&gt;
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">          </span>&lt;Suspense<span class="w"> </span><span class="nv">fallback</span><span class="o">={</span>&lt;p&gt;Slept<span class="w"> </span><span class="k">for</span><span class="w"> </span>1000ms.<span class="w"> </span>Random<span class="w"> </span>digit<span class="w"> </span>X&lt;/p&gt;<span class="o">}</span>&gt;
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">            </span>&lt;SlowServerComponent<span class="w"> </span>/&gt;
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">          </span>&lt;/Suspense&gt;
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">          </span>&lt;button<span class="w"> </span><span class="nv">onClick</span><span class="o">={()</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span>getSlowServerComponent<span class="o">()}</span>&gt;Run<span class="w"> </span>server<span class="w"> </span>action&lt;/button&gt;
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">          </span>&lt;Suspense<span class="w"> </span><span class="nv">fallback</span><span class="o">={</span>&lt;p&gt;Slept<span class="w"> </span><span class="k">for</span><span class="w"> </span>3000ms.<span class="w"> </span>Random<span class="w"> </span>digit<span class="w"> </span>X&lt;/p&gt;<span class="o">}</span>&gt;
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">            </span>&lt;SlowServerComponent<span class="w"> </span>/&gt;
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">          </span>&lt;/Suspense&gt;
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">        </span>&lt;/&gt;
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">      </span><span class="o">)}</span>
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">    </span>&lt;/div&gt;
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">  </span><span class="o">)</span><span class="p">;</span>
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="o">}</span><span class="p">;</span>
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="nb">export</span><span class="w"> </span>default<span class="w"> </span>Page<span class="p">;</span>
+</span></code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>The suspense boundary is a crucial aspect of Next.js that ensures only necessary components are reloaded when an action is triggered. However, if not implemented correctly, the suspense boundary can become ignored, leading to poor user experience due to long-running API calls blocking the entire page update.</p>
+<p>By understanding and properly implementing the suspense mechanism, you can build performant and responsive user interfaces that provide a seamless user experience.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/kubernetes/kubernetes/issues/129982">Source</a></li>
+<li><a href="https://github.com/vercel/next.js/issues/66431">Source</a></li>
 </ul>
 
 
@@ -1829,6 +1852,9 @@
 
 
 
+
+  
+  
 
 
 

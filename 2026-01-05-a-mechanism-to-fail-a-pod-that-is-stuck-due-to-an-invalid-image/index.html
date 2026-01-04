@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image/">
       
       
-        <link rel="prev" href="../2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results/">
+        <link rel="prev" href="../2026-01-04-tracking-issue-for-rfc-2045-improving-target_feature/">
       
       
-        <link rel="next" href="../2026-01-04-fetch-request-memoization-not-working-when-cookies-function-imported/">
+        <link rel="next" href="../2026-01-05-build-from-source-with-autodiff-fails-on-mac-os/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes - ISSUE WEB SEARCH</title>
+        <title>Detecting and Failing Stuck Pods Due to Invalid Images - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-happened" class="md-skip">
+        <a href="#detecting-and-failing-stuck-pods-due-to-invalid-images" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes
+              Detecting and Failing Stuck Pods Due to Invalid Images
             
           </span>
         </div>
@@ -306,11 +306,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/" class="md-tabs__link">
         
   
   
@@ -536,9 +534,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -940,35 +940,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/" class="md-nav__link">
         
   
   
@@ -984,156 +959,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-happened" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Happened?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-did-you-expect-to-happen" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Did You Expect to Happen?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-can-we-reproduce-it-as-minimally-and-precisely-as-possible" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How Can We Reproduce It (as Minimally and Precisely as Possible)?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anything-else-we-need-to-know" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Anything Else We Need to Know?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kubernetes-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Kubernetes Version
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Provider
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#os-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OS Version
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Tools
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#container-runtime-cri-and-version-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Container Runtime (CRI) and Version (if applicable)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-plugins-cni-csi-and-versions-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Plugins (CNI, CSI, ...) and Versions (if applicable)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#top-solutioncomment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Top Solution/Comment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1439,10 +1264,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Detecting and Failing Stuck Pods Due to Invalid Images
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1458,6 +1310,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1782,46 +1698,132 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:image-validation" class="md-tag">Image Validation</a>
+      
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:kubernetes" class="md-tag">Kubernetes</a>
+      
+    
+      
+      
+      
+      
+        <a href="../tags/#tag:pod-failure" class="md-tag">Pod Failure</a>
+      
+    
+  </nav>
 
 
-  <h1>2026 01 04 excessive conntrack cleanup causes high memory 12gb and cpu usage when any pod with a udp port changes</h1>
 
-<p><strong>Excessive conntrack Cleanup Causes High Memory and CPU Usage in Kubernetes</strong></p>
-<h3 id="what-happened">What Happened?</h3>
-<p>In Kubernetes 1.32, changes to Services or Pods that expose UDP ports trigger a full conntrack cleanup, leading to high resource consumption. This issue affects kube-proxy instances, causing them to consume up to 12 GB of memory and 1.5 CPU cores.</p>
-<h3 id="what-did-you-expect-to-happen">What Did You Expect to Happen?</h3>
-<p>We expected kube-proxy to handle conntrack cleanup in a more efficient and targeted way. Ideally, it should limit its cleanup to entries relevant to the specific changed UDP endpoint or provide a way to configure or disable this aggressive cleanup process.</p>
-<h3 id="how-can-we-reproduce-it-as-minimally-and-precisely-as-possible">How Can We Reproduce It (as Minimally and Precisely as Possible)?</h3>
-<ol>
-<li>Deploy multiple Pods that generate a high volume of DNS requests.</li>
-<li>Observe kube-proxy resource usage (memory and CPU) on the node.</li>
-<li>Delete or update the CoreDNS Pod, which also uses UDP DNS.</li>
-<li>Watch the logs and resource usage of kube-proxy closely, noting the surge in memory (potentially up to 12 GB) and CPU usage as it performs the conntrack cleanup.</li>
-</ol>
-<h3 id="anything-else-we-need-to-know">Anything Else We Need to Know?</h3>
-<h3 id="kubernetes-version">Kubernetes Version</h3>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>kubectl<span class="w"> </span>version
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="go">Client Version: v1.31.2</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="go">Kustomize Version: v5.4.2</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="go">Server Version: v1.32.0-eks-5ca49cb</span>
+<h1 id="detecting-and-failing-stuck-pods-due-to-invalid-images">Detecting and Failing Stuck Pods Due to Invalid Images</h1>
+<h2 id="core-problem">Core Problem</h2>
+<p>When a Pod fails to pull an image due to invalid or non-existent image names, it can get stuck in the <code>Pending</code> phase indefinitely. This issue is particularly problematic for Jobs submitted through queueing systems, where the delay between job submission and pod creation can be hours or days. Stuck Pods block resources in the cluster, preventing other pending Jobs from starting.</p>
+<h2 id="solution-analysis">Solution &amp; Analysis</h2>
+<p>To address this issue, we need to implement a mechanism that detects when an image pull has failed for a number of times (configurable) and sets the Pod into phase=Failed.</p>
+<p>One possible approach is to create a custom Kubernetes webhook that listens for the <code>ContainerStatusUpdated</code> event. When an image pull fails, the webhook updates the container status with a failure reason and increments a counter for the failed pulls. If the counter exceeds a configurable threshold, the webhook sets the Pod's phase to Failed.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># webhook.yaml
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>apiVersion: apiextensions.k8s.io/v1
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>kind: CustomResourceDefinition
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>metadata:
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  name: imagevalidationwebhook.crd
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>spec:
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  group: imagevalidation
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  versions:
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    - name: v1alpha1
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>      served: true
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>      storage: true
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>      validated: false
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  scope: Namespaced
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  names:
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    kind: ImageValidationWebhook
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    plural: imagevalidationwebhooks
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    singular: imagevalidationwebhook
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    group: imagevalidation
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>  validation:
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    openAPIV3Schema:
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>      type: object
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>      properties:
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        name:
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>          type: string
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        namespace:
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>          type: string
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        event_type:
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>          type: string
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>          enum: [ContainerStatusUpdated]
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>        container_status_updated:
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>          type: ContainerStatusUpdated
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a># webhook implementation (go)
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>package main
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>import (
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>    &quot;context&quot;
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>    &quot;fmt&quot;
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>    &quot;log&quot;
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>    metav1 &quot;k8s.io/apimachinery/pkg/apis/meta/v1&quot;
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>    &quot;k8s.io/client-go/informers&quot;
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    &quot;k8s.io/client-go/kubernetes&quot;
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>    &quot;k8s.io/client-go/rest&quot;
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>)
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>type ImageValidationWebhook struct {
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a> Metav1    *metav1.ObjectMeta
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a> Container StatusUpdated *ContainerStatusUpdated
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>}
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>func (i *ImageValidationWebhook) Create(ctx context.Context, req *api.v1.CreateEvent) (*api.v1.CreateEvent, error) {
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>    // ...
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>    return nil, nil // implementation omitted for brevity
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>}
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>type ContainerStatusUpdated struct {
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>    ContainerStatus []ContainerStatus `json:&quot;containerStatus&quot;`
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>}
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>func (i *ImageValidationWebhook) Update(ctx context.Context, req *api.v1.UpdateEvent) (*api.v1.UpdateEvent, error) {
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>    // Get the Pod and container status
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>    pod := req.Object
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>    container := pod.Status.Containers[0]
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>    // Check if the image pull has failed
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>    if container.State.Waiting != nil &amp;&amp; container.State.Waiting.Type == &quot;ImagePullBackoff&quot; {
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>        // Increment the failure counter
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>        failureCounter = failureCounter + 1
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>        // Set the Pod&#39;s phase to Failed
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>        pod.Status.Phase = &quot;Failed&quot;
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a>    }
+</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>    return nil, nil // implementation omitted for brevity
+</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>}
+</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a>
+</span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>var (
+</span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>    failureCounter int64 = 0
+</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>)
+</span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>
+</span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a>func main() {
+</span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a>    // Create a Kubernetes client and webhook server
+</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>    clientset := kubernetes.NewForConfig(context.Background(), rest.InClusterConfig())
+</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>    informer := informers.NewSharedInformerFactory(clientset, 0)
+</span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>    webhookServer := webhookserver.NewWebhookServer(clientset, informer)
+</span><span id="__span-0-87"><a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a>}
 </span></code></pre></div>
-<h3 id="cloud-provider">Cloud Provider</h3>
-<p>AWS</p>
-<h3 id="os-version">OS Version</h3>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp"># </span>On<span class="w"> </span>Linux:<span class="w"> </span>Amazon<span class="w"> </span>Linux<span class="w"> </span><span class="m">2</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="go">5.10.230-223.885.amzn2.aarch64</span>
-</span></code></pre></div>
-<h3 id="install-tools">Install Tools</h3>
-<p>EKS</p>
-<h3 id="container-runtime-cri-and-version-if-applicable">Container Runtime (CRI) and Version (if applicable)</h3>
-<p>containerd://1.7.23</p>
-<h3 id="related-plugins-cni-csi-and-versions-if-applicable">Related Plugins (CNI, CSI, ...) and Versions (if applicable)</h3>
-<p>kube-proxy:v1.32.0-minimal-eksbuild.2</p>
-<h3 id="top-solutioncomment">Top Solution/Comment</h3>
-<p>/sig network</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Implementing a custom Kubernetes webhook to detect and fail stuck Pods due to invalid images can help prevent resource blockages in queueing systems. By monitoring image pull failures and setting the Pod's phase to Failed when a configurable threshold is exceeded, we can ensure that resources are freed up for other pending Jobs.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/kubernetes/kubernetes/issues/129982">Source</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/issues/122300">Source</a></li>
 </ul>
 
 
@@ -1829,6 +1831,9 @@
 
 
 
+
+  
+  
 
 
 
