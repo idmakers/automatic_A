@@ -14,8 +14,9 @@ theme:
   - toc.integrate
   - search.suggest
   - search.highlight
-  - content.code.copy
-  - content.code.annotate
+    - content.code.copy
+    - content.code.annotate
+    # - navigation.instant # Optional for SPA-like feel, can conflict with scripts
   palette:
   - media: '(prefers-color-scheme: dark)'
     scheme: slate
