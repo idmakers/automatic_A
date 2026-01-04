@@ -1,110 +1,105 @@
-/* Google Research Blog Replica CSS */
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+/* Google Research Blog (Dark Mode) Replica */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
 
 :root {
-    /* Google Design Tokens */
-    --bg-color: #ffffff;
-    --text-primary: #202124;
-    --text-secondary: #5f6368;
-    --google-blue: #1a73e8;
-    --border-color: #dadce0;
-    --hero-bg: #000000;
-    --hero-text: #ffffff;
+    /* Google Dark Mode Palette */
+    --google-grey-900: #202124;
+    /* Main Background */
+    --google-grey-800: #292a2d;
+    /* Surface/Card */
+    --google-grey-700: #3c4043;
+    /* Border */
+    --google-grey-500: #5f6368;
+    /* Icon/Secondary */
+    --google-grey-300: #dadce0;
+    /* Text Primary */
+    --google-grey-100: #f1f3f4;
+    /* High Contrast Text */
+
+    --google-blue-200: #8ab4f8;
+    /* Primary Accent */
 
     /* MkDocs Material Overrides */
-    --md-default-bg-color: var(--bg-color);
-    --md-default-fg-color: var(--text-primary);
-    --md-primary-fg-color: #ffffff;
-    /* Header bg */
-    --md-primary-fg-color--light: #f1f3f4;
-    --md-primary-fg-color--dark: #ffffff;
-    --md-accent-fg-color: var(--google-blue);
+    --md-default-bg-color: var(--google-grey-900);
+    --md-default-fg-color: #e8eaed;
+    --md-default-fg-color--light: #9aa0a6;
+    --md-default-fg-color--lighter: #5f6368;
 
-    --md-text-font: "Google Sans Text", "Roboto", sans-serif;
+    --md-primary-fg-color: var(--google-grey-900);
+    /* Header blends with bg */
+    --md-primary-fg-color--light: var(--google-grey-800);
+    --md-primary-fg-color--dark: var(--google-grey-900);
+
+    --md-accent-fg-color: var(--google-blue-200);
+
+    --md-text-font: "Roboto", sans-serif;
     --md-code-font: "Roboto Mono", monospace;
+
+    /* Header transparency */
+    --md-header-bg-color: rgba(32, 33, 36, 0.9);
 }
 
 body {
-    font-family: var(--md-text-font);
-    color: var(--text-primary);
+    background-color: var(--md-default-bg-color);
 }
 
-/* Header - Clean White */
+/* Header - Minimalist & Blended */
 .md-header {
-    background-color: #ffffff !important;
-    color: var(--text-primary) !important;
-    border-bottom: 1px solid var(--border-color);
+    background-color: var(--md-header-bg-color) !important;
     box-shadow: none !important;
-}
-
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
-    fill: var(--text-secondary);
-    /* Grey logo */
+    border-bottom: 1px solid var(--google-grey-700);
 }
 
 .md-header__title {
-    color: var(--text-primary) !important;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+/* Tabs Navigation - App-like */
+.md-tabs {
+    background-color: var(--google-grey-900) !important;
+    border-bottom: 1px solid var(--google-grey-700);
+}
+
+.md-tabs__link {
+    color: #9aa0a6 !important;
+}
+
+.md-tabs__link--active {
+    color: var(--google-blue-200) !important;
     font-weight: 500;
 }
 
-.md-header__option {
-    color: var(--text-secondary) !important;
+/* Card / Content Styling */
+.md-content {
+    background-color: transparent;
 }
 
-/* Sidebar - Clean */
-.md-sidebar {
-    background-color: #ffffff;
-    border-right: 1px solid var(--border-color);
+/* mimic Google Blog Cards if they are articles or in a list */
+article.md-content__inner {
+    margin-top: 2rem;
 }
 
-.md-nav__title {
-    color: var(--text-secondary) !important;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
+/* General Card override (for Admonitions or Blog posts if configured as cards) */
+/* Or strictly framing the main content */
 
-.md-nav__link--active {
-    color: var(--google-blue) !important;
-    font-weight: 700;
-    background: #e8f0fe;
-    /* Light blue bg for active */
-    border-radius: 0 20px 20px 0;
-}
-
-/* Hero Section (Simulated with Admonition or Top Content) */
-/* We can style the first H1 to look like a hero title */
-.md-content h1:first-of-type {
-    font-family: "Google Sans Text", sans-serif;
-    font-size: 3.5rem;
+/* Typography overrides */
+h1 {
     font-weight: 400;
-    line-height: 1.2;
+    color: #e8eaed;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: var(--text-primary);
-    max-width: 800px;
 }
 
-/* Card Styling (If listing posts) or General Content */
-article {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-/* Typography */
-h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--text-primary);
+h3 {
     font-weight: 400;
-    /* Google style is often lighter weights for headings */
+    color: #e8eaed;
 }
 
+/* Links */
 a {
-    color: var(--google-blue);
+    color: var(--google-blue-200);
     text-decoration: none;
 }
 
@@ -112,51 +107,35 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Code Blocks - Simple & Clean */
+/* Code Blocks - Flat Dark */
 .md-typeset pre {
-    background-color: #f8f9fa !important;
-    border: 1px solid var(--border-color);
+    background-color: #000000 !important;
+    /* Deep black for contrast */
+    border: 1px solid var(--google-grey-700);
     border-radius: 8px;
     box-shadow: none;
-    color: var(--text-primary);
 }
 
 .md-typeset pre>code {
-    background-color: transparent !important;
     font-family: var(--md-code-font);
 }
 
-/* Admonitions - Google Style */
+/* Admonitions - Google Style Outline */
 .md-typeset .admonition {
-    border: 1px solid var(--border-color) !important;
-    border-left-width: 0 !important;
-    /* No left border usually */
+    background-color: transparent !important;
+    border: 1px solid var(--google-grey-700) !important;
     border-radius: 8px;
-    background-color: #f1f3f4 !important;
-    /* Grey background */
     box-shadow: none;
 }
 
 .md-typeset .admonition__title {
-    background-color: transparent !important;
-    border-bottom: none !important;
-    color: var(--text-primary) !important;
-    font-weight: 500;
-}
-
-/* Tags */
-.md-typeset .md-tag {
-    background-color: #f1f3f4;
-    color: var(--text-secondary);
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 4px 8px;
+    background-color: var(--google-grey-800) !important;
+    border-bottom: 1px solid var(--google-grey-700) !important;
+    color: #e8eaed !important;
 }
 
 /* Footer */
 footer {
-    background-color: #f8f9fa !important;
-    border-top: 1px solid var(--border-color);
-    color: var(--text-secondary);
+    background-color: var(--google-grey-900) !important;
+    border-top: 1px solid var(--google-grey-700);
 }
