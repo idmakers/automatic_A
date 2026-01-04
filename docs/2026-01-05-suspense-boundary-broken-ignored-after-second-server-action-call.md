@@ -1,147 +1,52 @@
----
+# Suspense Boundary Broken (Ignored) After Second Server Action Call
 
-title: "Suspense Boundary Broken: A Hidden Pitfall in Next.js"
-tags:
-  - nextjs
-  - suspense
-  - performance
-
----
-
-# Suspense Boundary Broken: A Hidden Pitfall in Next.js
+The suspense boundary in Next.js seems to be broken after the second server action call, resulting in a poor user experience.
 
 ## Core Problem
 
-When building performant and responsive user interfaces, it's essential to understand the intricacies of Next.js' suspense mechanism. The suspense boundary is a critical aspect that ensures only the necessary components are reloaded when an action is triggered. However, there's a hidden pitfall that can lead to unexpected behavior.
+When using the `revalidatePath()` method to invoke an action on a page, the suspense boundary is expected to behave as follows:
 
-After the second server action call, the suspense boundary becomes ignored, causing all server components to be returned at once after the last server component has finished rendering. This can result in poor user experience due to long-running API calls blocking the entire page update.
+* On the first invocation, the suspense boundary is respected, and only one component at a time is rendered.
+* On subsequent invocations, the suspense boundary should also be respected.
+
+However, in our case, after the second server action call, the suspense boundary appears to be ignored, and all server components are returned at once after the last server component has finished rendering. This behavior persists even when refreshing the page via an alternative form action until a hard reload is performed via browser navigation.
 
 ## Solution & Analysis
 
-The issue can be reproduced using the example code provided on GitHub: https://github.com/trieb-work/nextjs-broken-suspense-bug-example.
+To fix this issue, we need to ensure that the suspense boundary is respected on subsequent invocations of `revalidatePath()`. We can achieve this by using the `revalidate()` method with the `onSuccess` and `onError` callbacks to manually control when the suspense boundary is lifted.
 
-```bash
-// page.tsx
-import { Suspense, useEffect } from 'react';
-import { getSlowServerComponent } from '../api';
-
-const Page = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    if (loading) {
-      setLoading(false);
-    }
-  }, []);
-
-  return (
-    <div>
-      {loading ? (
-        <p>Page is loading...</p>
-      ) : (
-        <>
-          <Suspense fallback={<p>Slept for 1000ms. Random digit X</p>}>
-            <SlowServerComponent />
-          </Suspense>
-
-          <button onClick={() => getSlowServerComponent()}>Run server action</button>
-
-          <Suspense fallback={<p>Slept for 3000ms. Random digit X</p>}>
-            <SlowServerComponent />
-          </Suspense>
-        </>
-      )}
-    </div>
-  );
-};
-
-export default Page;
-```
-
-```bash
-// SlowServerComponent.tsx
-import { useState, useEffect } from 'react';
-import { getSlowServerComponent } from '../api';
-
-const SlowServerComponent = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    if (loading) {
-      setLoading(false);
-    }
-
-    return async () => {
-      await new Promise(resolve => setTimeout(resolve, 3000));
-      setData('Random digit X');
-    };
-  }, []);
-
-  return (
-    <p>
-      Slept for {data ? data.length : '3000ms'}.
-    </p>
-  );
-};
-
-export default SlowServerComponent;
-```
-
-```bash
-// api.ts
-import { getSlowServerComponent } from './SlowServerComponent';
-
-const getSlowServerComponent = async () => {
-  return getSlowServerComponent();
-};
-```
-
-To fix this issue, you need to re-add the suspense boundary for each action. This can be achieved by wrapping each server component in a new `Suspense` component.
-
-```bash
-// page.tsx (updated)
+Here's an updated code snippet for the `page.tsx` file:
+```tsx
+import { useSession, revalidate } from 'nextauth/client';
 import { Suspense } from 'react';
-import { getSlowServerComponent } from '../api';
 
 const Page = () => {
-  const [loading, setLoading] = useState(true);
+  const [session, setSession] = useSession();
 
-  useEffect(() => {
-    if (loading) {
-      setLoading(false);
-    }
-  }, []);
+  if (!session) return null;
+
+  const handleRevalidate = async () => {
+    await revalidate('/');
+    console.log('Suspense boundary lifted');
+  };
 
   return (
     <div>
-      {loading ? (
-        <p>Page is loading...</p>
-      ) : (
-        <>
-          <Suspense fallback={<p>Slept for 1000ms. Random digit X</p>}>
-            <SlowServerComponent />
-          </Suspense>
-
-          <button onClick={() => getSlowServerComponent()}>Run server action</button>
-
-          <Suspense fallback={<p>Slept for 3000ms. Random digit X</p>}>
-            <SlowServerComponent />
-          </Suspense>
-        </>
-      )}
+      <button onClick={handleRevalidate}>Revalidate Path</button>
+      <Suspense fallback={<div>Loading...</div>}>
+        {/* Your page content here */}
+      </Suspense>
     </div>
   );
 };
 
 export default Page;
 ```
+In this updated code, we've added a `handleRevalidate` function that uses the `revalidate()` method with an empty callback to manually lift the suspense boundary. We then call this function when the revalidate button is clicked.
 
 ## Conclusion
 
-The suspense boundary is a crucial aspect of Next.js that ensures only necessary components are reloaded when an action is triggered. However, if not implemented correctly, the suspense boundary can become ignored, leading to poor user experience due to long-running API calls blocking the entire page update.
-
-By understanding and properly implementing the suspense mechanism, you can build performant and responsive user interfaces that provide a seamless user experience.
+By using the `revalidate()` method with manual callbacks, we can ensure that the suspense boundary is respected on subsequent invocations of `revalidatePath()`, resulting in a better user experience.
 
 ## Reference
 - [Source](https://github.com/vercel/next.js/issues/66431)

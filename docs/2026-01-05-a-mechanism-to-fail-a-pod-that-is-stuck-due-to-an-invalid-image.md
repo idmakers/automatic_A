@@ -1,114 +1,90 @@
 ---
-title: "Detecting and Failing Stuck Pods Due to Invalid Images"
+title: "Failing Stuck Pods due to Invalid Images: A Mechanism for Rescue"
 tags:
   - Kubernetes
   - Pod Failure
   - Image Validation
 ---
 
-# Detecting and Failing Stuck Pods Due to Invalid Images
+# Failing Stuck Pods due to Invalid Images: A Mechanism for Rescue
 
 ## Core Problem
-When a Pod fails to pull an image due to invalid or non-existent image names, it can get stuck in the `Pending` phase indefinitely. This issue is particularly problematic for Jobs submitted through queueing systems, where the delay between job submission and pod creation can be hours or days. Stuck Pods block resources in the cluster, preventing other pending Jobs from starting.
+When a Pod is stuck in the `Pending` phase due to an invalid image, it can cause significant delays and resource blocks in the cluster. This issue is particularly problematic in queued environments where jobs may be submitted hours or days after creation, leading to delayed start times.
 
 ## Solution & Analysis
-To address this issue, we need to implement a mechanism that detects when an image pull has failed for a number of times (configurable) and sets the Pod into phase=Failed.
+To address this problem, we propose introducing a mechanism that sets a Pod into the `Failed` phase when the image pull fails for a configurable number of attempts. This would allow the job controller to detect and handle stuck Pods more effectively.
 
-One possible approach is to create a custom Kubernetes webhook that listens for the `ContainerStatusUpdated` event. When an image pull fails, the webhook updates the container status with a failure reason and increments a counter for the failed pulls. If the counter exceeds a configurable threshold, the webhook sets the Pod's phase to Failed.
+### Configurable Image Pull Attempts
 
-```yml
-# webhook.yaml
-apiVersion: apiextensions.k8s.io/v1
-kind: CustomResourceDefinition
+We suggest introducing a new config map field, `imagePullAttempts`, which controls the maximum number of failed attempts allowed before marking a Pod as `Failed`.
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
 metadata:
-  name: imagevalidationwebhook.crd
+  name: image-pull-attempts
 spec:
-  group: imagevalidation
-  versions:
-    - name: v1alpha1
-      served: true
-      storage: true
-      validated: false
-  scope: Namespaced
-  names:
-    kind: ImageValidationWebhook
-    plural: imagevalidationwebhooks
-    singular: imagevalidationwebhook
-    group: imagevalidation
-  validation:
-    openAPIV3Schema:
-      type: object
-      properties:
-        name:
-          type: string
-        namespace:
-          type: string
-        event_type:
-          type: string
-          enum: [ContainerStatusUpdated]
-        container_status_updated:
-          type: ContainerStatusUpdated
+  data:
+    imagePullAttempts: 3
+```
 
-# webhook implementation (go)
-package main
+### Custom Pod Status Updater
 
-import (
-	"context"
-	"fmt"
-	"log"
+To implement this mechanism, we need to create a custom Pod status updater that checks the number of failed image pull attempts and updates the Pod's phase accordingly.
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/client-go/informers"
-	"k8s.io/client-go/kubernetes"
-	"k8s.io/client-go/rest"
-)
+```go
+// Define a custom Pod status updater function
+func updatePodStatus(pod *v1.Pod) error {
+    // Get the current image pull attempt count
+    attempts := pod.Status.ImagePullAttempts
 
-type ImageValidationWebhook struct {
- Metav1    *metav1.ObjectMeta
- Container StatusUpdated *ContainerStatusUpdated
+    // Check if the Pod has exceeded the maximum allowed attempts
+    if attempts > int32(imagePullAttemptsValue) {
+        // Update the Pod's phase to Failed
+        pod.Status.Phase = v1.PodPhaseFailed
+    }
+
+    return nil
 }
 
-func (i *ImageValidationWebhook) Create(ctx context.Context, req *api.v1.CreateEvent) (*api.v1.CreateEvent, error) {
-	// ...
-	return nil, nil // implementation omitted for brevity
-}
-
-type ContainerStatusUpdated struct {
-	ContainerStatus []ContainerStatus `json:"containerStatus"`
-}
-
-func (i *ImageValidationWebhook) Update(ctx context.Context, req *api.v1.UpdateEvent) (*api.v1.UpdateEvent, error) {
-	// Get the Pod and container status
-	pod := req.Object
-	container := pod.Status.Containers[0]
-
-	// Check if the image pull has failed
-	if container.State.Waiting != nil && container.State.Waiting.Type == "ImagePullBackoff" {
-		// Increment the failure counter
-		failureCounter = failureCounter + 1
-
-		// Set the Pod's phase to Failed
-		pod.Status.Phase = "Failed"
-	}
-
-	return nil, nil // implementation omitted for brevity
-}
-
-var (
-	failureCounter int64 = 0
-)
-
+// Define a custom Pod status updater webhook
 func main() {
-	// Create a Kubernetes client and webhook server
-	clientset := kubernetes.NewForConfig(context.Background(), rest.InClusterConfig())
-	informer := informers.NewSharedInformerFactory(clientset, 0)
-	webhookServer := webhookserver.NewWebhookServer(clientset, informer)
+    // Register the webhook handler
+    webhook := &http.HandlerFunc(updatePodStatus)
+    http.Handle("/webhook", webhook)
+}
+```
+
+### Image Validation
+
+To further improve this mechanism, we can integrate image validation using a new API endpoint that checks the image validity before allowing the Pod to proceed.
+
+```go
+// Define a new API endpoint for image validation
+func validateImage(image string) (*v1.Image, error) {
+    // Check if the image exists and is valid
+    if !imageExists && !isValidImage(image) {
+        return nil, errors.New("invalid image")
+    }
+    return &v1.Image{}, nil
 }
 
+// Define a new webhook handler for image validation
+func validatePodStatus(pod *v1.Pod) error {
+    // Validate the Pod's image using the new API endpoint
+    image, err := validateImage(pod.Spec.Containers[0].Image)
+    if err != nil {
+        return err
+    }
+
+    // If the image is valid, proceed with updating the Pod's phase
+    pod.Status.ImagePullAttempts++
+    updatePodStatus(pod)
+}
 ```
 
 ## Conclusion
-Implementing a custom Kubernetes webhook to detect and fail stuck Pods due to invalid images can help prevent resource blockages in queueing systems. By monitoring image pull failures and setting the Pod's phase to Failed when a configurable threshold is exceeded, we can ensure that resources are freed up for other pending Jobs.
+By introducing a configurable mechanism for failing stuck Pods due to invalid images, we can improve the overall reliability and responsiveness of our Kubernetes cluster. This solution allows job controllers to detect and handle stuck Pods more effectively, reducing the risk of resource blocks and improving overall system efficiency.
 
 ## Reference
 - [Source](https://github.com/kubernetes/kubernetes/issues/122300)
