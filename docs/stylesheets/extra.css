@@ -1,0 +1,162 @@
+/* Global Variables */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
+
+:root {
+    /* Premium Dark Theme Palette */
+    --md-primary-fg-color: #2EBDAB;
+    /* Teal-ish for primary actions */
+    --md-primary-fg-color--light: #5CE6D0;
+    --md-primary-fg-color--dark: #008f81;
+
+    --md-accent-fg-color: #7C4DFF;
+    /* Deep Purple Accent */
+    --md-accent-fg-color--transparent: rgba(124, 77, 255, 0.1);
+
+    /* Backgrounds */
+    --md-default-bg-color: #0F111A;
+    /* Very dark blue-grey */
+    --md-default-fg-color: #D7DCE2;
+    /* Off-white text */
+    --md-default-fg-color--light: #8BA0B3;
+    /* Muted text */
+
+    --card-bg-color: #1A1E29;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+    --glass-bg: rgba(26, 30, 41, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: 12px;
+}
+
+/* Base Body Style */
+body {
+    background-color: var(--md-default-bg-color);
+    font-family: 'Inter', 'Roboto', sans-serif;
+    /* Prefer modern sans */
+}
+
+/* Header - Glassmorphism */
+.md-header {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: none !important;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    fill: var(--md-primary-fg-color);
+}
+
+.md-tabs {
+    background: transparent !important;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Sidebar / Navigation */
+.md-sidebar {
+    /* Make sidebars blend or float */
+}
+
+.md-nav__item .md-nav__link--active {
+    font-weight: 700;
+    color: var(--md-primary-fg-color) !important;
+    border-left: 2px solid var(--md-primary-fg-color);
+    padding-left: 8px;
+}
+
+.md-nav__item .md-nav__link {
+    transition: all 0.2s ease;
+}
+
+.md-nav__item .md-nav__link:hover {
+    color: var(--md-primary-fg-color--light);
+    transform: translateX(4px);
+}
+
+/* Main Content Area */
+.md-content {
+    background: transparent;
+}
+
+/* Article Cards */
+/* If material theme uses cards, or we simulate them */
+article {
+    background: transparent;
+}
+
+/* Code Blocks */
+.md-typeset pre>code {
+    background-color: #13161F !important;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+    border: 1px solid var(--glass-border) !important;
+    background-color: rgba(124, 77, 255, 0.05) !important;
+    /* Slight purple tint */
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.md-typeset .admonition__title,
+.md-typeset summary {
+    background-color: rgba(124, 77, 255, 0.1) !important;
+    border-bottom: 1px solid var(--glass-border) !important;
+    color: var(--md-accent-fg-color) !important;
+    font-weight: bold;
+}
+
+/* Typography Enhancements */
+.md-typeset h1 {
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5em;
+    letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+    color: #E2E8F0;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 0.5rem;
+    margin-top: 2em;
+}
+
+/* Footer */
+footer {
+    background: #0B0D13 !important;
+}
+
+/* Search Bar */
+.md-search__input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: #fff !important;
+    border-radius: 4px;
+}
+
+.md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #363B49;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F111A;
+}
