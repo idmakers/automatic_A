@@ -1,193 +1,162 @@
-/* Global Variables & Imports */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Google Research Blog Replica CSS */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-    /* Premium Dark Theme Palette - "Modern SaaS" */
-    --md-primary-fg-color: #6366f1;
-    /* Indigo-500 */
-    --md-primary-fg-color--light: #818cf8;
-    /* Indigo-400 */
-    --md-primary-fg-color--dark: #4f46e5;
-    /* Indigo-600 */
+    /* Google Design Tokens */
+    --bg-color: #ffffff;
+    --text-primary: #202124;
+    --text-secondary: #5f6368;
+    --google-blue: #1a73e8;
+    --border-color: #dadce0;
+    --hero-bg: #000000;
+    --hero-text: #ffffff;
 
-    --md-accent-fg-color: #f43f5e;
-    /* Rose-500 */
+    /* MkDocs Material Overrides */
+    --md-default-bg-color: var(--bg-color);
+    --md-default-fg-color: var(--text-primary);
+    --md-primary-fg-color: #ffffff;
+    /* Header bg */
+    --md-primary-fg-color--light: #f1f3f4;
+    --md-primary-fg-color--dark: #ffffff;
+    --md-accent-fg-color: var(--google-blue);
 
-    --bg-color: #0b0c15;
-    /* Deep Space */
-    --sidebar-bg: rgba(17, 24, 39, 0.7);
-    /* Translucent Panel */
-    --card-bg: #1e293b;
-    /* Slate-800 */
-
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-highlight: rgba(255, 255, 255, 0.05);
-    --glass-blur: 16px;
-
-    /* Typography */
-    --md-text-font: "Inter", sans-serif;
-    --md-code-font: "JetBrains Mono", monospace;
+    --md-text-font: "Google Sans Text", "Roboto", sans-serif;
+    --md-code-font: "Roboto Mono", monospace;
 }
 
-/* Base Body */
 body {
-    background-color: var(--bg-color);
-    background-image:
-        radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 25%),
-        radial-gradient(circle at 85% 30%, rgba(244, 63, 94, 0.1), transparent 25%);
-    background-attachment: fixed;
+    font-family: var(--md-text-font);
+    color: var(--text-primary);
 }
 
-/* Header - Floating Glass */
+/* Header - Clean White */
 .md-header {
-    background: rgba(11, 12, 21, 0.85) !important;
-    backdrop-filter: blur(var(--glass-blur));
-    -webkit-backdrop-filter: blur(var(--glass-blur));
-    border-bottom: 1px solid var(--glass-border);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    height: 3.5rem;
-    /* Slimmer header */
+    background-color: #ffffff !important;
+    color: var(--text-primary) !important;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: none !important;
 }
 
-/* Sidebar - Modern & Clean */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    fill: var(--text-secondary);
+    /* Grey logo */
+}
+
+.md-header__title {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+}
+
+.md-header__option {
+    color: var(--text-secondary) !important;
+}
+
+/* Sidebar - Clean */
 .md-sidebar {
-    /* No background on container, styled interior */
+    background-color: #ffffff;
+    border-right: 1px solid var(--border-color);
 }
 
-.md-nav--primary .md-nav__title {
-    background: transparent !important;
-    border-bottom: 1px solid var(--glass-border);
-    color: var(--md-default-fg-color);
+.md-nav__title {
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.md-nav__link--active {
+    color: var(--google-blue) !important;
     font-weight: 700;
+    background: #e8f0fe;
+    /* Light blue bg for active */
+    border-radius: 0 20px 20px 0;
 }
 
-/* Navigation Items */
-.md-nav__item .md-nav__link {
-    border-radius: 6px;
-    padding: 6px 12px;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+/* Hero Section (Simulated with Admonition or Top Content) */
+/* We can style the first H1 to look like a hero title */
+.md-content h1:first-of-type {
+    font-family: "Google Sans Text", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    max-width: 800px;
 }
 
-.md-nav__item .md-nav__link:hover {
-    background-color: var(--glass-highlight);
-    color: #fff;
+/* Card Styling (If listing posts) or General Content */
+article {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.md-nav__item .md-nav__link--active {
-    background: linear-gradient(90deg, rgba(99, 102, 241, 0.2) 0%, transparent 100%);
-    border-left: 3px solid var(--md-primary-fg-color);
-    color: #fff !important;
-    font-weight: 600;
-    box-shadow: 0 0 15px rgba(99, 102, 241, 0.1);
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+    font-weight: 400;
+    /* Google style is often lighter weights for headings */
 }
 
-/* Code Blocks - "Mac Style" Window */
+a {
+    color: var(--google-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code Blocks - Simple & Clean */
 .md-typeset pre {
-    background-color: #17171e !important;
-    /* Extremely dark slate */
-    border: 1px solid var(--glass-border);
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    margin-top: 1.5em;
-    padding-top: 2.5rem !important;
-    /* Space for dots */
-    position: relative;
-    overflow: hidden;
+    background-color: #f8f9fa !important;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: none;
+    color: var(--text-primary);
 }
 
 .md-typeset pre>code {
+    background-color: transparent !important;
     font-family: var(--md-code-font);
-    font-size: 0.9em;
 }
 
-/* The Mac Dots */
-.md-typeset pre::before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: 16px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ff5f56;
-    /* Red */
-    box-shadow:
-        18px 0 0 #ffbd2e,
-        /* Yellow */
-        36px 0 0 #27c93f;
-    /* Green */
-}
-
-/* Copy Button Styling */
-.md-clipboard {
-    top: 0.75rem;
-    right: 0.75rem;
-    color: rgba(255, 255, 255, 0.4);
-    transition: color 0.2s;
-}
-
-.md-clipboard:hover {
-    color: #fff;
-}
-
-/* Admonitions - Soft & Modern */
+/* Admonitions - Google Style */
 .md-typeset .admonition {
-    border: 1px solid var(--glass-border) !important;
-    border-left-width: 4px !important;
+    border: 1px solid var(--border-color) !important;
+    border-left-width: 0 !important;
+    /* No left border usually */
     border-radius: 8px;
-    background-color: rgba(30, 41, 59, 0.3) !important;
+    background-color: #f1f3f4 !important;
+    /* Grey background */
     box-shadow: none;
 }
 
 .md-typeset .admonition__title {
-    background: transparent !important;
+    background-color: transparent !important;
     border-bottom: none !important;
-    font-weight: 700;
-    padding-left: 1rem;
-    position: relative;
+    color: var(--text-primary) !important;
+    font-weight: 500;
 }
 
-/* Typography Enhancements */
-.md-typeset h1 {
-    font-size: 2.2em;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    background: linear-gradient(to right, #fff, #94a3b8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 2rem;
+/* Tags */
+.md-typeset .md-tag {
+    background-color: #f1f3f4;
+    color: var(--text-secondary);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 8px;
 }
 
-.md-typeset h2 {
-    font-weight: 700;
-    margin-top: 3rem;
-    color: #e2e8f0;
-}
-
-.md-typeset a {
-    color: var(--md-primary-fg-color--light);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s;
-}
-
-.md-typeset a:hover {
-    border-bottom-color: var(--md-primary-fg-color--light);
-}
-
-/* Footer & Search */
+/* Footer */
 footer {
-    background: rgba(11, 12, 21, 0.8) !important;
-    border-top: 1px solid var(--glass-border);
-}
-
-.md-search__input {
-    background-color: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid transparent;
-    transition: all 0.2s;
-}
-
-.md-search__input:focus {
-    background-color: rgba(255, 255, 255, 0.12) !important;
-    border-color: var(--md-primary-fg-color);
+    background-color: #f8f9fa !important;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
 }
