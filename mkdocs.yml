@@ -1,31 +1,23 @@
 site_name: ISSUE WEB SEARCH
-site_url: https://justwe.uk/
-edit_uri: ''
+site_url: https://justwe.uk
+repo_url: https://github.com/Startrachel/auto_github_issue
+repo_name: Startrachel/auto_github_issue
+
 theme:
   name: material
   custom_dir: docs/overrides
   features:
-  - navigation.indexes
-  - navigation.indexes
-  - navigation.top
-  - navigation.tracking
-  - navigation.path
-  - toc.follow
-  - toc.integrate
-  - search.suggest
-  - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
     - content.code.copy
     - content.code.annotate
-    # - navigation.instant # Optional for SPA-like feel, can conflict with scripts
   palette:
-    # Google Research Style (Light Minimalist)
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: white
-      accent: blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+    # Google Research Dark Mode (Slate Base)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -33,55 +25,34 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   font:
-    text: Roboto 
+    text: Roboto
     code: Roboto Mono
+
 plugins:
-- search
-- tags:
-    tags_file: tags.md
+  - search
+  - blog:
+      post_date_format: full 
+
 extra_css:
-- stylesheets/extra.css
+  - stylesheets/extra.css
+
 markdown_extensions:
-- pymdownx.highlight:
-    anchor_linenums: true
-    line_spans: __span
-    pygments_lang_class: true
-- pymdownx.inlinehilite
-- pymdownx.snippets
-- pymdownx.superfences
-- admonition
-- pymdownx.details
-extra:
-  adsense_id: ca-pub-1591357964960456
-nav:
-- Home: index.md
-- Latest Updates:
-  - 2026-01-05-why-models-dont-use-full-cpu-power.md
-  - 2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md
-  - 2026-01-05-suspense-boundary-broken-ignored-after-second-server-action-call.md
-  - 2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters.md
-  - 2026-01-05-reasoning-tokens-not-passing-through-from-openrouter-to-chatopenai.md
-  - 2026-01-05-pulling-manifest-error.md
-  - 2026-01-05-fetch-request-memoization-not-working-when-cookies-function-imported.md
-  - 2026-01-05-doc-show-source-button-on-api-pages-does-not-link-to-expected-source-code.md
-  - 2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md
-  - 2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md
-  - 2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md
-  - 2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md
-  - 2026-01-04-tracking-issue-for-rfc-2045-improving-target_feature.md
-  - 2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md
-  - 2026-01-04-support-for-multiple-images-in-chat-endpoint.md
-  - 2026-01-04-scheduler-will-run-into-race-conditions-on-large-scale-clusters.md
-  - 2026-01-04-reasoning-tokens-not-passing-through-from-openrouter-to-chatopenai.md
-  - 2026-01-04-pulling-manifest-error.md
-  - 2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md
-  - 2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures.md
-  - 2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md
-  - 2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0.md
-  - 2026-01-04-fetch-request-memoization-not-working-when-cookies-function-imported.md
-  - 2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes.md
-  - 2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md
-  - 2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md
-  - 2026-01-04-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md
-  - 2026-01-04-bug-actqueue-forever-growing-in-react-1900.md
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true 
