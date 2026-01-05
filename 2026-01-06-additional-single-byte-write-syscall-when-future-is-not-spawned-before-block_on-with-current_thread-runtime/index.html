@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-06--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/">
       
       
-        <link rel="prev" href="../2026-01-06-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image/">
+        <link rel="prev" href="../2026-01-06-build-from-source-with-autodiff-fails-on-mac-os/">
       
       
-        <link rel="next" href="../2026-01-05-why-models-dont-use-full-cpu-power/">
+        <link rel="next" href="../2026-01-06-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>A stacktrace in RISC-V builds with `force-frame-pointers=yes` and `opt-level=z`: The Unexplained Disappearance - ISSUE WEB SEARCH</title>
+        <title>A catchy, SEO-friendly title - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#core-problem" class="md-skip">
+        <a href="#tokio-runtime-and-thread-safety-issues" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              A stacktrace in RISC-V builds with `force-frame-pointers=yes` and `opt-level=z`: The Unexplained Disappearance
+              A catchy, SEO-friendly title
             
           </span>
         </div>
@@ -561,10 +561,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A catchy, SEO-friendly title
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -580,6 +607,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-the-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifying the Issue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixing-thread-safety-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing Thread Safety Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -617,37 +736,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    A stacktrace in RISC-V builds with `force-frame-pointers=yes` and `opt-level=z`: The Unexplained Disappearance
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-06--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf/" class="md-nav__link">
         
   
   
@@ -663,59 +755,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution &amp; Analysis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1567,6 +1606,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#solution-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1575,9 +1625,32 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-the-issue" class="md-nav__link">
+    <span class="md-ellipsis">
       
-        <li class="md-nav__item">
+        Identifying the Issue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixing-thread-safety-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing Thread Safety Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1585,6 +1658,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1620,87 +1698,84 @@
       
       
       
-        <a href="../.#tag:force-frame-pointersyes" class="md-tag">force-frame-pointers=yes</a>
+        <a href="../.#tag:async-programming" class="md-tag">async programming</a>
       
     
       
       
       
       
-        <a href="../.#tag:opt-levelz" class="md-tag">opt-level=z</a>
+        <a href="../.#tag:thread-safety" class="md-tag">thread safety</a>
       
     
       
       
       
       
-        <a href="../.#tag:riscv32imc-unknown-none-elf" class="md-tag">riscv32imc-unknown-none-elf</a>
+        <a href="../.#tag:tokio-runtime" class="md-tag">tokio runtime</a>
       
     
   </nav>
 
 
 
-<h1 id="core-problem">Core Problem</h1>
-<p>When building a Rust program for the RISC-V CPU (<code>riscv32imc-unknown-none-elf</code>) with <code>force-frame-pointers=yes</code> and running it in release mode with <code>opt-level = "z"</code>, the stacktrace disappears as soon as execution enters the panicking code, resulting in only two frames being reported in GDB.</p>
+<h1 id="tokio-runtime-and-thread-safety-issues">Tokio Runtime and Thread Safety Issues</h1>
+<h2 id="core-problem">Core Problem</h2>
+<p>The Tokio runtime is a popular choice for building asynchronous applications in Rust. However, due to the nature of asynchronous programming, issues related to thread safety can arise when not handled properly.</p>
 <h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To reproduce this issue, create a new Rust project using Cargo:</p>
-<div class="language-toml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">[package]</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;riscv_force_frame_pointers&quot;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<h3 id="identifying-the-issue">Identifying the Issue</h3>
+<p>In this example, we're going to look at an issue with thread safety that arises from using <code>tokio::runtime::Builder</code> without proper synchronization.</p>
+<div class="language-rust highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">use</span><span class="w"> </span><span class="n">tokio</span><span class="p">::</span><span class="n">runtime</span><span class="p">::{</span><span class="n">Builder</span><span class="p">,</span><span class="w"> </span><span class="n">Runtime</span><span class="p">};</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">use</span><span class="w"> </span><span class="n">tokio</span><span class="p">::</span><span class="n">sync</span><span class="p">::</span><span class="n">mpsc</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">use</span><span class="w"> </span><span class="n">std</span><span class="p">::</span><span class="n">thread</span><span class="p">;</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">[dependencies]</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">panic_abort</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.2.3&quot;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">riscv_rt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.20.0&quot;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">some_hal_crate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;path/to/some/hal/crate&quot;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">// Create a runtime builder</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kd">let</span><span class="w"> </span><span class="n">rt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Builder</span><span class="p">::</span><span class="n">new_multi_thread</span><span class="p">()</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">.</span><span class="n">worker_threads</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="p">.</span><span class="n">build</span><span class="p">()</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">.</span><span class="n">unwrap</span><span class="p">();</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1">// Get the runtime handle</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">rt</span><span class="p">.</span><span class="n">block_on</span><span class="p">(</span><span class="k">async</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="c1">// Use the runtime to run tasks asynchronously</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">});</span>
 </span></code></pre></div>
-<p>Add the following configuration to <code>.cargo/config.toml</code>:</p>
-<div class="language-toml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">[build]</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">rustflags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="c1"># ...</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="s2">&quot;-C&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;force-frame-pointers=yes&quot;</span><span class="p">,</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">]</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># ...</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="k">[unstable]</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">build-std</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;core&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;panic_abort&quot;</span><span class="p">]</span>
+<p>The issue here is that we're using <code>tokio::runtime::Builder</code> with only one worker thread. This can lead to issues when running multiple tasks concurrently.</p>
+<h3 id="fixing-thread-safety-issues">Fixing Thread Safety Issues</h3>
+<p>To fix this issue, you need to ensure that all tasks are executed within a single runtime. Here's an example of how you can modify the code above:</p>
+<div class="language-rust highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">use</span><span class="w"> </span><span class="n">tokio</span><span class="p">::</span><span class="n">runtime</span><span class="p">::{</span><span class="n">Builder</span><span class="p">,</span><span class="w"> </span><span class="n">Runtime</span><span class="p">};</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">use</span><span class="w"> </span><span class="n">tokio</span><span class="p">::</span><span class="n">sync</span><span class="p">::</span><span class="n">mpsc</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">use</span><span class="w"> </span><span class="n">std</span><span class="p">::</span><span class="n">thread</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">// Create a new thread for running tasks asynchronously</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">fn</span><span class="w"> </span><span class="nf">run_task</span><span class="p">(</span><span class="n">rt</span><span class="p">:</span><span class="w"> </span><span class="kp">&amp;</span><span class="nc">Runtime</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="n">rt</span><span class="p">.</span><span class="n">block_on</span><span class="p">(</span><span class="k">async</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="c1">// Use the runtime to run tasks asynchronously</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">});</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">}</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="k">fn</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">rt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Builder</span><span class="p">::</span><span class="n">new_multi_thread</span><span class="p">()</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="p">.</span><span class="n">worker_threads</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="p">.</span><span class="n">build</span><span class="p">()</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="p">.</span><span class="n">unwrap</span><span class="p">();</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="c1">// Create a new thread for running tasks asynchronously</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">handle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="p">::</span><span class="n">thread</span><span class="p">::</span><span class="n">spawn</span><span class="p">(</span><span class="k">move</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="n">run_task</span><span class="p">(</span><span class="n">rt</span><span class="p">);</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="p">});</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">    </span><span class="c1">// Wait for the task to finish</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">    </span><span class="n">handle</span><span class="p">.</span><span class="n">join</span><span class="p">().</span><span class="n">unwrap</span><span class="p">();</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Create a simple program that panics and uses the <code>panic_handler</code> macro to print a message:</p>
-<div class="language-rs highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#![no_std]</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#![no_main]</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">use</span><span class="w"> </span><span class="n">some_hal_crate</span><span class="p">::</span><span class="n">uart</span><span class="p">::</span><span class="n">Uart</span><span class="p">;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">use</span><span class="w"> </span><span class="n">riscv_rt</span><span class="p">::</span><span class="n">entry</span><span class="p">;</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">const</span><span class="w"> </span><span class="n">UART_ADDR</span><span class="p">:</span><span class="w"> </span><span class="o">*</span><span class="k">const</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mb">0b11</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">30</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="o">*</span><span class="k">const</span><span class="w"> </span><span class="p">();</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="cp">#[panic_handler]</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">fn</span><span class="w"> </span><span class="nf">panic_handler</span><span class="p">(</span><span class="n">info</span><span class="p">:</span><span class="w"> </span><span class="kp">&amp;</span><span class="nc">core</span><span class="p">::</span><span class="n">panic</span><span class="p">::</span><span class="n">PanicInfo</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">uart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Uart</span><span class="p">::</span><span class="n">new</span><span class="p">(</span><span class="n">UART_ADDR</span><span class="p">);</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="fm">writeln!</span><span class="p">(</span><span class="n">uart</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{info:?}&quot;</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="cp">#[entry]</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="k">fn</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="n">skooks</span><span class="p">();</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="k">loop</span><span class="w"> </span><span class="p">{}</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>Build the program with <code>opt-level=z</code> and run it in release mode:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cargo<span class="w"> </span>build<span class="w"> </span>--release<span class="w"> </span>-C<span class="w"> </span>opt-level<span class="o">=</span>z
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>target/debug/riscv_force_frame_pointers
-</span></code></pre></div>
-<p>Note that when running this program, GDB will not display a stacktrace beyond two frames. The exact location of the crash is not reported.</p>
-<p>However, when building with <code>opt-level=z</code> but in debug mode (<code>debug = true</code>, <code>split-debuginfo = "unpacked"</code>), the issue does not occur:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cargo<span class="w"> </span>build<span class="w"> </span>--release<span class="w"> </span>-C<span class="w"> </span>opt-level<span class="o">=</span>z<span class="w"> </span>-C<span class="w"> </span><span class="nv">debug</span><span class="o">=</span><span class="nb">true</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>target/debug/riscv_force_frame_pointers
-</span></code></pre></div>
-<p>In this case, GDB will display a complete stacktrace when the program panics.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>This problem appears to be specific to release builds with <code>opt-level = "z"</code>. The exact cause of this issue is not yet understood.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In this example, we've demonstrated how to identify and fix issues related to thread safety when using the Tokio runtime. By ensuring that all tasks are executed within a single runtime, you can avoid common thread safety pitfalls in asynchronous programming.</p>
+<!-- ADSENSE_PLACEHOLDER -->
+
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/rust-lang/rust/issues/136198">Source</a></li>
+<li><a href="https://github.com/tokio-rs/tokio/issues/7570">Source</a></li>
 </ul>
 
 
