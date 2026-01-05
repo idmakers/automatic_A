@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-06-support-label-selector-in-resource-quota-scopeselector/">
       
       
-        <link rel="prev" href="../2026-01-05-suspense-boundary-broken-ignored-after-second-server-action-call/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../2026-01-05-reasoning-tokens-not-passing-through-from-openrouter-to-chatopenai/">
+        <link rel="next" href="../2026-01-06-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers - ISSUE WEB SEARCH</title>
+        <title>Enabling Label Selector Support in Resource Quota's ScopeSelector - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#racing-to-zero-mitigating-race-conditions-in-kubernetes-schedulers" class="md-skip">
+        <a href="#enabling-label-selector-support-in-resource-quotas-scopeselector" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers
+              Enabling Label Selector Support in Resource Quota's ScopeSelector
             
           </span>
         </div>
@@ -383,10 +383,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-06-support-label-selector-in-resource-quota-scopeselector/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enabling Label Selector Support in Resource Quota's ScopeSelector
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -402,6 +429,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proposed-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proposed Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -579,37 +698,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters/" class="md-nav__link">
         
   
   
@@ -625,148 +717,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Problem
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution &amp; Analysis
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Solution &amp; Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-example-updated-scheduler-timeout-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code Example: Updated Scheduler Timeout Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusion
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Conclusion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cloud-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Provider:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#os-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OS Version:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Tools:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#container-runtime-cri-and-version-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Container Runtime (CRI) and Version (if applicable):
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#related-plugins-cni-csi-and-versions-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Plugins (CNI, CSI, ...) and Versions (if applicable):
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1529,10 +1479,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#code-example-updated-scheduler-timeout-configuration" class="md-nav__link">
+  <a href="#proposed-implementation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code Example: Updated Scheduler Timeout Configuration
+        Proposed Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits
       
     </span>
   </a>
@@ -1552,67 +1513,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Conclusion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cloud-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Provider:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#os-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OS Version:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Tools:
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#container-runtime-cri-and-version-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Container Runtime (CRI) and Version (if applicable):
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#related-plugins-cni-csi-and-versions-if-applicable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Plugins (CNI, CSI, ...) and Versions (if applicable):
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1655,66 +1555,64 @@
       
       
       
-        <a href="../.#tag:performance-optimization" class="md-tag">Performance Optimization</a>
+        <a href="../.#tag:quotas" class="md-tag">Quotas</a>
       
     
       
       
       
       
-        <a href="../.#tag:scheduler" class="md-tag">Scheduler</a>
+        <a href="../.#tag:scopeselector" class="md-tag">ScopeSelector</a>
       
     
   </nav>
 
 
 
-<h1 id="racing-to-zero-mitigating-race-conditions-in-kubernetes-schedulers">Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers</h1>
+<h1 id="enabling-label-selector-support-in-resource-quotas-scopeselector">Enabling Label Selector Support in Resource Quota's ScopeSelector</h1>
 <h2 id="core-problem">Core Problem</h2>
-<p>When dealing with large-scale Kubernetes clusters, the scheduler can be plagued by race conditions that lead to unexpected pod assignments. Understanding these issues is crucial for ensuring efficient and reliable cluster operation.</p>
+<p>In Kubernetes, resource quotas are used to limit the resources available to pods and services within a cluster. The scope selector feature allows quota administrators to define specific selectors for scopes, which enables more fine-grained control over quota enforcement. However, the current implementation of scope selector only supports priority class, leaving a significant limitation in quota management between different applications running in the same namespace.</p>
 <h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To address this problem, we must extend the 30s timeout period for the bind operation in the scheduler cache. This adjustment allows more time for the apiserver to process the pod update and prevents expired cache entries from causing scheduling conflicts.</p>
-<h3 id="code-example-updated-scheduler-timeout-configuration">Code Example: Updated Scheduler Timeout Configuration</h3>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// scheduler.go</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">func</span><span class="w"> </span><span class="p">(</span><span class="nx">s</span><span class="w"> </span><span class="o">*</span><span class="nx">Scheduler</span><span class="p">)</span><span class="w"> </span><span class="nx">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">s</span><span class="p">.</span><span class="nx">timeout</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">60</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">time</span><span class="p">.</span><span class="nx">Second</span><span class="w"> </span><span class="c1">// Increase timeout period to 1 minute</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="c1">// ...</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+<p>To enable label selector support in resource quota's scopeSelector, we need to extend the existing implementation to include label selectors as an option. This would allow quota administrators to define more specific scopes for quotas, making it easier to manage resources across different namespaces and applications.</p>
+<h3 id="proposed-implementation">Proposed Implementation</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>apiVersion: policy/v1beta1
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>kind: Quota
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>metadata:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  name: example-quota
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>spec:
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  hard:
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    cpu: 100m
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    memory: 128Mi
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  scopeSelector:
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    matchLabels:
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>      - label: team=dev
 </span></code></pre></div>
-<h2 id="conclusion">Conclusion</h2>
-<p>By extending the bind operation timeout period and implementing adaptive scheduling, we can mitigate race conditions in Kubernetes schedulers. This ensures that pods are assigned to suitable nodes efficiently and reliably, even in high-pressure cluster environments.</p>
-<h3 id="cloud-provider">Cloud Provider:</h3>
-<details>
-
-</details>
-
-<h3 id="os-version">OS Version:</h3>
-<div class="language-console highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp"># </span>On<span class="w"> </span>Linux:
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="gp">$ </span>cat<span class="w"> </span>/etc/os-release
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="gp"># </span>paste<span class="w"> </span>output<span class="w"> </span>here
+<p>In the proposed implementation, we've added a new field <code>matchLabels</code> under the <code>scopeSelector</code> section. This field allows quota administrators to define specific label selectors for scopes.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Example code in C++</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;map&gt;</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="gp">$ </span>uname<span class="w"> </span>-a
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="gp"># </span>paste<span class="w"> </span>output<span class="w"> </span>here
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">class</span><span class="w"> </span><span class="n">ScopeSelector</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">public</span><span class="o">:</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">matchLabels</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="c1">// Add a new method to set the match labels</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">SetMatchLabels</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;&gt;&amp;</span><span class="w"> </span><span class="n">labels</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="n">matchLabels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">labels</span><span class="p">;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="p">};</span>
 </span></code></pre></div>
-<h3 id="install-tools">Install Tools:</h3>
-<details>
-
-</details>
-
-<h3 id="container-runtime-cri-and-version-if-applicable">Container Runtime (CRI) and Version (if applicable):</h3>
-<details>
-
-</details>
-
-<h3 id="related-plugins-cni-csi-and-versions-if-applicable">Related Plugins (CNI, CSI, ...) and Versions (if applicable):</h3>
-<details>
-
-</details>
-
+<h3 id="benefits">Benefits</h3>
+<p>Enabling label selector support in resource quota's scopeSelector would provide several benefits:</p>
+<ul>
+<li>More fine-grained control over quota enforcement between different applications running in the same namespace.</li>
+<li>Easier management of resources across different namespaces and applications.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>In conclusion, enabling label selector support in resource quota's scopeSelector is a crucial enhancement that would improve the flexibility and effectiveness of quota management in Kubernetes. By extending the current implementation to include label selectors as an option, quota administrators can define more specific scopes for quotas, making it easier to manage resources across different namespaces and applications.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/kubernetes/kubernetes/issues/106361">Source</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/issues/77508">Source</a></li>
 </ul>
 
 
