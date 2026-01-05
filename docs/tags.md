@@ -7,19 +7,24 @@ title: Tags
 
 - AMD
 - Deep Learning
+- DeepSeek-R1
+- Image Pull Issues
 - Image Validation
 - Kubernetes
 - Memory Detection
+- MoE Architecture
 - Model Optimization
 - Ollama
 - Performance Optimization
 - Pod Failure
+- Quotas
 - RFC 2045
 - React 19.0.0
 - React Hooks
 - Rust
 - Rust Feature Gates
 - Scheduler
+- ScopeSelector
 - State Management
 - Transition Optimization
 - Transitioning
@@ -36,6 +41,7 @@ title: Tags
 - errors
 - fetch
 - file system operations
+- force-frame-pointers=yes
 - graph database
 - infinite growth
 - installation
@@ -54,7 +60,9 @@ title: Tags
 - nextjs
 - ollama
 - ollama-api
+- opt-level=z
 - pandas
+- riscv32imc-unknown-none-elf
 - rust
 - rust-lang
 - rustc-docs
