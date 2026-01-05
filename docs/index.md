@@ -108,6 +108,7 @@
 
 ## async programming
 
+- [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 - [Why Tokio's `File::write` Returns Early Before OS Completes the Operation](2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
 
 ## asynchronous programming
@@ -116,6 +117,7 @@
 
 ## autodiff
 
+- [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Building Rust with Autodiff on Mac OS Fails](2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md)
 
 ## chat-endpoint
@@ -177,6 +179,7 @@
 
 ## mac os
 
+- [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Building Rust with Autodiff on Mac OS Fails](2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md)
 
 ## manifest
@@ -236,6 +239,7 @@
 
 ## rust
 
+- [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 - [Building Rust with Autodiff on Mac OS Fails](2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md)
 
@@ -261,9 +265,17 @@
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
 
+## thread safety
+
+- [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
 ## tokio
 
 - [tokio::fs::File::write Returns Early Before OS Says Operation is Completed](2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
+
+## tokio runtime
+
+- [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
 ## tokio-rs
 
