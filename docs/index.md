@@ -4,6 +4,10 @@
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
 
+## DRA drivers
+
+- [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
+
 ## Deep Learning
 
 - [Unlocking CPU Potential in Model-Driven Applications](2026-01-05-why-models-dont-use-full-cpu-power.md)
@@ -22,6 +26,7 @@
 
 ## Kubernetes
 
+- [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
 - [Enabling Label Selector Support in Resource Quota's ScopeSelector](2026-01-06-support-label-selector-in-resource-quota-scopeselector.md)
 - [Detecting and Handling Stuck Pods due to Invalid Image Pulls](2026-01-06-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
 - [Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers](2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters.md)
@@ -148,9 +153,17 @@
 
 - [A stacktrace in RISC-V builds with `force-frame-pointers=yes` and `opt-level=z`: The Unexplained Disappearance](2026-01-06--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
 
+## getInitialProps
+
+- [Pages Router + getInitialProps = Static worker unexpectedly](2026-01-07-pages-router--getinitialprops--static-worker-unexpectedly.md)
+
 ## graph database
 
 - [Resolving APOC Procedures Error in Langchain with Neo4j v5.9](2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures.md)
+
+## html-parsing
+
+- [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
 
 ## infinite growth
 
@@ -168,6 +181,10 @@
 ## jinja2
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
+
+## kubelet
+
+- [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
 
 ## langchain
 
@@ -208,6 +225,7 @@
 
 ## next.js
 
+- [Pages Router + getInitialProps = Static worker unexpectedly](2026-01-07-pages-router--getinitialprops--static-worker-unexpectedly.md)
 - [ISR Fails to Serve 404 Pages After Page Deletion with Experimental ISR Memory Cache Size Set to 0](2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0.md)
 
 ## nextjs
@@ -256,6 +274,10 @@
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 
+## static-worker
+
+- [Pages Router + getInitialProps = Static worker unexpectedly](2026-01-07-pages-router--getinitialprops--static-worker-unexpectedly.md)
+
 ## sum
 
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
@@ -264,6 +286,10 @@
 ## templating
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
+
+## text-extraction
+
+- [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
 
 ## thread safety
 
@@ -280,4 +306,8 @@
 ## tokio-rs
 
 - [Why Tokio's `File::write` Returns Early Before OS Completes the Operation](2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
+
+## transformer-based
+
+- [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
 

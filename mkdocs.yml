@@ -43,6 +43,10 @@ extra:
 nav:
 - Home: index.md
 - Latest Updates:
+  - 2026-01-07-support-readerlm-v2.md
+  - 2026-01-07-pages-router--getinitialprops--static-worker-unexpectedly.md
+  - 2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md
+  - 2026-01-07-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available.md
   - 2026-01-06-suspense-boundary-broken-ignored-after-second-server-action-call.md
   - 2026-01-06-support-label-selector-in-resource-quota-scopeselector.md
   - 2026-01-06-htmlsemanticpreservingsplitter-preserved-elements-ignores-child-elements.md
