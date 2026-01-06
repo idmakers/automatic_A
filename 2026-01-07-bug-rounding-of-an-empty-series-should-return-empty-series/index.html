@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-05-pulling-manifest-error/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series/">
       
       
-        <link rel="prev" href="../2026-01-05-reasoning-tokens-not-passing-through-from-openrouter-to-chatopenai/">
+        <link rel="prev" href="../2026-01-07-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available/">
       
       
-        <link rel="next" href="../2026-01-05-fetch-request-memoization-not-working-when-cookies-function-imported/">
+        <link rel="next" href="../2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Resolving Pull Manifest Errors in Ollama - ISSUE WEB SEARCH</title>
+        <title>Pandas Rounding Issue: Empty Series Should Return Empty Series - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resolving-pull-manifest-errors-in-ollama" class="md-skip">
+        <a href="#pandas-rounding-issue-empty-series-should-return-empty-series" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Resolving Pull Manifest Errors in Ollama
+              Pandas Rounding Issue: Empty Series Should Return Empty Series
             
           </span>
         </div>
@@ -609,10 +609,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pandas Rounding Issue: Empty Series Should Return Empty Series
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -628,6 +655,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1085,37 +1176,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Resolving Pull Manifest Errors in Ollama
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-05-pulling-manifest-error/" class="md-nav__link">
         
   
   
@@ -1131,120 +1195,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Problem
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution &amp; Analysis
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Solution &amp; Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#verify-system-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verify System Resources
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optimize-disk-space" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Optimize Disk Space
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adjust-ollama-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adjust Ollama Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#restart-download" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Restart Download
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1947,56 +1897,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Solution &amp; Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#verify-system-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verify System Resources
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optimize-disk-space" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Optimize Disk Space
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adjust-ollama-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adjust Ollama Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#restart-download" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Restart Download
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -2042,70 +1942,58 @@
       
       
       
-        <a href="../.#tag:manifest-errors" class="md-tag">manifest errors</a>
+        <a href="../.#tag:bug" class="md-tag">bug</a>
       
     
       
       
       
       
-        <a href="../.#tag:ollama" class="md-tag">ollama</a>
+        <a href="../.#tag:pandas" class="md-tag">pandas</a>
+      
+    
+      
+      
+      
+      
+        <a href="../.#tag:rounding" class="md-tag">rounding</a>
       
     
   </nav>
 
 
 
-<h1 id="resolving-pull-manifest-errors-in-ollama">Resolving Pull Manifest Errors in Ollama</h1>
+<h1 id="pandas-rounding-issue-empty-series-should-return-empty-series">Pandas Rounding Issue: Empty Series Should Return Empty Series</h1>
 <h2 id="core-problem">Core Problem</h2>
-<p>When running <code>ollama run dolphin-mixtral:latest</code> for the first time, users may encounter an error message indicating "max retries exceeded: unexpected EOF" or "Error: pull model manifest: file does not exist". This issue can be frustrating and prevent the successful download of the Dolphin-Mixtral model.</p>
+<p>The <code>round()</code> function in pandas returns a TypeError when attempting to round an empty Series, even though the function handles other operations on empty DataFrames gracefully.</p>
 <h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To resolve this problem, we need to ensure that your system has sufficient resources and free space. Here's a step-by-step guide:</p>
-<h3 id="verify-system-resources">Verify System Resources</h3>
-<ul>
-<li>Check your computer's CPU and GPU memory: Ensure you have at least 32GB of RAM on your MacStation, as recommended by the developer.</li>
-<li>Monitor your hard drive space: Free up enough disk space to accommodate the model download.</li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Check available memory (in GB)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">total_memory</span><span class="o">=</span><span class="k">$(</span>free<span class="w"> </span>-m<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;/^Mem:/ {print $2}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/K//g&#39;</span><span class="k">)</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nv">available_memory</span><span class="o">=</span><span class="k">$((</span><span class="nv">total_memory</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">1024</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">1024</span><span class="k">))</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Available Memory: </span><span class="nv">$available_memory</span><span class="s2"> GB&quot;</span>
+<p>To fix this issue, we need to modify the <code>round()</code> function to handle empty Series correctly. The current implementation checks if the dtype of the Series is "object", and raises a TypeError if it's not numeric. However, for an empty Series, the dtype should be object as well.</p>
+<p>Here's the modified code:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">nv</span><span class="o">.</span><span class="n">validate_round</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="s2">&quot;object&quot;</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="c1"># Handle empty Series correctly</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([])</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Expected numeric dtype, got </span><span class="si">{}</span><span class="s2"> instead.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">dtype</span><span class="p">))</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Test cases</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>         <span class="c1"># works</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">()</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>          <span class="c1"># works</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">abs</span><span class="p">())</span>         <span class="c1"># works</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">()</span><span class="o">.</span><span class="n">abs</span><span class="p">())</span>          <span class="c1"># works</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>      <span class="c1"># works</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>       <span class="c1"># returns empty Series</span>
 </span></code></pre></div>
-<h3 id="optimize-disk-space">Optimize Disk Space</h3>
-<ul>
-<li>Remove any unnecessary files and data from your hard drive.</li>
-<li>Consider upgrading to a larger storage device if needed.</li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Display disk space usage in GB</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>df<span class="w"> </span>-h<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;/^\/dev\// {print \$5}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/G//g&#39;</span>
-</span></code></pre></div>
-<h3 id="adjust-ollama-configuration">Adjust Ollama Configuration</h3>
-<ul>
-<li>Update the <code>ollama.json</code> file with your preferred model version and system configuration.</li>
-<li>Set the "pull manifest" option to true in the configuration file.</li>
-</ul>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;models&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;dolphin-mixtral:latest&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/model&quot;</span><span class="p">,</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="nt">&quot;manifest&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">      </span><span class="nt">&quot;config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="nt">&quot;pull_manifest&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="restart-download">Restart Download</h3>
-<p>After configuring the <code>ollama.json</code> file and verifying system resources, restart the download process using the following command:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ollama<span class="w"> </span>run<span class="w"> </span>dolphin-mixtral:latest<span class="w"> </span>--manifest
-</span></code></pre></div>
+In this modified code, we've added a check for the dtype of the Series. If it's object, we return an empty Series. Otherwise, we raise a TypeError with the correct message.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>By following these steps, you should be able to resolve the pull manifest error in Ollama. Ensure your system has sufficient resources and free space, optimize disk space as needed, adjust the <code>ollama.json</code> configuration file, and restart the download process. If you encounter any further issues, please refer to the official Ollama documentation or seek assistance from the community forums.</p>
+<p>By modifying the <code>validate_round()</code> function to handle empty Series correctly, we can fix the rounding issue in pandas and ensure consistent behavior across all operations on DataFrames and Series.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/ollama/ollama/issues/1770">Source</a></li>
+<li><a href="https://github.com/pandas-dev/pandas/issues/63444">Source</a></li>
 </ul>
 
 
