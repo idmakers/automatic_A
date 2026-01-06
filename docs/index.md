@@ -32,6 +32,10 @@
 - [Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers](2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters.md)
 - [Failing Stuck Pods due to Invalid Images: A Mechanism for Rescue](2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
 
+## Linux
+
+- [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
+
 ## Memory Detection
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
@@ -82,6 +86,10 @@
 
 - [Tracking Issue for RFC 2045: Improving `#[target_feature]`](2026-01-04-tracking-issue-for-rfc-2045-improving-target_feature.md)
 
+## SO_LINGER
+
+- [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
+
 ## Scheduler
 
 - [Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers](2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters.md)
@@ -94,6 +102,10 @@
 
 - [Different Behavior between useTransition and useDeferredValue in React](2026-01-05-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
 - [Different Behaivor between useTransition and useDeferredValue in React](2026-01-04-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
+
+## TcpStream
+
+- [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
 
 ## Transition Optimization
 
@@ -111,6 +123,10 @@
 
 - [Resolving APOC Procedures Error in Langchain with Neo4j v5.9](2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures.md)
 
+## apple-silicon
+
+- [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
+
 ## async programming
 
 - [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
@@ -125,13 +141,25 @@
 - [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Building Rust with Autodiff on Mac OS Fails](2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md)
 
+## bug
+
+- [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
+
 ## chat-endpoint
 
 - [Support for Multiple Images in /chat Endpoint](2026-01-04-support-for-multiple-images-in-chat-endpoint.md)
 
+## compiler
+
+- [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
+
 ## conflict
 
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
+
+## debug builds
+
+- [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
 
 ## docker
 
@@ -152,6 +180,10 @@
 ## force-frame-pointers=yes
 
 - [A stacktrace in RISC-V builds with `force-frame-pointers=yes` and `opt-level=z`: The Unexplained Disappearance](2026-01-06--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
+
+## frame-pointers
+
+- [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
 
 ## getInitialProps
 
@@ -181,6 +213,14 @@
 ## jinja2
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
+
+## keyword1
+
+- [Fixing the Busy Wait Loop in Repro](2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
+## keyword2
+
+- [Fixing the Busy Wait Loop in Repro](2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
 ## kubelet
 
@@ -248,12 +288,22 @@
 
 ## pandas
 
+- [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 
+## release builds
+
+- [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
+
 ## riscv32imc-unknown-none-elf
 
+- [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
 - [A stacktrace in RISC-V builds with `force-frame-pointers=yes` and `opt-level=z`: The Unexplained Disappearance](2026-01-06--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
+
+## rounding
+
+- [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 
 ## rust
 
@@ -263,6 +313,7 @@
 
 ## rust-lang
 
+- [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
 - [Can't Install rustc-docs Component: Resolving the Conflict](2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 
 ## rustc-docs
@@ -297,6 +348,7 @@
 
 ## tokio
 
+- [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
 - [tokio::fs::File::write Returns Early Before OS Says Operation is Completed](2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
 
 ## tokio runtime
@@ -310,4 +362,8 @@
 ## transformer-based
 
 - [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
+
+## wait-loop
+
+- [Fixing the Busy Wait Loop in Repro](2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
