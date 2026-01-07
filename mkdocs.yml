@@ -44,6 +44,7 @@ nav:
 - Home: index.md
 - Latest Updates:
   - 2026-01-08-support-readerlm-v2.md
+  - 2026-01-08-summarizationmiddleware-fails---list-object-has-no-attribute-strip.md
   - 2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md
   - 2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md
   - 2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md
