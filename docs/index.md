@@ -4,6 +4,14 @@
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
 
+## Bug
+
+- [Bug in VSCode and Typescript - TSServer exited. Code: null. Signal: SIGTERM](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+
+## DRA
+
+- [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
+
 ## DRA drivers
 
 - [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
@@ -26,6 +34,8 @@
 
 ## Kubernetes
 
+- [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
+- [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
 - [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
 - [Enabling Label Selector Support in Resource Quota's ScopeSelector](2026-01-06-support-label-selector-in-resource-quota-scopeselector.md)
 - [Detecting and Handling Stuck Pods due to Invalid Image Pulls](2026-01-06-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
@@ -61,6 +71,10 @@
 - [Detecting and Handling Stuck Pods due to Invalid Image Pulls](2026-01-06-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
 - [Failing Stuck Pods due to Invalid Images: A Mechanism for Rescue](2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
 
+## Pod Termination
+
+- [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
+
 ## Quotas
 
 - [Enabling Label Selector Support in Resource Quota's ScopeSelector](2026-01-06-support-label-selector-in-resource-quota-scopeselector.md)
@@ -80,6 +94,7 @@
 
 ## Rust
 
+- [Backwards-Incompatible Assert Desugaring Change in Rust](2026-01-08-assert-desugaring-change-is-backwards-incompatible.md)
 - [tokio::fs::File::write Returns Early Before OS Says Operation is Completed](2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
 
 ## Rust Feature Gates
@@ -103,6 +118,10 @@
 - [Different Behavior between useTransition and useDeferredValue in React](2026-01-05-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
 - [Different Behaivor between useTransition and useDeferredValue in React](2026-01-04-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
 
+## StatefulSets
+
+- [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
+
 ## TcpStream
 
 - [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
@@ -115,6 +134,14 @@
 
 - [Different Behavior between useTransition and useDeferredValue in React](2026-01-05-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
 
+## TypeScript
+
+- [Bug in VSCode and Typescript - TSServer exited. Code: null. Signal: SIGTERM](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+
+## Visual Studio Code
+
+- [Bug in VSCode and Typescript - TSServer exited. Code: null. Signal: SIGTERM](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+
 ## actQueue
 
 - [React 19.0.0 actQueue Infinite Growth Bug](2026-01-04-bug-actqueue-forever-growing-in-react-1900.md)
@@ -126,6 +153,10 @@
 ## apple-silicon
 
 - [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
+
+## assert desugaring
+
+- [Backwards-Incompatible Assert Desugaring Change in Rust](2026-01-08-assert-desugaring-change-is-backwards-incompatible.md)
 
 ## async programming
 
@@ -140,6 +171,10 @@
 
 - [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Building Rust with Autodiff on Mac OS Fails](2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md)
+
+## backwards-incompatibility
+
+- [Backwards-Incompatible Assert Desugaring Change in Rust](2026-01-08-assert-desugaring-change-is-backwards-incompatible.md)
 
 ## bug
 
@@ -157,13 +192,29 @@
 
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 
+## data manipulation
+
+- [Rounding Errors in Pandas Series: A Potential Pitfall](2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series.md)
+
 ## debug builds
 
 - [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
 
+## deepseek-r1
+
+- [Error When Downloading DeepSeek-R1:7b with Ollama](2026-01-08-error-when-trying-to-download--deepseek-r17b.md)
+
 ## docker
 
 - [Resolving 'max retries exceeded' and 'file does not exist' Errors When Pulling Manifest](2026-01-04-pulling-manifest-error.md)
+
+## downloading
+
+- [Error When Downloading DeepSeek-R1:7b with Ollama](2026-01-08-error-when-trying-to-download--deepseek-r17b.md)
+
+## duplicate-paths
+
+- [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
 
 ## errors
 
@@ -224,6 +275,7 @@
 
 ## kubelet
 
+- [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
 - [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
 
 ## langchain
@@ -270,10 +322,12 @@
 
 ## nextjs
 
+- [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
 - [Fetch Request Memoization Not Working When Cookies Function Imported](2026-01-05-fetch-request-memoization-not-working-when-cookies-function-imported.md)
 
 ## ollama
 
+- [Error When Downloading DeepSeek-R1:7b with Ollama](2026-01-08-error-when-trying-to-download--deepseek-r17b.md)
 - [DeepSeek-R1 671B Q4_K_M Error: Model Requires More System Memory Than Available](2026-01-06-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available.md)
 - [Resolving Pull Manifest Errors in Ollama](2026-01-05-pulling-manifest-error.md)
 - [Resolving 'max retries exceeded' and 'file does not exist' Errors When Pulling Manifest](2026-01-04-pulling-manifest-error.md)
@@ -288,6 +342,8 @@
 
 ## pandas
 
+- [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
+- [Rounding Errors in Pandas Series: A Potential Pitfall](2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 - [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
@@ -296,6 +352,10 @@
 
 - [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
 
+## replace
+
+- [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
+
 ## riscv32imc-unknown-none-elf
 
 - [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
@@ -303,7 +363,12 @@
 
 ## rounding
 
+- [Rounding Errors in Pandas Series: A Potential Pitfall](2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 - [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
+
+## route-interception
+
+- [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
 
 ## rust
 
@@ -322,6 +387,7 @@
 
 ## series
 
+- [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 
