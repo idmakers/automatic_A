@@ -1,97 +1,60 @@
 ---
-title: "Bug in VSCode and Typescript - TSServer exited. Code: null. Signal: SIGTERM"
+title: "TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide"
 tags:
   - TypeScript
-  - Visual Studio Code
-  - Bug
+  - VSCode
+  - TSC Server
+  - Debugging
 ---
 
-# Bug in VSCode and Typescript - TSServer exited. Code: null. Signal: SIGTERM
+# TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide
 
 ## Core Problem
-
-When launching a TypeScript project, even an empty one, the error "TSServer exited. Code: null. Signal: SIGTERM" appears in the output, despite restarting the TS server.
+When launching a TypeScript project in Visual Studio Code (VSCode), even on an empty project, the TSServer exited with a code of null and a signal of SIGTERM. This issue persists despite restarting the TSC server.
 
 ## Solution & Analysis
 
-The issue is caused by a problem with the TypeScript Server (tsserver) extension in VSCode. The error message indicates that the tsserver process terminated abruptly due to a signal (SIGTERM).
+To troubleshoot this issue, we will follow these steps:
 
-To fix this issue:
-
-1. Check if there are any unhandled exceptions related to the typings installer, as suggested in one of the top solutions.
+1. **Enable Debugging**: Ensure that debugging is enabled in VSCode by checking the `launch.json` file in your project directory.
+2. **Disable typings Installer**: Try disabling the typings installer to see if it's related to the issue. You can do this by setting `"typescript.disableAutomaticTypeAcquisition": true` in your `tsconfig.json` file.
 
 ```json
 {
-  "compilerOptions": {
-    // ...
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.test.ts",
-  ],
-  "exclude": [
-    "node_modules",
-    "build",
-  ]
+    "compilerOptions": {
+        // ...
+        "disableAutomaticTypeAcquisition": true,
+        // ...
+    }
 }
 ```
 
-2. Try setting `"typescript.disableAutomaticTypeAcquisition": true` to see if it stops the crash.
+3. **Run with Extensions Disabled**: Try running the project with all extensions disabled to see if the issue persists.
+4. **Verify TSC Server Logs**: Check the TSC server logs for any errors or warnings that might indicate the cause of the issue.
 
 ```json
 {
-  "compilerOptions": {
-    // ...
-    "disableAutomaticTypeAcquisition": true,
-    // ...
-  },
-  // ...
+    "compilerOptions": {
+        // ...
+    }
 }
 ```
 
-3. Disable all extensions and try to reproduce the issue, as suggested in one of the top solutions.
+5. **Check for Updates**: Ensure that VSCode and TypeScript are up-to-date, as newer versions may fix this issue.
+6. **Reset TSC Server Settings**: Try resetting the TSC server settings to their default values.
 
 ```json
-// disable all extensions
-
 {
-  "compilerOptions": {
-    // ...
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.test.ts",
-  ],
-  "exclude": [
-    "node_modules",
-    "build",
-  ]
-}
-```
-
-4. If none of the above solutions work, try resetting VSCode to its default settings.
-
-```json
-// reset vscode to default settings
-
-{
-  "compilerOptions": {
-    // ...
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.test.ts",
-  ],
-  "exclude": [
-    "node_modules",
-    "build",
-  ]
+    "compilerOptions": {
+        // ...
+        "resetConfig": true,
+        // ...
+    }
 }
 ```
 
 ## Conclusion
-
-The error "TSServer exited. Code: null. Signal: SIGTERM" in VSCode and TypeScript can be caused by various factors, including problems with the tsserver extension or unhandled exceptions related to typings installer. Disabling extensions, setting `"typescript.disableAutomaticTypeAcquisition": true`, and resetting VSCode to its default settings may help resolve the issue.
+By following these troubleshooting steps, you should be able to identify and potentially fix the issue causing the TSServer to exit with a code of null and signal SIGTERM. If none of these solutions work, please provide more detailed information about your project and environment, as this will help us further investigate the issue.
 
 ## Reference
 - [Source](https://github.com/microsoft/TypeScript/issues/62337)

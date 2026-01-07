@@ -4,10 +4,6 @@
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
 
-## Bug
-
-- [Bug in VSCode and Typescript - TSServer exited. Code: null. Signal: SIGTERM](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
-
 ## DRA
 
 - [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
@@ -15,6 +11,10 @@
 ## DRA drivers
 
 - [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
+
+## Debugging
+
+- [TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
 
 ## Deep Learning
 
@@ -58,6 +58,10 @@
 
 - [Unlocking CPU Potential in Model-Driven Applications](2026-01-05-why-models-dont-use-full-cpu-power.md)
 
+## ModuleNotFoundError
+
+- [ModuleNotFoundError: No module named 'langchain.schema](2026-01-08-modulenotfounderror-no-module-named-langchainschema.md)
+
 ## Ollama
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
@@ -74,6 +78,10 @@
 ## Pod Termination
 
 - [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
+
+## Python
+
+- [ModuleNotFoundError: No module named 'langchain.schema](2026-01-08-modulenotfounderror-no-module-named-langchainschema.md)
 
 ## Quotas
 
@@ -122,6 +130,10 @@
 
 - [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
 
+## TSC Server
+
+- [TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+
 ## TcpStream
 
 - [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
@@ -136,11 +148,11 @@
 
 ## TypeScript
 
-- [Bug in VSCode and Typescript - TSServer exited. Code: null. Signal: SIGTERM](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+- [TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
 
-## Visual Studio Code
+## VSCode
 
-- [Bug in VSCode and Typescript - TSServer exited. Code: null. Signal: SIGTERM](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+- [TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
 
 ## actQueue
 
@@ -160,6 +172,7 @@
 
 ## async programming
 
+- [A System Crash in Tokio-based Systems](2026-01-08-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 - [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 - [Why Tokio's `File::write` Returns Early Before OS Completes the Operation](2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
 
@@ -280,6 +293,7 @@
 
 ## langchain
 
+- [ModuleNotFoundError: No module named 'langchain.schema](2026-01-08-modulenotfounderror-no-module-named-langchainschema.md)
 - [Resolving APOC Procedures Error in Langchain with Neo4j v5.9](2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures.md)
 
 ## langchain-ai
@@ -400,6 +414,10 @@
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 
+## system crashes
+
+- [A System Crash in Tokio-based Systems](2026-01-08-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
 ## templating
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
@@ -420,6 +438,10 @@
 ## tokio runtime
 
 - [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
+## tokio-1.47
+
+- [A System Crash in Tokio-based Systems](2026-01-08-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
 ## tokio-rs
 
