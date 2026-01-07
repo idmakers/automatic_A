@@ -197,6 +197,10 @@
          <lastmod>2026-01-07</lastmod>
     </url>
     <url>
+         <loc>https://justwe.uk/2026-01-08-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
          <loc>https://justwe.uk/2026-01-08-assert-desugaring-change-is-backwards-incompatible/</loc>
          <lastmod>2026-01-07</lastmod>
     </url>
@@ -214,6 +218,10 @@
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-error-when-trying-to-download--deepseek-r17b/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-08-modulenotfounderror-no-module-named-langchainschema/</loc>
          <lastmod>2026-01-07</lastmod>
     </url>
     <url>
