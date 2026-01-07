@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series/">
       
       
-        <link rel="prev" href="../2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/">
+        <link rel="prev" href="../2026-01-08-dra-kubelet-support-permanent-and-transient-errors/">
       
       
-        <link rel="next" href="../2026-01-06-suspense-boundary-broken-ignored-after-second-server-action-call/">
+        <link rel="next" href="../2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z' - ISSUE WEB SEARCH</title>
+        <title>Rounding Errors in Pandas Series: A Potential Pitfall - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#frame-pointers-not-saved-on-release-builds" class="md-skip">
+        <a href="#rounding-errors-in-pandas-series-a-potential-pitfall" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z'
+              Rounding Errors in Pandas Series: A Potential Pitfall
             
           </span>
         </div>
@@ -599,10 +599,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rounding Errors in Pandas Series: A Potential Pitfall
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -618,6 +645,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -935,37 +1026,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z'
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf/" class="md-nav__link">
         
   
   
@@ -981,98 +1045,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Problem
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution &amp; Analysis
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Solution &amp; Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-example-for-debug-builds" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code Example for Debug Builds
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-example-for-release-builds" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code Example for Release Builds
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2195,34 +2167,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Solution &amp; Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-example-for-debug-builds" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code Example for Debug Builds
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-example-for-release-builds" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Code Example for Release Builds
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -2268,82 +2212,53 @@
       
       
       
-        <a href="../.#tag:debug-builds" class="md-tag">debug builds</a>
+        <a href="../.#tag:data-manipulation" class="md-tag">data manipulation</a>
       
     
       
       
       
       
-        <a href="../.#tag:frame-pointers" class="md-tag">frame-pointers</a>
+        <a href="../.#tag:pandas" class="md-tag">pandas</a>
       
     
       
       
       
       
-        <a href="../.#tag:release-builds" class="md-tag">release builds</a>
-      
-    
-      
-      
-      
-      
-        <a href="../.#tag:riscv32imc-unknown-none-elf" class="md-tag">riscv32imc-unknown-none-elf</a>
+        <a href="../.#tag:rounding" class="md-tag">rounding</a>
       
     
   </nav>
 
 
 
-<h1 id="frame-pointers-not-saved-on-release-builds">Frame Pointers Not Saved on Release Builds</h1>
+<h1 id="rounding-errors-in-pandas-series-a-potential-pitfall">Rounding Errors in Pandas Series: A Potential Pitfall</h1>
 <h2 id="core-problem">Core Problem</h2>
-<p>When compiling Rust code with the <code>-C force-frame-pointers=yes</code> flag and running it in a release build configuration (<code>opt-level = "z"</code>), the stack trace information is not saved, resulting in an incomplete backtrace when a panic occurs. This issue affects RISC-V (<code>riscv32imc-unknown-none-elf</code>) targets.</p>
+<p>When working with Pandas Series, developers often rely on the <code>round()</code> function to manipulate numeric values. However, a subtle issue arises when dealing with empty Series, where the <code>round()</code> function unexpectedly raises a <code>TypeError</code>. This behavior can lead to unexpected errors and make debugging more challenging.</p>
 <h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To investigate this problem, we need to understand how frame pointers are handled in Rust and how they affect the stack trace information during panics. We will analyze the code examples provided and discuss potential solutions.</p>
-<h3 id="code-example-for-debug-builds">Code Example for Debug Builds</h3>
-<div class="language-rust highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#![no_std]</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#![no_main]</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// ...</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cp">#[panic_handler]</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">fn</span><span class="w"> </span><span class="nf">panic_handler</span><span class="p">(</span><span class="n">info</span><span class="p">:</span><span class="w"> </span><span class="kp">&amp;</span><span class="nc">core</span><span class="p">::</span><span class="n">panic</span><span class="p">::</span><span class="n">PanicInfo</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">uart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Uart</span><span class="p">::</span><span class="n">new</span><span class="p">(</span><span class="n">UART_ADDR</span><span class="p">);</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="fm">writeln!</span><span class="p">(</span><span class="n">uart</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{info:?}&quot;</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="cp">#[entry]</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">fn</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="n">skooks</span><span class="p">();</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="k">loop</span><span class="w"> </span><span class="p">{}</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
+<p>To address this issue, we need to modify the Pandas implementation to handle rounding operations on empty Series gracefully. Here's an example of how you can fix this:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">round_empty_series</span><span class="p">(</span><span class="n">series</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">if</span> <span class="n">series</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">()</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="k">return</span> <span class="n">series</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># Test cases</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">series1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">round_empty_series</span><span class="p">(</span><span class="n">series1</span><span class="p">))</span>  <span class="c1"># Expected output: [1.0]</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">series2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">()</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">round_empty_series</span><span class="p">(</span><span class="n">series2</span><span class="p">))</span>  <span class="c1"># Expected output: []</span>
 </span></code></pre></div>
-<p>In debug builds with the <code>-C force-frame-pointers=yes</code> flag, the frame pointer is saved, and a complete stack trace is available when a panic occurs.</p>
-<h3 id="code-example-for-release-builds">Code Example for Release Builds</h3>
-<div class="language-rust highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#![no_std]</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#![no_main]</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// ...</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cp">#[panic_handler]</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">fn</span><span class="w"> </span><span class="nf">panic_handler</span><span class="p">(</span><span class="n">info</span><span class="p">:</span><span class="w"> </span><span class="kp">&amp;</span><span class="nc">core</span><span class="p">::</span><span class="n">panic</span><span class="p">::</span><span class="n">PanicInfo</span><span class="p">)</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">uart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Uart</span><span class="p">::</span><span class="n">new</span><span class="p">(</span><span class="n">UART_ADDR</span><span class="p">);</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="fm">writeln!</span><span class="p">(</span><span class="n">uart</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{info:?}&quot;</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">}</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="cp">#[entry]</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="k">fn</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="o">!</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="n">skooks</span><span class="p">();</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="k">loop</span><span class="w"> </span><span class="p">{}</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>However, in release builds with <code>opt-level = "z"</code> and the same <code>-C force-frame-pointers=yes</code> flag, the frame pointer is not saved during panics, resulting in an incomplete stack trace.</p>
+<p>In the above code, we create a new function called <code>round_empty_series()</code> that checks if the input Series is empty. If it's not empty, it proceeds with the standard rounding operation using the <code>round()</code> method. If it's an empty Series, it returns an empty Pandas Series.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>The issue seems to be related to the optimization level used for release builds (<code>opt-level = "z"</code>). It's recommended to use a lower optimization level, such as <code>opt-level = "s"</code>, to ensure that frame pointers are saved and complete stack traces are available during panics.</p>
+<p>The issue of raising a <code>TypeError</code> when attempting to round an empty Series is fixed by providing a custom implementation that handles this edge case gracefully. By following this solution, developers can avoid unexpected errors and ensure their code works correctly across various data manipulation scenarios.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/rust-lang/rust/issues/136198">Source</a></li>
+<li><a href="https://github.com/pandas-dev/pandas/issues/63444">Source</a></li>
 </ul>
 
 
