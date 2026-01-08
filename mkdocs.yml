@@ -43,6 +43,15 @@ extra:
 nav:
 - Home: index.md
 - Latest Updates:
+  - 2026-01-09-typescript-type-annotations-as-comments.md
+  - 2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md
+  - 2026-01-09-incremental-compilation-warning-error-finalizing-incremental-compilation-session-directory-when-building-compiler-on-windows.md
+  - 2026-01-09-importing-hub-fails-with-latest039-version.md
+  - 2026-01-09-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md
+  - 2026-01-09-allow-scaling-up-to-meet-pdb-constraints.md
+  - 2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md
+  - 2026-01-09-ability-to-not-store-certain-attributes-in-tf-state.md
+  - 2026-01-09-a-way-to-update-all-downloaded-models.md
   - 2026-01-08-support-readerlm-v2.md
   - 2026-01-08-summarizationmiddleware-fails---list-object-has-no-attribute-strip.md
   - 2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md

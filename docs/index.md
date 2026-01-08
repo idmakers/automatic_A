@@ -32,6 +32,10 @@
 
 - [Failing Stuck Pods due to Invalid Images: A Mechanism for Rescue](2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
 
+## Intellisense and Code Completion
+
+- [Enabling Real-Time Type Checking in JavaScript Projects with Comment Annotations](2026-01-09-typescript-type-annotations-as-comments.md)
+
 ## Kubernetes
 
 - [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
@@ -41,6 +45,10 @@
 - [Detecting and Handling Stuck Pods due to Invalid Image Pulls](2026-01-06-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
 - [Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers](2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters.md)
 - [Failing Stuck Pods due to Invalid Images: A Mechanism for Rescue](2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
+
+## Kubernetes Autoscaling
+
+- [Allowing Kubernetes Horizontal Pod Autoscaling to Meet Persistent Volume Boundaries](2026-01-09-allow-scaling-up-to-meet-pdb-constraints.md)
 
 ## Linux
 
@@ -65,6 +73,10 @@
 ## Ollama
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
+
+## PDB Constraints
+
+- [Allowing Kubernetes Horizontal Pod Autoscaling to Meet Persistent Volume Boundaries](2026-01-09-allow-scaling-up-to-meet-pdb-constraints.md)
 
 ## Performance Optimization
 
@@ -121,6 +133,10 @@
 
 - [Enabling Label Selector Support in Resource Quota's ScopeSelector](2026-01-06-support-label-selector-in-resource-quota-scopeselector.md)
 
+## Series
+
+- [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
+
 ## State Management
 
 - [Different Behavior between useTransition and useDeferredValue in React](2026-01-05-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
@@ -148,7 +164,12 @@
 
 ## TypeScript
 
+- [Enabling Real-Time Type Checking in JavaScript Projects with Comment Annotations](2026-01-09-typescript-type-annotations-as-comments.md)
 - [TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+
+## Typescript type annotations as comments
+
+- [Enabling Real-Time Type Checking in JavaScript Projects with Comment Annotations](2026-01-09-typescript-type-annotations-as-comments.md)
 
 ## VSCode
 
@@ -184,6 +205,10 @@
 
 - [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Building Rust with Autodiff on Mac OS Fails](2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md)
+
+## automation
+
+- [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
 
 ## backwards-incompatibility
 
@@ -261,6 +286,18 @@
 
 - [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
 
+## hub
+
+- [Importing Hub Fails with Latest langchain Version 0.3.9](2026-01-09-importing-hub-fails-with-latest039-version.md)
+
+## import error
+
+- [Importing Hub Fails with Latest langchain Version 0.3.9](2026-01-09-importing-hub-fails-with-latest039-version.md)
+
+## incremental compilation
+
+- [Incremental Compilation Warning on Windows: A Step-by-Step Fix](2026-01-09-incremental-compilation-warning-error-finalizing-incremental-compilation-session-directory-when-building-compiler-on-windows.md)
+
 ## infinite growth
 
 - [React 19.0.0 actQueue Infinite Growth Bug](2026-01-04-bug-actqueue-forever-growing-in-react-1900.md)
@@ -293,12 +330,17 @@
 
 ## langchain
 
+- [Importing Hub Fails with Latest langchain Version 0.3.9](2026-01-09-importing-hub-fails-with-latest039-version.md)
 - [ModuleNotFoundError: No module named 'langchain.schema](2026-01-08-modulenotfounderror-no-module-named-langchainschema.md)
 - [Resolving APOC Procedures Error in Langchain with Neo4j v5.9](2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures.md)
 
 ## langchain-ai
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
+
+## localset
+
+- [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
 
 ## mac os
 
@@ -321,6 +363,10 @@
 
 - [ISR Fails to Serve 404 Pages After Page Deletion with Experimental ISR Memory Cache Size Set to 0](2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0.md)
 
+## model updates
+
+- [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
+
 ## multiple-images
 
 - [Support for Multiple Images in /chat Endpoint](2026-01-04-support-for-multiple-images-in-chat-endpoint.md)
@@ -341,6 +387,7 @@
 
 ## ollama
 
+- [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
 - [Error When Downloading DeepSeek-R1:7b with Ollama](2026-01-08-error-when-trying-to-download--deepseek-r17b.md)
 - [DeepSeek-R1 671B Q4_K_M Error: Model Requires More System Memory Than Available](2026-01-06-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available.md)
 - [Resolving Pull Manifest Errors in Ollama](2026-01-05-pulling-manifest-error.md)
@@ -356,6 +403,7 @@
 
 ## pandas
 
+- [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Rounding Errors in Pandas Series: A Potential Pitfall](2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 - [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
@@ -368,6 +416,7 @@
 
 ## replace
 
+- [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 
 ## riscv32imc-unknown-none-elf
@@ -384,6 +433,10 @@
 
 - [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
 
+## runtime
+
+- [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
+
 ## rust
 
 - [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
@@ -395,9 +448,17 @@
 - [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
 - [Can't Install rustc-docs Component: Resolving the Conflict](2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 
+## rustc
+
+- [Incremental Compilation Warning on Windows: A Step-by-Step Fix](2026-01-09-incremental-compilation-warning-error-finalizing-incremental-compilation-session-directory-when-building-compiler-on-windows.md)
+
 ## rustc-docs
 
 - [Can't Install rustc-docs Component: Resolving the Conflict](2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
+
+## sensitive attributes
+
+- [Avoiding Sensitive Attributes in Terraform State](2026-01-09-ability-to-not-store-certain-attributes-in-tf-state.md)
 
 ## series
 
@@ -422,6 +483,10 @@
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
 
+## terraform state
+
+- [Avoiding Sensitive Attributes in Terraform State](2026-01-09-ability-to-not-store-certain-attributes-in-tf-state.md)
+
 ## text-extraction
 
 - [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
@@ -445,6 +510,7 @@
 
 ## tokio-rs
 
+- [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Why Tokio's `File::write` Returns Early Before OS Completes the Operation](2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
 
 ## transformer-based
@@ -454,4 +520,8 @@
 ## wait-loop
 
 - [Fixing the Busy Wait Loop in Repro](2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
+## windows
+
+- [Incremental Compilation Warning on Windows: A Step-by-Step Fix](2026-01-09-incremental-compilation-warning-error-finalizing-incremental-compilation-session-directory-when-building-compiler-on-windows.md)
 
