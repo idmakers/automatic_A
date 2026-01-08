@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://justwe.uk/2026-01-08-support-readerlm-v2/">
+        <link rel="canonical" href="https://justwe.uk/2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state/">
       
       
-        <link rel="prev" href="../2026-01-09-a-way-to-update-all-downloaded-models/">
+        <link rel="prev" href="../2026-01-09-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier/">
       
       
-        <link rel="next" href="../2026-01-08-summarizationmiddleware-fails---list-object-has-no-attribute-strip/">
+        <link rel="next" href="../2026-01-09-allow-scaling-up-to-meet-pdb-constraints/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>2026 01 08 support readerlm v2 - ISSUE WEB SEARCH</title>
+        <title>Copy-on-Write Index Labels Are Still Shared Mutable State - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#supporting-readerlm-v2-for-efficient-html-parsing-and-text-extraction" class="md-skip">
+        <a href="#copy-on-write-cow-index-labels-are-still-shared-mutable-state" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2026 01 08 support readerlm v2
+              Copy-on-Write Index Labels Are Still Shared Mutable State
             
           </span>
         </div>
@@ -597,10 +597,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Copy-on-Write Index Labels Are Still Shared Mutable State
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -616,6 +643,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution &amp; Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solution &amp; Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reproducible-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reproducible Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutating-a-series-breaks-the-link-to-the-dataframe-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mutating a Series breaks the link to the DataFrame index
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-should-this-index-object-be-treated-independently-from-dataframe-or-is-it-okay-that-a-mutation-here-affects-the-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Question: Should this Index object be treated independently from DataFrame or is it okay that a mutation here affects the DataFrame?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -737,37 +867,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    2026 01 08 support readerlm v2
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2026-01-08-support-readerlm-v2/" class="md-nav__link">
         
   
   
@@ -783,98 +886,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Problem
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution &amp; Analysis
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Solution &amp; Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example Code
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusion
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Reference
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2589,10 +2600,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#reproducible-example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation
+        Reproducible Example
       
     </span>
   </a>
@@ -2600,10 +2611,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-code" class="md-nav__link">
+  <a href="#mutating-a-series-breaks-the-link-to-the-dataframe-index" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example Code
+        Mutating a Series breaks the link to the DataFrame index
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-should-this-index-object-be-treated-independently-from-dataframe-or-is-it-okay-that-a-mutation-here-affects-the-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Question: Should this Index object be treated independently from DataFrame or is it okay that a mutation here affects the DataFrame?
       
     </span>
   </a>
@@ -2652,43 +2674,101 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../.#tag:copy-on-write" class="md-tag">copy-on-write</a>
+      
+    
+      
+      
+      
+      
+        <a href="../.#tag:index-labels" class="md-tag">index labels</a>
+      
+    
+      
+      
+      
+      
+        <a href="../.#tag:pandas" class="md-tag">pandas</a>
+      
+    
+  </nav>
 
 
-<hr />
-<p>title: "Supporting ReaderLM-v2 for Efficient HTML Parsing and Text Extraction"
-tags:
-  - Natural Language Processing (NLP)
-  - Machine Learning (ML)
-  - GitHub</p>
-<h1 id="supporting-readerlm-v2-for-efficient-html-parsing-and-text-extraction">Supporting ReaderLM-v2 for Efficient HTML Parsing and Text Extraction</h1>
+
+<h1 id="copy-on-write-cow-index-labels-are-still-shared-mutable-state">Copy-on-Write (CoW): index labels are still shared mutable state</h1>
 <h2 id="core-problem">Core Problem</h2>
-<p>ReaderLM-v2 is a specialized library designed for tasks involving HTML parsing, transformation, and text extraction. However, its usage has been limited due to the lack of support in popular NLP frameworks.</p>
+<p>When turning on Copy-on-Write mode in pandas, index labels remain as shared mutable state across Series and DataFrame. This issue can cause unexpected behavior when working with Series and DataFrames.</p>
 <h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>To support ReaderLM-v2, we need to integrate it with an NLP framework that can handle HTML parsing and text extraction efficiently. We will use Hugging Face's <code>jinaai</code> library, which provides a simple interface for accessing ReaderLM-v2 models.</p>
-<h3 id="installation">Installation</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>jinaai<span class="o">[</span>reader-lm-v2<span class="o">]</span>
+<h3 id="reproducible-example">Reproducible Example</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">mode</span><span class="o">.</span><span class="n">copy_on_write</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </span></code></pre></div>
-<h3 id="example-code">Example Code</h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">jinaai</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Load the ReaderLM-v2 model</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">model</span> <span class="o">=</span> <span class="n">jinaai</span><span class="o">.</span><span class="n">ReaderLMV2</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;path_to_your_model&#39;</span><span class="p">)</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># Define a function to parse HTML and extract text</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">html_to_text</span><span class="p">(</span><span class="n">html_string</span><span class="p">):</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="c1"># Use ReaderLM-v2 to parse HTML and extract text</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">html_string</span><span class="p">)</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="k">return</span> <span class="n">result</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># Test the function with an example HTML string</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">html_string</span> <span class="o">=</span> <span class="s1">&#39;&lt;p&gt;This is a sample HTML string.&lt;/p&gt;&#39;</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">html_to_text</span><span class="p">(</span><span class="n">html_string</span><span class="p">))</span>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="mutating-a-series-breaks-the-link-to-the-dataframe-index">Mutating a Series breaks the link to the DataFrame index</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">s1</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">s2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
 </span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>0      1
+1    100
+2      3
+Name: a, dtype: int64
+
+new name
+
+new name
+</code></pre></div>
+<h3 id="question-should-this-index-object-be-treated-independently-from-dataframe-or-is-it-okay-that-a-mutation-here-affects-the-dataframe">Question: Should this Index object be treated independently from DataFrame or is it okay that a mutation here affects the DataFrame?</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">i</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">index</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">i</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;new name&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">s1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+</span></code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>new name
+
+new name
+</code></pre></div>
 <h2 id="conclusion">Conclusion</h2>
-<p>By supporting ReaderLM-v2, we can leverage its strengths in HTML parsing and text extraction, making it easier to work with unstructured data. This solution provides a starting point for integrating ReaderLM-v2 into popular NLP frameworks, enabling more efficient and effective natural language processing tasks.</p>
+<p>When using Copy-on-Write mode in pandas, index labels are still shared mutable state across Series and DataFrame. This can cause unexpected behavior when working with Series and DataFrames. To avoid this issue, consider using a different data structure or approach that does not rely on shared mutable state.</p>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://github.com/ollama/ollama/issues/8453">Source</a></li>
+<li><a href="https://github.com/pandas-dev/pandas/issues/53529">Source</a></li>
 </ul>
 
 
@@ -2696,6 +2776,9 @@ tags:
 
 
 
+
+  
+  
 
 
 
