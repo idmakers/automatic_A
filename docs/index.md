@@ -230,6 +230,10 @@
 
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 
+## copy-on-write
+
+- [Copy-on-Write Index Labels Are Still Shared Mutable State](2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
+
 ## data manipulation
 
 - [Rounding Errors in Pandas Series: A Potential Pitfall](2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series.md)
@@ -297,6 +301,10 @@
 ## incremental compilation
 
 - [Incremental Compilation Warning on Windows: A Step-by-Step Fix](2026-01-09-incremental-compilation-warning-error-finalizing-incremental-compilation-session-directory-when-building-compiler-on-windows.md)
+
+## index labels
+
+- [Copy-on-Write Index Labels Are Still Shared Mutable State](2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 
 ## infinite growth
 
@@ -404,6 +412,7 @@
 ## pandas
 
 - [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
+- [Copy-on-Write Index Labels Are Still Shared Mutable State](2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Rounding Errors in Pandas Series: A Potential Pitfall](2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 - [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)

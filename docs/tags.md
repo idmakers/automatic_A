@@ -66,6 +66,7 @@ title: Tags
 - chat-endpoint
 - compiler
 - conflict
+- copy-on-write
 - data manipulation
 - debug builds
 - deep-seek-r1
@@ -86,6 +87,7 @@ title: Tags
 - hub
 - import error
 - incremental compilation
+- index labels
 - infinite growth
 - installation
 - isr cache
