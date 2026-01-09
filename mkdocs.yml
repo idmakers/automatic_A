@@ -43,6 +43,21 @@ extra:
 nav:
 - Home: index.md
 - Latest Updates:
+  - 2026-01-10-typescript-type-annotations-as-comments.md
+  - 2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md
+  - 2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md
+  - 2026-01-10-support-for-internvl-chat-v15.md
+  - 2026-01-10-support-closed-file-diagnostics-in-vs-code.md
+  - 2026-01-10-set-enableservicelinks-to-false-as-default.md
+  - 2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md
+  - 2026-01-10-internalerror-too-much-recursion-on-firefox.md
+  - 2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md
+  - 2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md
+  - 2026-01-10-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md
+  - 2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md
+  - 2026-01-10-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md
+  - 2026-01-10-add-a-localruntime-for-replacing-runtimelocalset.md
+  - 2026-01-10-a-way-to-update-all-downloaded-models.md
   - 2026-01-09-typescript-type-annotations-as-comments.md
   - 2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md
   - 2026-01-09-incremental-compilation-warning-error-finalizing-incremental-compilation-session-directory-when-building-compiler-on-windows.md

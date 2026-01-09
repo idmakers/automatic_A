@@ -4,6 +4,14 @@
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
 
+## AWS
+
+- [Terraform 0.14 → 1.13.1: apply re-creates existing AWS resources (VPC/Subnets/NAT) instead of updating despite S3 remote state](2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md)
+
+## Bug Fix
+
+- [Functions and buttons from react-big-calendar don't work in next 13.4.9 and upwards](2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md)
+
 ## DRA
 
 - [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
@@ -24,6 +32,18 @@
 
 - [DeepSeek-R1 671B Q4_K_M Error: Model Requires More System Memory Than Available](2026-01-06-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available.md)
 
+## Disruption Budget
+
+- [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
+
+## Error Handling
+
+- [InternalError: too much recursion on Firefox](2026-01-10-internalerror-too-much-recursion-on-firefox.md)
+
+## Horizontal Pod Autoscaling
+
+- [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
+
 ## Image Pull Issues
 
 - [Detecting and Handling Stuck Pods due to Invalid Image Pulls](2026-01-06-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
@@ -32,12 +52,21 @@
 
 - [Failing Stuck Pods due to Invalid Images: A Mechanism for Rescue](2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image.md)
 
+## Inline Comments
+
+- [Enabling TypeScript Type Checking in JavaScript Projects with Inline Comments](2026-01-10-typescript-type-annotations-as-comments.md)
+
 ## Intellisense and Code Completion
 
 - [Enabling Real-Time Type Checking in JavaScript Projects with Comment Annotations](2026-01-09-typescript-type-annotations-as-comments.md)
 
+## JavaScript
+
+- [Enabling TypeScript Type Checking in JavaScript Projects with Inline Comments](2026-01-10-typescript-type-annotations-as-comments.md)
+
 ## Kubernetes
 
+- [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
 - [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
 - [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
 - [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
@@ -70,6 +99,11 @@
 
 - [ModuleNotFoundError: No module named 'langchain.schema](2026-01-08-modulenotfounderror-no-module-named-langchainschema.md)
 
+## Next.js
+
+- [InternalError: too much recursion on Firefox](2026-01-10-internalerror-too-much-recursion-on-firefox.md)
+- [Functions and buttons from react-big-calendar don't work in next 13.4.9 and upwards](2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md)
+
 ## Ollama
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
@@ -78,9 +112,17 @@
 
 - [Allowing Kubernetes Horizontal Pod Autoscaling to Meet Persistent Volume Boundaries](2026-01-09-allow-scaling-up-to-meet-pdb-constraints.md)
 
+## Performance
+
+- [InternalError: too much recursion on Firefox](2026-01-10-internalerror-too-much-recursion-on-firefox.md)
+
 ## Performance Optimization
 
 - [Racing to Zero: Mitigating Race Conditions in Kubernetes Schedulers](2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters.md)
+
+## Persistent Volumes
+
+- [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
 
 ## Pod Failure
 
@@ -107,10 +149,18 @@
 
 - [React 19.0.0 actQueue Infinite Growth Bug](2026-01-04-bug-actqueue-forever-growing-in-react-1900.md)
 
+## React Big Calendar
+
+- [Functions and buttons from react-big-calendar don't work in next 13.4.9 and upwards](2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md)
+
 ## React Hooks
 
 - [Different Behavior between useTransition and useDeferredValue in React](2026-01-05-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
 - [Different Behaivor between useTransition and useDeferredValue in React](2026-01-04-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
+
+## Remote State
+
+- [Terraform 0.14 → 1.13.1: apply re-creates existing AWS resources (VPC/Subnets/NAT) instead of updating despite S3 remote state](2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md)
 
 ## Rust
 
@@ -120,6 +170,10 @@
 ## Rust Feature Gates
 
 - [Tracking Issue for RFC 2045: Improving `#[target_feature]`](2026-01-04-tracking-issue-for-rfc-2045-improving-target_feature.md)
+
+## S3
+
+- [Terraform 0.14 → 1.13.1: apply re-creates existing AWS resources (VPC/Subnets/NAT) instead of updating despite S3 remote state](2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md)
 
 ## SO_LINGER
 
@@ -135,6 +189,7 @@
 
 ## Series
 
+- [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 
 ## State Management
@@ -154,6 +209,10 @@
 
 - [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
 
+## Terraform
+
+- [Terraform 0.14 → 1.13.1: apply re-creates existing AWS resources (VPC/Subnets/NAT) instead of updating despite S3 remote state](2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md)
+
 ## Transition Optimization
 
 - [Different Behaivor between useTransition and useDeferredValue in React](2026-01-04-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
@@ -164,12 +223,21 @@
 
 ## TypeScript
 
+- [Support Closed-File Diagnostics in VS Code](2026-01-10-support-closed-file-diagnostics-in-vs-code.md)
 - [Enabling Real-Time Type Checking in JavaScript Projects with Comment Annotations](2026-01-09-typescript-type-annotations-as-comments.md)
 - [TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+
+## Typescript
+
+- [Enabling TypeScript Type Checking in JavaScript Projects with Inline Comments](2026-01-10-typescript-type-annotations-as-comments.md)
 
 ## Typescript type annotations as comments
 
 - [Enabling Real-Time Type Checking in JavaScript Projects with Comment Annotations](2026-01-09-typescript-type-annotations-as-comments.md)
+
+## VS Code
+
+- [Support Closed-File Diagnostics in VS Code](2026-01-10-support-closed-file-diagnostics-in-vs-code.md)
 
 ## VSCode
 
@@ -208,6 +276,7 @@
 
 ## automation
 
+- [Automate Model Updates with Batch Pulling](2026-01-10-a-way-to-update-all-downloaded-models.md)
 - [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
 
 ## backwards-incompatibility
@@ -222,6 +291,10 @@
 
 - [Support for Multiple Images in /chat Endpoint](2026-01-04-support-for-multiple-images-in-chat-endpoint.md)
 
+## chromadb
+
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
+
 ## compiler
 
 - [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
@@ -232,6 +305,7 @@
 
 ## copy-on-write
 
+- [Copy-on-Write (CoW) in Pandas: Index Labels as Shared Mutable State](2026-01-10-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Copy-on-Write Index Labels Are Still Shared Mutable State](2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 
 ## data manipulation
@@ -257,6 +331,10 @@
 ## duplicate-paths
 
 - [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
+
+## error
+
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
 ## errors
 
@@ -286,6 +364,10 @@
 
 - [Resolving APOC Procedures Error in Langchain with Neo4j v5.9](2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures.md)
 
+## heterogenous types
+
+- [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
+
 ## html-parsing
 
 - [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
@@ -304,6 +386,7 @@
 
 ## index labels
 
+- [Copy-on-Write (CoW) in Pandas: Index Labels as Shared Mutable State](2026-01-10-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Copy-on-Write Index Labels Are Still Shared Mutable State](2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 
 ## infinite growth
@@ -315,6 +398,10 @@
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 - [Can't Install rustc-docs Component: Resolving the Conflict](2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 
+## integer-powers
+
+- [Inherent Unchecked Integer Methods in Rust](2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md)
+
 ## isr cache
 
 - [ISR Fails to Serve 404 Pages After Page Deletion with Experimental ISR Memory Cache Size Set to 0](2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0.md)
@@ -325,10 +412,12 @@
 
 ## keyword1
 
+- [A catchy, SEO-friendly title](2026-01-10-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 - [Fixing the Busy Wait Loop in Repro](2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
 ## keyword2
 
+- [A catchy, SEO-friendly title](2026-01-10-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 - [Fixing the Busy Wait Loop in Repro](2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
 ## kubelet
@@ -336,8 +425,13 @@
 - [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
 - [Surface Permanent Errors in Kubelet and DRA Drivers](2026-01-07-dra-kubelet-support-permanent-and-transient-errors.md)
 
+## kubernetes
+
+- [Set enableServiceLinks to False as Default in Kubernetes](2026-01-10-set-enableservicelinks-to-false-as-default.md)
+
 ## langchain
 
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Importing Hub Fails with Latest langchain Version 0.3.9](2026-01-09-importing-hub-fails-with-latest039-version.md)
 - [ModuleNotFoundError: No module named 'langchain.schema](2026-01-08-modulenotfounderror-no-module-named-langchainschema.md)
 - [Resolving APOC Procedures Error in Langchain with Neo4j v5.9](2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures.md)
@@ -373,7 +467,12 @@
 
 ## model updates
 
+- [Automate Model Updates with Batch Pulling](2026-01-10-a-way-to-update-all-downloaded-models.md)
 - [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
+
+## multimodal large language models
+
+- [Supporting InternVL-Chat-V1.5 in Hugging Face Models](2026-01-10-support-for-internvl-chat-v15.md)
 
 ## multiple-images
 
@@ -405,12 +504,18 @@
 
 - [Support for Multiple Images in /chat Endpoint](2026-01-04-support-for-multiple-images-in-chat-endpoint.md)
 
+## open-source models
+
+- [Supporting InternVL-Chat-V1.5 in Hugging Face Models](2026-01-10-support-for-internvl-chat-v15.md)
+
 ## opt-level=z
 
 - [A stacktrace in RISC-V builds with `force-frame-pointers=yes` and `opt-level=z`: The Unexplained Disappearance](2026-01-06--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
 
 ## pandas
 
+- [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
+- [Copy-on-Write (CoW) in Pandas: Index Labels as Shared Mutable State](2026-01-10-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Copy-on-Write Index Labels Are Still Shared Mutable State](2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
@@ -419,12 +524,21 @@
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 
+## performance-optimization
+
+- [Inherent Unchecked Integer Methods in Rust](2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md)
+
+## proprietary commercial models
+
+- [Supporting InternVL-Chat-V1.5 in Hugging Face Models](2026-01-10-support-for-internvl-chat-v15.md)
+
 ## release builds
 
 - [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
 
 ## replace
 
+- [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 
@@ -446,6 +560,10 @@
 
 - [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
 
+## runtime-localset
+
+- [Elevate Tokio Performance with LocalRuntime](2026-01-10-add-a-localruntime-for-replacing-runtimelocalset.md)
+
 ## rust
 
 - [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
@@ -456,6 +574,10 @@
 
 - [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
 - [Can't Install rustc-docs Component: Resolving the Conflict](2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
+
+## rust-language-features
+
+- [Inherent Unchecked Integer Methods in Rust](2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md)
 
 ## rustc
 
@@ -474,6 +596,10 @@
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
+
+## service-links
+
+- [Set enableServiceLinks to False as Default in Kubernetes](2026-01-10-set-enableservicelinks-to-false-as-default.md)
 
 ## static-worker
 
@@ -516,6 +642,10 @@
 ## tokio-1.47
 
 - [A System Crash in Tokio-based Systems](2026-01-08-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
+## tokio-performance
+
+- [Elevate Tokio Performance with LocalRuntime](2026-01-10-add-a-localruntime-for-replacing-runtimelocalset.md)
 
 ## tokio-rs
 
