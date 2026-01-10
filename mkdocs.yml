@@ -43,6 +43,17 @@ extra:
 nav:
 - Home: index.md
 - Latest Updates:
+  - 2026-01-11-typescript-type-annotations-as-comments.md
+  - 2026-01-11-tracking-issue-for-inherent-unchecked-integer-methods.md
+  - 2026-01-11-support-for-internvl-chat-v15.md
+  - 2026-01-11-support-closed-file-diagnostics-in-vs-code.md
+  - 2026-01-11-suggestion-for-readonly-interface.md
+  - 2026-01-11-set-enableservicelinks-to-false-as-default.md
+  - 2026-01-11-kubectl-create-service-should-accept---selector.md
+  - 2026-01-11-is-there-any-plan-to-support-fingpt.md
+  - 2026-01-11-build-hang-on-linux.md
+  - 2026-01-11-allow-scaling-up-to-meet-pdb-constraints.md
+  - 2026-01-11-a-way-to-update-all-downloaded-models.md
   - 2026-01-10-typescript-type-annotations-as-comments.md
   - 2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md
   - 2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md

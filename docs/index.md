@@ -32,6 +32,10 @@
 
 - [DeepSeek-R1 671B Q4_K_M Error: Model Requires More System Memory Than Available](2026-01-06-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available.md)
 
+## Diagnostics
+
+- [Supporting Closed-File Diagnostics in VS Code](2026-01-11-support-closed-file-diagnostics-in-vs-code.md)
+
 ## Disruption Budget
 
 - [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
@@ -62,10 +66,12 @@
 
 ## JavaScript
 
+- [TypeScript Type Annotations as Comments: Revolutionizing Code Reviews and Development](2026-01-11-typescript-type-annotations-as-comments.md)
 - [Enabling TypeScript Type Checking in JavaScript Projects with Inline Comments](2026-01-10-typescript-type-annotations-as-comments.md)
 
 ## Kubernetes
 
+- [Enabling Selector in kubectl Create Service Command](2026-01-11-kubectl-create-service-should-accept---selector.md)
 - [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
 - [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
 - [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
@@ -78,6 +84,10 @@
 ## Kubernetes Autoscaling
 
 - [Allowing Kubernetes Horizontal Pod Autoscaling to Meet Persistent Volume Boundaries](2026-01-09-allow-scaling-up-to-meet-pdb-constraints.md)
+
+## Large Language Models
+
+- [Unlocking Multimodal Understanding with InternVL 1.5](2026-01-11-support-for-internvl-chat-v15.md)
 
 ## Linux
 
@@ -99,6 +109,10 @@
 
 - [ModuleNotFoundError: No module named 'langchain.schema](2026-01-08-modulenotfounderror-no-module-named-langchainschema.md)
 
+## Multimodal Understanding
+
+- [Unlocking Multimodal Understanding with InternVL 1.5](2026-01-11-support-for-internvl-chat-v15.md)
+
 ## Next.js
 
 - [InternalError: too much recursion on Firefox](2026-01-10-internalerror-too-much-recursion-on-firefox.md)
@@ -107,6 +121,10 @@
 ## Ollama
 
 - [AMD Memory Detection Routines Ignore Unified Memory on AMD APU](2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu.md)
+
+## Open-Source Models
+
+- [Unlocking Multimodal Understanding with InternVL 1.5](2026-01-11-support-for-internvl-chat-v15.md)
 
 ## PDB Constraints
 
@@ -221,8 +239,14 @@
 
 - [Different Behavior between useTransition and useDeferredValue in React](2026-01-05-bug-different-behaivor-between-usetransition-and-usedeferredvalue.md)
 
+## Type Checking
+
+- [TypeScript Type Annotations as Comments: Revolutionizing Code Reviews and Development](2026-01-11-typescript-type-annotations-as-comments.md)
+
 ## TypeScript
 
+- [TypeScript Type Annotations as Comments: Revolutionizing Code Reviews and Development](2026-01-11-typescript-type-annotations-as-comments.md)
+- [Supporting Closed-File Diagnostics in VS Code](2026-01-11-support-closed-file-diagnostics-in-vs-code.md)
 - [Support Closed-File Diagnostics in VS Code](2026-01-10-support-closed-file-diagnostics-in-vs-code.md)
 - [Enabling Real-Time Type Checking in JavaScript Projects with Comment Annotations](2026-01-09-typescript-type-annotations-as-comments.md)
 - [TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
@@ -237,6 +261,7 @@
 
 ## VS Code
 
+- [Supporting Closed-File Diagnostics in VS Code](2026-01-11-support-closed-file-diagnostics-in-vs-code.md)
 - [Support Closed-File Diagnostics in VS Code](2026-01-10-support-closed-file-diagnostics-in-vs-code.md)
 
 ## VSCode
@@ -276,6 +301,7 @@
 
 ## automation
 
+- [Automate Model Updates with Ollama](2026-01-11-a-way-to-update-all-downloaded-models.md)
 - [Automate Model Updates with Batch Pulling](2026-01-10-a-way-to-update-all-downloaded-models.md)
 - [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
 
@@ -286,6 +312,10 @@
 ## bug
 
 - [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
+
+## build-hangs
+
+- [Build Hangs on Linux with Nightly Toolchain](2026-01-11-build-hang-on-linux.md)
 
 ## chat-endpoint
 
@@ -298,6 +328,10 @@
 ## compiler
 
 - [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
+
+## configuration
+
+- [Defaulting Service Links to Disabled in Kubernetes](2026-01-11-set-enableservicelinks-to-false-as-default.md)
 
 ## conflict
 
@@ -368,6 +402,10 @@
 
 - [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 
+## horizontal-pod-autoscaling
+
+- [Allowing Kubernetes Horizontal Pod Autoscaler to Meet Pod Disruption Budget Constraints](2026-01-11-allow-scaling-up-to-meet-pdb-constraints.md)
+
 ## html-parsing
 
 - [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
@@ -375,6 +413,10 @@
 ## hub
 
 - [Importing Hub Fails with Latest langchain Version 0.3.9](2026-01-09-importing-hub-fails-with-latest039-version.md)
+
+## immutable objects
+
+- [Simplifying Immutable Interfaces in TypeScript](2026-01-11-suggestion-for-readonly-interface.md)
 
 ## import error
 
@@ -398,6 +440,10 @@
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 - [Can't Install rustc-docs Component: Resolving the Conflict](2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 
+## integer
+
+- [Inherent Unchecked Integer Methods in Rust](2026-01-11-tracking-issue-for-inherent-unchecked-integer-methods.md)
+
 ## integer-powers
 
 - [Inherent Unchecked Integer Methods in Rust](2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md)
@@ -420,6 +466,10 @@
 - [A catchy, SEO-friendly title](2026-01-10-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 - [Fixing the Busy Wait Loop in Repro](2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
+## kubectl
+
+- [Enabling Selector in kubectl Create Service Command](2026-01-11-kubectl-create-service-should-accept---selector.md)
+
 ## kubelet
 
 - [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
@@ -427,6 +477,7 @@
 
 ## kubernetes
 
+- [Defaulting Service Links to Disabled in Kubernetes](2026-01-11-set-enableservicelinks-to-false-as-default.md)
 - [Set enableServiceLinks to False as Default in Kubernetes](2026-01-10-set-enableservicelinks-to-false-as-default.md)
 
 ## langchain
@@ -440,6 +491,10 @@
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
 
+## linux
+
+- [Build Hangs on Linux with Nightly Toolchain](2026-01-11-build-hang-on-linux.md)
+
 ## localset
 
 - [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
@@ -448,6 +503,10 @@
 
 - [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Building Rust with Autodiff on Mac OS Fails](2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md)
+
+## machine-learning-models
+
+- [Will FinGPT Be Supported by Ollama Soon?](2026-01-11-is-there-any-plan-to-support-fingpt.md)
 
 ## manifest
 
@@ -470,6 +529,10 @@
 - [Automate Model Updates with Batch Pulling](2026-01-10-a-way-to-update-all-downloaded-models.md)
 - [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
 
+## model-management
+
+- [Automate Model Updates with Ollama](2026-01-11-a-way-to-update-all-downloaded-models.md)
+
 ## multimodal large language models
 
 - [Supporting InternVL-Chat-V1.5 in Hugging Face Models](2026-01-10-support-for-internvl-chat-v15.md)
@@ -477,6 +540,10 @@
 ## multiple-images
 
 - [Support for Multiple Images in /chat Endpoint](2026-01-04-support-for-multiple-images-in-chat-endpoint.md)
+
+## natural-language-processing
+
+- [Will FinGPT Be Supported by Ollama Soon?](2026-01-11-is-there-any-plan-to-support-fingpt.md)
 
 ## neo4j
 
@@ -491,6 +558,10 @@
 
 - [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
 - [Fetch Request Memoization Not Working When Cookies Function Imported](2026-01-05-fetch-request-memoization-not-working-when-cookies-function-imported.md)
+
+## nightly-toolchain
+
+- [Build Hangs on Linux with Nightly Toolchain](2026-01-11-build-hang-on-linux.md)
 
 ## ollama
 
@@ -528,9 +599,17 @@
 
 - [Inherent Unchecked Integer Methods in Rust](2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md)
 
+## pod-disruption-budget
+
+- [Allowing Kubernetes Horizontal Pod Autoscaler to Meet Pod Disruption Budget Constraints](2026-01-11-allow-scaling-up-to-meet-pdb-constraints.md)
+
 ## proprietary commercial models
 
 - [Supporting InternVL-Chat-V1.5 in Hugging Face Models](2026-01-10-support-for-internvl-chat-v15.md)
+
+## readonly interfaces
+
+- [Simplifying Immutable Interfaces in TypeScript](2026-01-11-suggestion-for-readonly-interface.md)
 
 ## release builds
 
@@ -566,12 +645,14 @@
 
 ## rust
 
+- [Inherent Unchecked Integer Methods in Rust](2026-01-11-tracking-issue-for-inherent-unchecked-integer-methods.md)
 - [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 - [Building Rust with Autodiff on Mac OS Fails](2026-01-05-build-from-source-with-autodiff-fails-on-mac-os.md)
 
 ## rust-lang
 
+- [Build Hangs on Linux with Nightly Toolchain](2026-01-11-build-hang-on-linux.md)
 - [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
 - [Can't Install rustc-docs Component: Resolving the Conflict](2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
 
@@ -596,6 +677,14 @@
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
+
+## service creation
+
+- [Enabling Selector in kubectl Create Service Command](2026-01-11-kubectl-create-service-should-accept---selector.md)
+
+## service links
+
+- [Defaulting Service Links to Disabled in Kubernetes](2026-01-11-set-enableservicelinks-to-false-as-default.md)
 
 ## service-links
 
@@ -655,6 +744,10 @@
 ## transformer-based
 
 - [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
+
+## unchecked
+
+- [Inherent Unchecked Integer Methods in Rust](2026-01-11-tracking-issue-for-inherent-unchecked-integer-methods.md)
 
 ## wait-loop
 
