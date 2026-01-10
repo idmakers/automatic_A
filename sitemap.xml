@@ -349,6 +349,14 @@
          <lastmod>2026-01-10</lastmod>
     </url>
     <url>
+         <loc>https://justwe.uk/2026-01-11-add-a-localruntime-for-replacing-runtimelocalset/</loc>
+         <lastmod>2026-01-10</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-11-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/</loc>
+         <lastmod>2026-01-10</lastmod>
+    </url>
+    <url>
          <loc>https://justwe.uk/2026-01-11-allow-scaling-up-to-meet-pdb-constraints/</loc>
          <lastmod>2026-01-10</lastmod>
     </url>
@@ -357,11 +365,27 @@
          <lastmod>2026-01-10</lastmod>
     </url>
     <url>
+         <loc>https://justwe.uk/2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state/</loc>
+         <lastmod>2026-01-10</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists/</loc>
+         <lastmod>2026-01-10</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-11-internalerror-too-much-recursion-on-firefox/</loc>
+         <lastmod>2026-01-10</lastmod>
+    </url>
+    <url>
          <loc>https://justwe.uk/2026-01-11-is-there-any-plan-to-support-fingpt/</loc>
          <lastmod>2026-01-10</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-kubectl-create-service-should-accept---selector/</loc>
+         <lastmod>2026-01-10</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types/</loc>
          <lastmod>2026-01-10</lastmod>
     </url>
     <url>
