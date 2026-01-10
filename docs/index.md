@@ -8,6 +8,10 @@
 
 - [Terraform 0.14 → 1.13.1: apply re-creates existing AWS resources (VPC/Subnets/NAT) instead of updating despite S3 remote state](2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md)
 
+## Artificial Intelligence
+
+- [AIOps: AI-Driven Operations for Enhanced Network Performance](2026-01-11-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
 ## Bug Fix
 
 - [Functions and buttons from react-big-calendar don't work in next 13.4.9 and upwards](2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md)
@@ -42,6 +46,7 @@
 
 ## Error Handling
 
+- [InternalError: too much recursion on Firefox](2026-01-11-internalerror-too-much-recursion-on-firefox.md)
 - [InternalError: too much recursion on Firefox](2026-01-10-internalerror-too-much-recursion-on-firefox.md)
 
 ## Horizontal Pod Autoscaling
@@ -113,8 +118,13 @@
 
 - [Unlocking Multimodal Understanding with InternVL 1.5](2026-01-11-support-for-internvl-chat-v15.md)
 
+## Network Optimization
+
+- [AIOps: AI-Driven Operations for Enhanced Network Performance](2026-01-11-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
 ## Next.js
 
+- [InternalError: too much recursion on Firefox](2026-01-11-internalerror-too-much-recursion-on-firefox.md)
 - [InternalError: too much recursion on Firefox](2026-01-10-internalerror-too-much-recursion-on-firefox.md)
 - [Functions and buttons from react-big-calendar don't work in next 13.4.9 and upwards](2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md)
 
@@ -286,6 +296,7 @@
 
 ## async programming
 
+- [Replacing Runtime+LocalSet with a LocalRuntime in Tokio](2026-01-11-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [A System Crash in Tokio-based Systems](2026-01-08-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 - [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 - [Why Tokio's `File::write` Returns Early Before OS Completes the Operation](2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
@@ -323,6 +334,7 @@
 
 ## chromadb
 
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
 ## compiler
@@ -339,11 +351,13 @@
 
 ## copy-on-write
 
+- [Shared Mutable State in Pandas Index Labels](2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Copy-on-Write (CoW) in Pandas: Index Labels as Shared Mutable State](2026-01-10-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Copy-on-Write Index Labels Are Still Shared Mutable State](2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 
 ## data manipulation
 
+- [Shared Mutable State in Pandas Index Labels](2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Rounding Errors in Pandas Series: A Potential Pitfall](2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 
 ## debug builds
@@ -369,6 +383,10 @@
 ## error
 
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
+
+## error-message
+
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
 ## errors
 
@@ -491,6 +509,10 @@
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
 
+## langchain-chroma
+
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
+
 ## linux
 
 - [Build Hangs on Linux with Nightly Toolchain](2026-01-11-build-hang-on-linux.md)
@@ -585,6 +607,8 @@
 
 ## pandas
 
+- [Series.replace not working on slices of heterogeneous types](2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
+- [Shared Mutable State in Pandas Index Labels](2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Copy-on-Write (CoW) in Pandas: Index Labels as Shared Mutable State](2026-01-10-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
@@ -617,6 +641,7 @@
 
 ## replace
 
+- [Series.replace not working on slices of heterogeneous types](2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
@@ -674,6 +699,7 @@
 
 ## series
 
+- [Series.replace not working on slices of heterogeneous types](2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
@@ -738,6 +764,7 @@
 
 ## tokio-rs
 
+- [Replacing Runtime+LocalSet with a LocalRuntime in Tokio](2026-01-11-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Why Tokio's `File::write` Returns Early Before OS Completes the Operation](2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
 
