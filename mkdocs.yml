@@ -43,6 +43,11 @@ extra:
 nav:
 - Home: index.md
 - Latest Updates:
+  - 2026-01-12-typescript-type-annotations-as-comments.md
+  - 2026-01-12-kubernetes-publishing-bot-is-broken.md
+  - 2026-01-12-issue-with-ollama-model-download-progress-reverting-during-download.md
+  - 2026-01-12-build-hang-on-linux.md
+  - 2026-01-12-add-length-parameter-to-typed-arrays.md
   - 2026-01-11-typescript-type-annotations-as-comments.md
   - 2026-01-11-tracking-issue-for-inherent-unchecked-integer-methods.md
   - 2026-01-11-support-for-internvl-chat-v15.md

@@ -16,6 +16,10 @@
 
 - [Functions and buttons from react-big-calendar don't work in next 13.4.9 and upwards](2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md)
 
+## Code Completion
+
+- [Enabling Real-Time Type Checking in JavaScript Projects with TypeScript Annotations](2026-01-12-typescript-type-annotations-as-comments.md)
+
 ## DRA
 
 - [Introducing Permanent and Transient Error Handling in kubelet](2026-01-08-dra-kubelet-support-permanent-and-transient-errors.md)
@@ -251,10 +255,12 @@
 
 ## Type Checking
 
+- [Enabling Real-Time Type Checking in JavaScript Projects with TypeScript Annotations](2026-01-12-typescript-type-annotations-as-comments.md)
 - [TypeScript Type Annotations as Comments: Revolutionizing Code Reviews and Development](2026-01-11-typescript-type-annotations-as-comments.md)
 
 ## TypeScript
 
+- [Enabling Real-Time Type Checking in JavaScript Projects with TypeScript Annotations](2026-01-12-typescript-type-annotations-as-comments.md)
 - [TypeScript Type Annotations as Comments: Revolutionizing Code Reviews and Development](2026-01-11-typescript-type-annotations-as-comments.md)
 - [Supporting Closed-File Diagnostics in VS Code](2026-01-11-support-closed-file-diagnostics-in-vs-code.md)
 - [Support Closed-File Diagnostics in VS Code](2026-01-10-support-closed-file-diagnostics-in-vs-code.md)
@@ -328,6 +334,10 @@
 
 - [Build Hangs on Linux with Nightly Toolchain](2026-01-11-build-hang-on-linux.md)
 
+## building-issues
+
+- [Building Issues with Rust's Nightly Toolchain](2026-01-12-build-hang-on-linux.md)
+
 ## chat-endpoint
 
 - [Support for Multiple Images in /chat Endpoint](2026-01-04-support-for-multiple-images-in-chat-endpoint.md)
@@ -354,6 +364,10 @@
 - [Shared Mutable State in Pandas Index Labels](2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Copy-on-Write (CoW) in Pandas: Index Labels as Shared Mutable State](2026-01-10-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Copy-on-Write Index Labels Are Still Shared Mutable State](2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
+
+## cpu-apple
+
+- [Ollama Model Download Issue with Reverting Progress](2026-01-12-issue-with-ollama-model-download-progress-reverting-during-download.md)
 
 ## data manipulation
 
@@ -411,6 +425,10 @@
 ## getInitialProps
 
 - [Pages Router + getInitialProps = Static worker unexpectedly](2026-01-07-pages-router--getinitialprops--static-worker-unexpectedly.md)
+
+## gpu-apple
+
+- [Ollama Model Download Issue with Reverting Progress](2026-01-12-issue-with-ollama-model-download-progress-reverting-during-download.md)
 
 ## graph database
 
@@ -470,6 +488,10 @@
 
 - [ISR Fails to Serve 404 Pages After Page Deletion with Experimental ISR Memory Cache Size Set to 0](2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0.md)
 
+## issue
+
+- [kubernetes publishing bot is broken](2026-01-12-kubernetes-publishing-bot-is-broken.md)
+
 ## jinja2
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
@@ -495,6 +517,7 @@
 
 ## kubernetes
 
+- [kubernetes publishing bot is broken](2026-01-12-kubernetes-publishing-bot-is-broken.md)
 - [Defaulting Service Links to Disabled in Kubernetes](2026-01-11-set-enableservicelinks-to-false-as-default.md)
 - [Set enableServiceLinks to False as Default in Kubernetes](2026-01-10-set-enableservicelinks-to-false-as-default.md)
 
@@ -515,6 +538,7 @@
 
 ## linux
 
+- [Building Issues with Rust's Nightly Toolchain](2026-01-12-build-hang-on-linux.md)
 - [Build Hangs on Linux with Nightly Toolchain](2026-01-11-build-hang-on-linux.md)
 
 ## localset
@@ -529,6 +553,10 @@
 ## machine-learning-models
 
 - [Will FinGPT Be Supported by Ollama Soon?](2026-01-11-is-there-any-plan-to-support-fingpt.md)
+
+## macos
+
+- [Ollama Model Download Issue with Reverting Progress](2026-01-12-issue-with-ollama-model-download-progress-reverting-during-download.md)
 
 ## manifest
 
@@ -597,6 +625,14 @@
 
 - [Support for Multiple Images in /chat Endpoint](2026-01-04-support-for-multiple-images-in-chat-endpoint.md)
 
+## ollama-model-download
+
+- [Ollama Model Download Issue with Reverting Progress](2026-01-12-issue-with-ollama-model-download-progress-reverting-during-download.md)
+
+## ollama-version-0.5.7
+
+- [Ollama Model Download Issue with Reverting Progress](2026-01-12-issue-with-ollama-model-download-progress-reverting-during-download.md)
+
 ## open-source models
 
 - [Supporting InternVL-Chat-V1.5 in Hugging Face Models](2026-01-10-support-for-internvl-chat-v15.md)
@@ -627,9 +663,17 @@
 
 - [Allowing Kubernetes Horizontal Pod Autoscaler to Meet Pod Disruption Budget Constraints](2026-01-11-allow-scaling-up-to-meet-pdb-constraints.md)
 
+## progress-reverting
+
+- [Ollama Model Download Issue with Reverting Progress](2026-01-12-issue-with-ollama-model-download-progress-reverting-during-download.md)
+
 ## proprietary commercial models
 
 - [Supporting InternVL-Chat-V1.5 in Hugging Face Models](2026-01-10-support-for-internvl-chat-v15.md)
+
+## publishing-bot
+
+- [kubernetes publishing bot is broken](2026-01-12-kubernetes-publishing-bot-is-broken.md)
 
 ## readonly interfaces
 
@@ -684,6 +728,10 @@
 ## rust-language-features
 
 - [Inherent Unchecked Integer Methods in Rust](2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md)
+
+## rust-nightly-toolchain
+
+- [Building Issues with Rust's Nightly Toolchain](2026-01-12-build-hang-on-linux.md)
 
 ## rustc
 
@@ -771,6 +819,14 @@
 ## transformer-based
 
 - [Support ReaderLM-v2 for Efficient HTML Parsing and Text Extraction](2026-01-07-support-readerlm-v2.md)
+
+## type safety
+
+- [Adding Length Parameter to Typed Arrays](2026-01-12-add-length-parameter-to-typed-arrays.md)
+
+## typed arrays
+
+- [Adding Length Parameter to Typed Arrays](2026-01-12-add-length-parameter-to-typed-arrays.md)
 
 ## unchecked
 

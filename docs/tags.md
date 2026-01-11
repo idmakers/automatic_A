@@ -9,6 +9,7 @@ title: Tags
 - AWS
 - Artificial Intelligence
 - Bug Fix
+- Code Completion
 - DRA
 - DRA drivers
 - Debugging
@@ -87,12 +88,14 @@ title: Tags
 - backwards-incompatibility
 - bug
 - build-hangs
+- building-issues
 - chat-endpoint
 - chromadb
 - compiler
 - configuration
 - conflict
 - copy-on-write
+- cpu-apple
 - data manipulation
 - debug builds
 - deep-seek-r1
@@ -109,6 +112,7 @@ title: Tags
 - force-frame-pointers=yes
 - frame-pointers
 - getInitialProps
+- gpu-apple
 - graph database
 - heterogenous types
 - horizontal-pod-autoscaling
@@ -123,6 +127,7 @@ title: Tags
 - integer
 - integer-powers
 - isr cache
+- issue
 - jinja2
 - keyword1
 - keyword2
@@ -136,6 +141,7 @@ title: Tags
 - localset
 - mac os
 - machine-learning-models
+- macos
 - manifest
 - manifest errors
 - memoization
@@ -152,12 +158,16 @@ title: Tags
 - nightly-toolchain
 - ollama
 - ollama-api
+- ollama-model-download
+- ollama-version-0.5.7
 - open-source models
 - opt-level=z
 - pandas
 - performance-optimization
 - pod-disruption-budget
+- progress-reverting
 - proprietary commercial models
+- publishing-bot
 - readonly interfaces
 - release builds
 - replace
@@ -169,6 +179,7 @@ title: Tags
 - rust
 - rust-lang
 - rust-language-features
+- rust-nightly-toolchain
 - rustc
 - rustc-docs
 - sensitive attributes
@@ -190,6 +201,8 @@ title: Tags
 - tokio-performance
 - tokio-rs
 - transformer-based
+- type safety
+- typed arrays
 - unchecked
 - wait-loop
 - windows
