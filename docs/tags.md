@@ -7,6 +7,7 @@ title: Tags
 
 - AMD
 - AWS
+- App Router
 - Artificial Intelligence
 - Bug Fix
 - Code Completion
@@ -55,6 +56,7 @@ title: Tags
 - React Big Calendar
 - React Hooks
 - Remote State
+- Routing
 - Rust
 - Rust Feature Gates
 - S3
@@ -87,6 +89,7 @@ title: Tags
 - automation
 - backwards-incompatibility
 - bug
+- build system
 - build-hangs
 - building-issues
 - chat-endpoint
@@ -104,11 +107,13 @@ title: Tags
 - documentation
 - downloading
 - duplicate-paths
+- environment-variables
 - error
 - error-message
 - errors
 - fetch
 - file system operations
+- firefox
 - force-frame-pointers=yes
 - frame-pointers
 - getInitialProps
@@ -126,6 +131,7 @@ title: Tags
 - installation
 - integer
 - integer-powers
+- internalerror
 - isr cache
 - issue
 - jinja2
@@ -146,6 +152,7 @@ title: Tags
 - manifest errors
 - memoization
 - memory caching
+- meson
 - model updates
 - model-management
 - moe-architecture
@@ -192,6 +199,7 @@ title: Tags
 - summarizationmiddleware
 - system crashes
 - templating
+- terraform
 - terraform state
 - text-extraction
 - thread safety

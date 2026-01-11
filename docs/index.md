@@ -8,6 +8,10 @@
 
 - [Terraform 0.14 → 1.13.1: apply re-creates existing AWS resources (VPC/Subnets/NAT) instead of updating despite S3 remote state](2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md)
 
+## App Router
+
+- [Routes with 'nested' parallel routes are not correctly rendered](2026-01-12-routes-with-nested-parallel-routes-are-not-correctly-rendered.md)
+
 ## Artificial Intelligence
 
 - [AIOps: AI-Driven Operations for Enhanced Network Performance](2026-01-11-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
@@ -128,6 +132,7 @@
 
 ## Next.js
 
+- [Routes with 'nested' parallel routes are not correctly rendered](2026-01-12-routes-with-nested-parallel-routes-are-not-correctly-rendered.md)
 - [InternalError: too much recursion on Firefox](2026-01-11-internalerror-too-much-recursion-on-firefox.md)
 - [InternalError: too much recursion on Firefox](2026-01-10-internalerror-too-much-recursion-on-firefox.md)
 - [Functions and buttons from react-big-calendar don't work in next 13.4.9 and upwards](2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md)
@@ -193,6 +198,10 @@
 ## Remote State
 
 - [Terraform 0.14 → 1.13.1: apply re-creates existing AWS resources (VPC/Subnets/NAT) instead of updating despite S3 remote state](2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state.md)
+
+## Routing
+
+- [Routes with 'nested' parallel routes are not correctly rendered](2026-01-12-routes-with-nested-parallel-routes-are-not-correctly-rendered.md)
 
 ## Rust
 
@@ -330,6 +339,10 @@
 
 - [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 
+## build system
+
+- [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
+
 ## build-hangs
 
 - [Build Hangs on Linux with Nightly Toolchain](2026-01-11-build-hang-on-linux.md)
@@ -344,6 +357,7 @@
 
 ## chromadb
 
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-12-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
@@ -394,8 +408,13 @@
 
 - [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
 
+## environment-variables
+
+- [Support for `env()` Function in Terraform](2026-01-12-support-a-function-env-to-read-an-environment-variable.md)
+
 ## error
 
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-12-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
 ## error-message
@@ -413,6 +432,10 @@
 ## file system operations
 
 - [Why Tokio's `File::write` Returns Early Before OS Completes the Operation](2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
+
+## firefox
+
+- [InternalError: too much recursion on Firefox](2026-01-12-internalerror-too-much-recursion-on-firefox.md)
 
 ## force-frame-pointers=yes
 
@@ -484,6 +507,10 @@
 
 - [Inherent Unchecked Integer Methods in Rust](2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md)
 
+## internalerror
+
+- [InternalError: too much recursion on Firefox](2026-01-12-internalerror-too-much-recursion-on-firefox.md)
+
 ## isr cache
 
 - [ISR Fails to Serve 404 Pages After Page Deletion with Experimental ISR Memory Cache Size Set to 0](2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0.md)
@@ -523,6 +550,7 @@
 
 ## langchain
 
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-12-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Importing Hub Fails with Latest langchain Version 0.3.9](2026-01-09-importing-hub-fails-with-latest039-version.md)
 - [ModuleNotFoundError: No module named 'langchain.schema](2026-01-08-modulenotfounderror-no-module-named-langchainschema.md)
@@ -543,6 +571,7 @@
 
 ## localset
 
+- [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-12-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
 
 ## mac os
@@ -574,6 +603,10 @@
 
 - [ISR Fails to Serve 404 Pages After Page Deletion with Experimental ISR Memory Cache Size Set to 0](2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0.md)
 
+## meson
+
+- [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
+
 ## model updates
 
 - [Automate Model Updates with Batch Pulling](2026-01-10-a-way-to-update-all-downloaded-models.md)
@@ -601,6 +634,7 @@
 
 ## next.js
 
+- [InternalError: too much recursion on Firefox](2026-01-12-internalerror-too-much-recursion-on-firefox.md)
 - [Pages Router + getInitialProps = Static worker unexpectedly](2026-01-07-pages-router--getinitialprops--static-worker-unexpectedly.md)
 - [ISR Fails to Serve 404 Pages After Page Deletion with Experimental ISR Memory Cache Size Set to 0](2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0.md)
 
@@ -643,6 +677,7 @@
 
 ## pandas
 
+- [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Shared Mutable State in Pandas Index Labels](2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
@@ -706,6 +741,7 @@
 
 ## runtime
 
+- [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-12-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
 
 ## runtime-localset
@@ -781,6 +817,10 @@
 
 - [Jinja2 loop.index0 blocked by RestrictedSandboxedEnvironment in LangChain](2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2.md)
 
+## terraform
+
+- [Support for `env()` Function in Terraform](2026-01-12-support-a-function-env-to-read-an-environment-variable.md)
+
 ## terraform state
 
 - [Avoiding Sensitive Attributes in Terraform State](2026-01-09-ability-to-not-store-certain-attributes-in-tf-state.md)
@@ -795,6 +835,7 @@
 
 ## tokio
 
+- [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-12-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
 - [tokio::fs::File::write Returns Early Before OS Says Operation is Completed](2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
 
