@@ -43,6 +43,18 @@ extra:
 nav:
 - Home: index.md
 - Latest Updates:
+  - 2026-01-13-typescript-type-annotations-as-comments.md
+  - 2026-01-13-turbopack-nextjs-16-pino---cannot-find-module-transport-stream.md
+  - 2026-01-13-ts-58-typeerror-cannot-read-properties-of-undefined-reading-kind.md
+  - 2026-01-13-tracker-getting-started-with-mesonbug-reports.md
+  - 2026-01-13-teuken-7b.md
+  - 2026-01-13-suggestion-for-readonly-interface.md
+  - 2026-01-13-kubernetes-publishing-bot-is-broken.md
+  - 2026-01-13-issue-importing-resources-when-upgraded-to-v1140-from-v1135.md
+  - 2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md
+  - 2026-01-13-erroneous-address-mapping-when-using-thread_local-on-unsupported-targets.md
+  - 2026-01-13-add-a-localruntime-for-replacing-runtimelocalset.md
+  - 2026-01-13-aarch64-pc-windows-gnullvm-cant-build-simple-test-app-fails-with-rust-lld-error-undefined-symbol-__chkstk.md
   - 2026-01-12-typescript-type-annotations-as-comments.md
   - 2026-01-12-tracker-getting-started-with-mesonbug-reports.md
   - 2026-01-12-support-a-function-env-to-read-an-environment-variable.md

@@ -22,6 +22,7 @@
 
 ## Code Completion
 
+- [Enabling Type Checking on Existing JavaScript Projects with Comments](2026-01-13-typescript-type-annotations-as-comments.md)
 - [Enabling Real-Time Type Checking in JavaScript Projects with TypeScript Annotations](2026-01-12-typescript-type-annotations-as-comments.md)
 
 ## DRA
@@ -79,11 +80,13 @@
 
 ## JavaScript
 
+- [Enabling Type Checking on Existing JavaScript Projects with Comments](2026-01-13-typescript-type-annotations-as-comments.md)
 - [TypeScript Type Annotations as Comments: Revolutionizing Code Reviews and Development](2026-01-11-typescript-type-annotations-as-comments.md)
 - [Enabling TypeScript Type Checking in JavaScript Projects with Inline Comments](2026-01-10-typescript-type-annotations-as-comments.md)
 
 ## Kubernetes
 
+- [Configuring imagePullPolicy to Pull Latest Image or Fall Back to Local Cache](2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md)
 - [Enabling Selector in kubectl Create Service Command](2026-01-11-kubectl-create-service-should-accept---selector.md)
 - [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
 - [Pods with Zero TerminationGracePeriod are Force-Deleted](2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted.md)
@@ -269,6 +272,7 @@
 
 ## TypeScript
 
+- [Enabling Type Checking on Existing JavaScript Projects with Comments](2026-01-13-typescript-type-annotations-as-comments.md)
 - [Enabling Real-Time Type Checking in JavaScript Projects with TypeScript Annotations](2026-01-12-typescript-type-annotations-as-comments.md)
 - [TypeScript Type Annotations as Comments: Revolutionizing Code Reviews and Development](2026-01-11-typescript-type-annotations-as-comments.md)
 - [Supporting Closed-File Diagnostics in VS Code](2026-01-11-support-closed-file-diagnostics-in-vs-code.md)
@@ -292,6 +296,10 @@
 ## VSCode
 
 - [TSServer Exited. Code: null. Signal: SIGTERM - A Troubleshooting Guide](2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works.md)
+
+## aarch64-pc-windows-gnullvm
+
+- [Fixing `rust-lld` Error in `aarch64-pc-windows-gnullvm` Builds](2026-01-13-aarch64-pc-windows-gnullvm-cant-build-simple-test-app-fails-with-rust-lld-error-undefined-symbol-__chkstk.md)
 
 ## actQueue
 
@@ -339,6 +347,10 @@
 
 - [Pandas Rounding Issue: Empty Series Should Return Empty Series](2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 
+## bug reports
+
+- [Getting Started with Meson/Bug Reports in pandas](2026-01-13-tracker-getting-started-with-mesonbug-reports.md)
+
 ## build system
 
 - [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
@@ -350,6 +362,10 @@
 ## building-issues
 
 - [Building Issues with Rust's Nightly Toolchain](2026-01-12-build-hang-on-linux.md)
+
+## caching
+
+- [Configuring imagePullPolicy to Pull Latest Image or Fall Back to Local Cache](2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md)
 
 ## chat-endpoint
 
@@ -473,9 +489,17 @@
 
 - [Importing Hub Fails with Latest langchain Version 0.3.9](2026-01-09-importing-hub-fails-with-latest039-version.md)
 
+## imagePullPolicy
+
+- [Configuring imagePullPolicy to Pull Latest Image or Fall Back to Local Cache](2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md)
+
 ## immutable objects
 
 - [Simplifying Immutable Interfaces in TypeScript](2026-01-11-suggestion-for-readonly-interface.md)
+
+## import
+
+- [Issue Importing Resources When Upgraded to v1.14.0 from v1.13.5](2026-01-13-issue-importing-resources-when-upgraded-to-v1140-from-v1135.md)
 
 ## import error
 
@@ -544,6 +568,7 @@
 
 ## kubernetes
 
+- [kubernetes publishing bot is broken](2026-01-13-kubernetes-publishing-bot-is-broken.md)
 - [kubernetes publishing bot is broken](2026-01-12-kubernetes-publishing-bot-is-broken.md)
 - [Defaulting Service Links to Disabled in Kubernetes](2026-01-11-set-enableservicelinks-to-false-as-default.md)
 - [Set enableServiceLinks to False as Default in Kubernetes](2026-01-10-set-enableservicelinks-to-false-as-default.md)
@@ -564,6 +589,10 @@
 
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
+## large language models
+
+- [Running Teuken-7b with Ollama: A Step-by-Step Guide](2026-01-13-teuken-7b.md)
+
 ## linux
 
 - [Building Issues with Rust's Nightly Toolchain](2026-01-12-build-hang-on-linux.md)
@@ -571,6 +600,7 @@
 
 ## localset
 
+- [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-13-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-12-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
 
@@ -605,6 +635,7 @@
 
 ## meson
 
+- [Getting Started with Meson/Bug Reports in pandas](2026-01-13-tracker-getting-started-with-mesonbug-reports.md)
 - [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
 
 ## model updates
@@ -649,6 +680,7 @@
 
 ## ollama
 
+- [Running Teuken-7b with Ollama: A Step-by-Step Guide](2026-01-13-teuken-7b.md)
 - [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
 - [Error When Downloading DeepSeek-R1:7b with Ollama](2026-01-08-error-when-trying-to-download--deepseek-r17b.md)
 - [DeepSeek-R1 671B Q4_K_M Error: Model Requires More System Memory Than Available](2026-01-06-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available.md)
@@ -677,6 +709,7 @@
 
 ## pandas
 
+- [Getting Started with Meson/Bug Reports in pandas](2026-01-13-tracker-getting-started-with-mesonbug-reports.md)
 - [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Shared Mutable State in Pandas Index Labels](2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
@@ -708,10 +741,12 @@
 
 ## publishing-bot
 
+- [kubernetes publishing bot is broken](2026-01-13-kubernetes-publishing-bot-is-broken.md)
 - [kubernetes publishing bot is broken](2026-01-12-kubernetes-publishing-bot-is-broken.md)
 
 ## readonly interfaces
 
+- [Simplifying Immutable Interfaces in TypeScript](2026-01-13-suggestion-for-readonly-interface.md)
 - [Simplifying Immutable Interfaces in TypeScript](2026-01-11-suggestion-for-readonly-interface.md)
 
 ## release builds
@@ -724,6 +759,10 @@
 - [Series.replace not working on slices of heterogeneous types](2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace Fails on Slices of Heterogeneous Types](2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
+
+## resource management
+
+- [Issue Importing Resources When Upgraded to v1.14.0 from v1.13.5](2026-01-13-issue-importing-resources-when-upgraded-to-v1140-from-v1135.md)
 
 ## riscv32imc-unknown-none-elf
 
@@ -741,6 +780,7 @@
 
 ## runtime
 
+- [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-13-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-12-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Introducing LocalRuntime: Simplifying Task Spawning in Tokio](2026-01-09-add-a-localruntime-for-replacing-runtimelocalset.md)
 
@@ -764,6 +804,10 @@
 ## rust-language-features
 
 - [Inherent Unchecked Integer Methods in Rust](2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods.md)
+
+## rust-lld
+
+- [Fixing `rust-lld` Error in `aarch64-pc-windows-gnullvm` Builds](2026-01-13-aarch64-pc-windows-gnullvm-cant-build-simple-test-app-fails-with-rust-lld-error-undefined-symbol-__chkstk.md)
 
 ## rust-nightly-toolchain
 
@@ -819,11 +863,16 @@
 
 ## terraform
 
+- [Issue Importing Resources When Upgraded to v1.14.0 from v1.13.5](2026-01-13-issue-importing-resources-when-upgraded-to-v1140-from-v1135.md)
 - [Support for `env()` Function in Terraform](2026-01-12-support-a-function-env-to-read-an-environment-variable.md)
 
 ## terraform state
 
 - [Avoiding Sensitive Attributes in Terraform State](2026-01-09-ability-to-not-store-certain-attributes-in-tf-state.md)
+
+## teuken-7b
+
+- [Running Teuken-7b with Ollama: A Step-by-Step Guide](2026-01-13-teuken-7b.md)
 
 ## text-extraction
 
@@ -835,6 +884,7 @@
 
 ## tokio
 
+- [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-13-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [Simplifying Task Spawning in Tokio with LocalRuntime](2026-01-12-add-a-localruntime-for-replacing-runtimelocalset.md)
 - [TcpStream::set_linger Can Lead to Blocking in Tokio](2026-01-07-tcpstreamset_linger-can-lead-to-blocking.md)
 - [tokio::fs::File::write Returns Early Before OS Says Operation is Completed](2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed.md)
@@ -865,6 +915,10 @@
 
 - [Adding Length Parameter to Typed Arrays](2026-01-12-add-length-parameter-to-typed-arrays.md)
 
+## type scripting
+
+- [Simplifying Immutable Interfaces in TypeScript](2026-01-13-suggestion-for-readonly-interface.md)
+
 ## typed arrays
 
 - [Adding Length Parameter to Typed Arrays](2026-01-12-add-length-parameter-to-typed-arrays.md)
@@ -872,6 +926,10 @@
 ## unchecked
 
 - [Inherent Unchecked Integer Methods in Rust](2026-01-11-tracking-issue-for-inherent-unchecked-integer-methods.md)
+
+## undefined symbol __chkstk
+
+- [Fixing `rust-lld` Error in `aarch64-pc-windows-gnullvm` Builds](2026-01-13-aarch64-pc-windows-gnullvm-cant-build-simple-test-app-fails-with-rust-lld-error-undefined-symbol-__chkstk.md)
 
 ## wait-loop
 
