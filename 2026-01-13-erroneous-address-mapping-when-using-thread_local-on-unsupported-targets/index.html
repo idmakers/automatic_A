@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://justwe.uk/2026-01-13-erroneous-address-mapping-when-using-thread_local-on-unsupported-targets/">
       
       
-        <link rel="prev" href="../2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable/">
+        <link rel="prev" href="../2026-01-13-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists/">
       
       
         <link rel="next" href="../2026-01-13-add-a-localruntime-for-replacing-runtimelocalset/">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Erroneous Address Mapping When Using #[thread_local] on Unsupported Targets - ISSUE WEB SEARCH</title>
+        <title>2026 01 13 erroneous address mapping when using thread local on unsupported targets - ISSUE WEB SEARCH</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#erroneous-address-mapping-when-using-thread_local-on-unsupported-targets" class="md-skip">
+        <a href="#core-problem" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Erroneous Address Mapping When Using #[thread_local] on Unsupported Targets
+              2026 01 13 erroneous address mapping when using thread local on unsupported targets
             
           </span>
         </div>
@@ -272,6 +272,8 @@
   
     
     
+      
+        
       
         
       
@@ -821,6 +823,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026-01-13-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -830,8 +860,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -840,7 +868,7 @@
   <span class="md-ellipsis">
     
   
-    Erroneous Address Mapping When Using #[thread_local] on Unsupported Targets
+    2026 01 13 erroneous address mapping when using thread local on unsupported targets
   
 
     
@@ -858,7 +886,7 @@
   <span class="md-ellipsis">
     
   
-    Erroneous Address Mapping When Using #[thread_local] on Unsupported Targets
+    2026 01 13 erroneous address mapping when using thread local on unsupported targets
   
 
     
@@ -873,8 +901,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -902,45 +928,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Solution &amp; Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solution-1-use-a-supported-target" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 1: Use a supported target
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-2-use-a-custom-linker-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 2: Use a custom linker script
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-3-use-thread_local-with-caution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 3: Use #[thread_local] with caution
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4247,8 +4234,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4275,45 +4260,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Solution &amp; Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solution-1-use-a-supported-target" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 1: Use a supported target
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-2-use-a-custom-linker-script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 2: Use a custom linker script
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-3-use-thread_local-with-caution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 3: Use #[thread_local] with caution
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4356,48 +4302,45 @@
 
 
 
-<h1 id="erroneous-address-mapping-when-using-thread_local-on-unsupported-targets">Erroneous Address Mapping When Using <code>#[thread_local]</code> on Unsupported Targets</h1>
-<h2 id="core-problem">Core Problem</h2>
-<p>When using the <code>#[thread_local]</code> attribute in Rust on unsupported targets, it can lead to erroneous address mapping, causing page faults and other runtime errors.</p>
-<h2 id="solution-analysis">Solution &amp; Analysis</h2>
-<p>The issue arises when the compiler generates code for the <code>#[thread_local]</code> attribute that is not compatible with the target's memory layout. In this case, the target is <code>"os": "none"</code>, which means it's an unsupported operating system.</p>
-<p>To understand why this happens, let's dive into how <code>#[thread_local]</code> works on normal ELF targets. As explained in <a href="https://maskray.me/blog/2021-02-14-all-about-thread-local-storage">this article</a>, <code>#[thread_local]</code> creates a new thread-local storage entry for each thread. This involves creating a new section in the ELF file and setting up the necessary relocations.</p>
-<p>However, on an unsupported target like <code>"os": "none"</code>, the compiler may not generate code that is compatible with the target's memory layout. For example, the target may have different endianness or pointer width, which can cause issues when trying to access the thread-local storage.</p>
-<p>To fix this issue, you can try one of the following solutions:</p>
-<h3 id="solution-1-use-a-supported-target">Solution 1: Use a supported target</h3>
-<p>Switch to a supported target by modifying your <code>rustc</code> configuration. For example, you can change <code>"os": "none"</code> to <code>"os": "linux-gnu"</code> or <code>"os": "windows"</code>.</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;llvm-target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;x86_64-unknown-linux-gnu&quot;</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&quot;data-layout&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128&quot;</span><span class="p">,</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="err">...</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+  <h1>2026 01 13 erroneous address mapping when using thread local on unsupported targets</h1>
+
+<p><strong>Erroneous Address Mapping with <code>#[thread_local]</code> on Unsupported Targets</strong></p>
+<h3 id="core-problem">Core Problem</h3>
+<p>When using the <code>#[thread_local]</code> attribute in Rust to create a global static variable, it can lead to erroneous address mapping on unsupported targets. This issue is particularly problematic when developing an operating system (OS) in Rust.</p>
+<h3 id="solution-analysis">Solution &amp; Analysis</h3>
+<p>The problem lies in how the <code>#[thread_local]</code> attribute interacts with the target's ELF layout and relocations. On normal ELF targets, thread-local storage is managed by the linker, which generates special sections for thread-local variables. However, when targeting an unsupported architecture like <code>"os": "none"</code>, the compiler generates code that relies on specific relocation patterns to access these sectioned addresses.</p>
+<p>The issue arises because <code>#[thread_local]</code> generates code that attempts to map the static variable's address at a specific location in memory, which is not supported by the target. This results in an out-of-bounds error and eventually leads to a page fault.</p>
+<p>To demonstrate this issue, consider the following example:
+<div class="language-rust highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#[thread_local]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">static</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">GLOBAL</span><span class="p">:</span><span class="w"> </span><span class="kt">i32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">fn</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">unsafe</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">GLOBAL</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
 </span></code></pre></div>
-<h3 id="solution-2-use-a-custom-linker-script">Solution 2: Use a custom linker script</h3>
-<p>If you need to use an unsupported target, you can try using a custom linker script to handle the thread-local storage. This involves creating a linker script that sets up the necessary relocations and memory mapping for the <code>#[thread_local]</code> attribute.</p>
-<p>For example, you can add the following code to your <code>linker script</code> file:
-<div class="language-rust highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">;</span><span class="w"> </span><span class="n">Define</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">global</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">thread</span><span class="o">-</span><span class="n">local</span><span class="w"> </span><span class="n">storage</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">global</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_GLOBAL_OFFSET_SIZE</span><span class="p">;</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">@</span><span class="n">GLOBAL_SIZE</span><span class="p">;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">.</span><span class="n">LThreadLocal</span><span class="p">;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">;</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">relocations</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">thread</span><span class="o">-</span><span class="n">local</span><span class="w"> </span><span class="n">storage</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">relocation</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="p">.</span><span class="n">LThreadLocal</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="k">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">GLIBC_X86_64_TLS_DPLRDT32</span><span class="p">;</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">#</span><span class="n">define</span><span class="w"> </span><span class="n">TLS_DPLRDT32</span><span class="w"> </span><span class="mh">0x10</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">}</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">;</span><span class="w"> </span><span class="n">Map</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">thread</span><span class="o">-</span><span class="n">local</span><span class="w"> </span><span class="n">storage</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">memory</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">memory</span><span class="w"> </span><span class="n">region</span><span class="w"> </span><span class="p">.</span><span class="n">LThreadLocal</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="n">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">@</span><span class="n">GLOBAL_SIZE</span><span class="p">;</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">@</span><span class="n">GLOBAL_SIZE</span><span class="p">;</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">}</span>
-</span></code></pre></div></p>
-<p>This custom linker script sets up a global section for the thread-local storage and defines the necessary relocations and memory mapping. Note that this is just an example, and you may need to modify it to fit your specific use case.</p>
-<h3 id="solution-3-use-thread_local-with-caution">Solution 3: Use <code>#[thread_local]</code> with caution</h3>
-<p>If you're working on an unsupported target, it's generally recommended to exercise caution when using <code>#[thread_local]</code>. This attribute can be useful for certain applications, but it's not always compatible with all targets.</p>
-<p>In this case, the issue is caused by the compiler generating code that is not compatible with the target's memory layout. By switching to a supported target or using a custom linker script, you can work around this issue and use <code>#[thread_local]</code> safely.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>When working on an unsupported target, it's essential to be aware of the potential issues with <code>#[thread_local]</code>. By understanding how this attribute works on normal ELF targets and using one of the solutions outlined above, you can minimize the risk of erroneous address mapping and ensure that your code runs smoothly.</p>
+On a normal ELF target like <code>"llvm-target": "x86_64-unknown-linux-gnu"</code>, this code will print <code>0</code>. However, when targeting <code>"os": "none"</code> with the same code, it will produce an out-of-bounds error and crash.</p>
+<p>To fix this issue, you can use the following workaround:
+<div class="language-rust highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#[thread_local]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">static</span><span class="w"> </span><span class="n">GLOBAL</span><span class="p">:</span><span class="w"> </span><span class="kt">i32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">fn</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">GLOBAL</span><span class="p">);</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div>
+By removing the <code>mut</code> keyword and using a non-static variable, we bypass the need for thread-local storage and avoid the out-of-bounds error.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>When developing an OS in Rust or targeting unsupported architectures with <code>#[thread_local]</code>, it is essential to be aware of these potential issues. By understanding how the attribute interacts with the target's ELF layout and relocations, you can take steps to mitigate these errors and ensure your code runs reliably on a wide range of targets.</p>
+<p><strong>Example Use Cases</strong></p>
+<ul>
+<li>Developing an OS in Rust</li>
+<li>Targeting unsupported architectures like <code>"os": "none"</code></li>
+<li>Using <code>#[thread_local]</code> with static variables</li>
+</ul>
+<p><strong>Related Issues</strong></p>
+<ul>
+<li><a href="https://maskray.me/blog/2021-02-14-all-about-thread-local-storage">Thread-local storage issues</a></li>
+<li><a href="https://github.com/rust-lang/rust/issues/77415">Rust's ELF target support</a></li>
+</ul>
 <h2 id="reference">Reference</h2>
 <ul>
 <li><a href="https://github.com/rust-lang/rust/issues/150573">Source</a></li>
