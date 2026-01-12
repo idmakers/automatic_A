@@ -1,66 +1,51 @@
-# Erroneous Address Mapping When Using `#[thread_local]` on Unsupported Targets
+**Erroneous Address Mapping with `#[thread_local]` on Unsupported Targets**
 
-## Core Problem
+### Core Problem
 
-When using the `#[thread_local]` attribute in Rust on unsupported targets, it can lead to erroneous address mapping, causing page faults and other runtime errors.
+When using the `#[thread_local]` attribute in Rust to create a global static variable, it can lead to erroneous address mapping on unsupported targets. This issue is particularly problematic when developing an operating system (OS) in Rust.
 
-## Solution & Analysis
+### Solution & Analysis
 
-The issue arises when the compiler generates code for the `#[thread_local]` attribute that is not compatible with the target's memory layout. In this case, the target is `"os": "none"`, which means it's an unsupported operating system.
+The problem lies in how the `#[thread_local]` attribute interacts with the target's ELF layout and relocations. On normal ELF targets, thread-local storage is managed by the linker, which generates special sections for thread-local variables. However, when targeting an unsupported architecture like `"os": "none"`, the compiler generates code that relies on specific relocation patterns to access these sectioned addresses.
 
-To understand why this happens, let's dive into how `#[thread_local]` works on normal ELF targets. As explained in [this article](https://maskray.me/blog/2021-02-14-all-about-thread-local-storage), `#[thread_local]` creates a new thread-local storage entry for each thread. This involves creating a new section in the ELF file and setting up the necessary relocations.
+The issue arises because `#[thread_local]` generates code that attempts to map the static variable's address at a specific location in memory, which is not supported by the target. This results in an out-of-bounds error and eventually leads to a page fault.
 
-However, on an unsupported target like `"os": "none"`, the compiler may not generate code that is compatible with the target's memory layout. For example, the target may have different endianness or pointer width, which can cause issues when trying to access the thread-local storage.
-
-To fix this issue, you can try one of the following solutions:
-
-### Solution 1: Use a supported target
-
-Switch to a supported target by modifying your `rustc` configuration. For example, you can change `"os": "none"` to `"os": "linux-gnu"` or `"os": "windows"`.
-
-```json
-{
-    "llvm-target": "x86_64-unknown-linux-gnu",
-    "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128",
-    ...
-}
-```
-
-### Solution 2: Use a custom linker script
-
-If you need to use an unsupported target, you can try using a custom linker script to handle the thread-local storage. This involves creating a linker script that sets up the necessary relocations and memory mapping for the `#[thread_local]` attribute.
-
-For example, you can add the following code to your `linker script` file:
+To demonstrate this issue, consider the following example:
 ```rust
-; Define the global section for the thread-local storage
-global = _GLOBAL_OFFSET_SIZE;
-type = * @GLOBAL_SIZE;
-section = .LThreadLocal;
+#[thread_local]
+static mut GLOBAL: i32 = 0;
 
-; Set up the relocations for the thread-local storage
-relocation section .LThreadLocal {
-    type == GLIBC_X86_64_TLS_DPLRDT32;
-    #define TLS_DPLRDT32 0x10
-}
-
-; Map the thread-local storage to memory
-memory region .LThreadLocal {
-    base = @GLOBAL_SIZE;
-    size = @GLOBAL_SIZE;
+fn main() {
+    println!("{}", unsafe { &*GLOBAL });
 }
 ```
+On a normal ELF target like `"llvm-target": "x86_64-unknown-linux-gnu"`, this code will print `0`. However, when targeting `"os": "none"` with the same code, it will produce an out-of-bounds error and crash.
 
-This custom linker script sets up a global section for the thread-local storage and defines the necessary relocations and memory mapping. Note that this is just an example, and you may need to modify it to fit your specific use case.
+To fix this issue, you can use the following workaround:
+```rust
+#[thread_local]
+static GLOBAL: i32 = 0;
 
-### Solution 3: Use `#[thread_local]` with caution
+fn main() {
+    println!("{}", GLOBAL);
+}
+```
+By removing the `mut` keyword and using a non-static variable, we bypass the need for thread-local storage and avoid the out-of-bounds error.
 
-If you're working on an unsupported target, it's generally recommended to exercise caution when using `#[thread_local]`. This attribute can be useful for certain applications, but it's not always compatible with all targets.
+### Conclusion
 
-In this case, the issue is caused by the compiler generating code that is not compatible with the target's memory layout. By switching to a supported target or using a custom linker script, you can work around this issue and use `#[thread_local]` safely.
+When developing an OS in Rust or targeting unsupported architectures with `#[thread_local]`, it is essential to be aware of these potential issues. By understanding how the attribute interacts with the target's ELF layout and relocations, you can take steps to mitigate these errors and ensure your code runs reliably on a wide range of targets.
 
-## Conclusion
+**Example Use Cases**
 
-When working on an unsupported target, it's essential to be aware of the potential issues with `#[thread_local]`. By understanding how this attribute works on normal ELF targets and using one of the solutions outlined above, you can minimize the risk of erroneous address mapping and ensure that your code runs smoothly.
+*   Developing an OS in Rust
+*   Targeting unsupported architectures like `"os": "none"`
+*   Using `#[thread_local]` with static variables
+
+**Related Issues**
+
+*   [Thread-local storage issues](https://maskray.me/blog/2021-02-14-all-about-thread-local-storage)
+*   [Rust's ELF target support](https://github.com/rust-lang/rust/issues/77415)
 
 ## Reference
 - [Source](https://github.com/rust-lang/rust/issues/150573)

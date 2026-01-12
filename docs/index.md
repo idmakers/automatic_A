@@ -373,6 +373,7 @@
 
 ## chromadb
 
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-13-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-12-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
@@ -432,6 +433,10 @@
 
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-12-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
+
+## error-handling
+
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-13-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
 ## error-message
 
@@ -587,6 +592,7 @@
 
 ## langchain-chroma
 
+- [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-13-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
 ## large language models

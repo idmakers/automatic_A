@@ -114,6 +114,7 @@ title: Tags
 - duplicate-paths
 - environment-variables
 - error
+- error-handling
 - error-message
 - errors
 - fetch

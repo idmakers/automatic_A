@@ -52,6 +52,7 @@ nav:
   - 2026-01-13-kubernetes-publishing-bot-is-broken.md
   - 2026-01-13-issue-importing-resources-when-upgraded-to-v1140-from-v1135.md
   - 2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md
+  - 2026-01-13-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md
   - 2026-01-13-erroneous-address-mapping-when-using-thread_local-on-unsupported-targets.md
   - 2026-01-13-add-a-localruntime-for-replacing-runtimelocalset.md
   - 2026-01-13-aarch64-pc-windows-gnullvm-cant-build-simple-test-app-fails-with-rust-lld-error-undefined-symbol-__chkstk.md
