@@ -2,518 +2,566 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://justwe.uk/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-bug-actqueue-forever-growing-in-react-1900/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-bug-different-behaivor-between-usetransition-and-usedeferredvalue/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-excessive-conntrack-cleanup-causes-high-memory-12gb-and-cpu-usage-when-any-pod-with-a-udp-port-changes/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-fetch-request-memoization-not-working-when-cookies-function-imported/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-isr-fails-to-serve-404-pages-once-the-page-gets-deleted-if-experimental-isr-memory-cache-size-is-set-to-0/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-jinja2-loopindex0-blocked-by-restrictedsandboxedenvironment-when-using-template_formatjinja2/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-langchain-connects-neo4j-v59-error-could-not-use-apoc-procedures/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-new-amd-memory-detection-routines-ignores-unified-memory-on-amd-apu/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-pulling-manifest-error/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-reasoning-tokens-not-passing-through-from-openrouter-to-chatopenai/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-scheduler-will-run-into-race-conditions-on-large-scale-clusters/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-support-for-multiple-images-in-chat-endpoint/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-04-tracking-issue-for-rfc-2045-improving-target_feature/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-bug-different-behaivor-between-usetransition-and-usedeferredvalue/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-build-from-source-with-autodiff-fails-on-mac-os/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-doc-show-source-button-on-api-pages-does-not-link-to-expected-source-code/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-fetch-request-memoization-not-working-when-cookies-function-imported/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-pulling-manifest-error/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-reasoning-tokens-not-passing-through-from-openrouter-to-chatopenai/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-scheduler-will-run-into-race-conditions-on-large-scale-clusters/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-suspense-boundary-broken-ignored-after-second-server-action-call/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-tokiofsfilewrite-returns-early-before-os-says-that-the-operation-is-completed/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-05-why-models-dont-use-full-cpu-power/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06-a-mechanism-to-fail-a-pod-that-is-stuck-due-to-an-invalid-image/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06-build-from-source-with-autodiff-fails-on-mac-os/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06-dynamic-routes-in-app-router-are-considered-server-functions/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06-htmlsemanticpreservingsplitter-preserved-elements-ignores-child-elements/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06-support-label-selector-in-resource-quota-scopeselector/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-06-suspense-boundary-broken-ignored-after-second-server-action-call/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-bug-rounding-of-an-empty-series-should-return-empty-series/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-deepseek-r1671b-q4_k_m-errormodel-requires-more-system-memory-4463-gib-than-is-available/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-dra-kubelet-support-permanent-and-transient-errors/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-pages-router--getinitialprops--static-worker-unexpectedly/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-summarizationmiddleware-fails---list-object-has-no-attribute-strip/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-support-readerlm-v2/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-tcpstreamset_linger-can-lead-to-blocking/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-assert-desugaring-change-is-backwards-incompatible/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-bug-in-vscode-and-typescript---tsserver-exited-code-null-signal-sigterm---even-on-empty-project-while-tsc-build-works/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-dra-kubelet-support-permanent-and-transient-errors/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-error-when-trying-to-download--deepseek-r17b/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-modulenotfounderror-no-module-named-langchainschema/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-pods-with-zero-terminationgraceperiod-are-force-deleted/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-seriesreplace-not-working-on-slices-of-heterogenoues-types/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-summarizationmiddleware-fails---list-object-has-no-attribute-strip/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-08-support-readerlm-v2/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-a-way-to-update-all-downloaded-models/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-ability-to-not-store-certain-attributes-in-tf-state/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-add-a-localruntime-for-replacing-runtimelocalset/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-allow-scaling-up-to-meet-pdb-constraints/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-copy-on-write-cow-index-labels-are-still-shared-mutable-state/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-importing-hub-fails-with-latest039-version/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-incremental-compilation-warning-error-finalizing-incremental-compilation-session-directory-when-building-compiler-on-windows/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-seriesreplace-not-working-on-slices-of-heterogenoues-types/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-09-typescript-type-annotations-as-comments/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-a-way-to-update-all-downloaded-models/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-add-a-localruntime-for-replacing-runtimelocalset/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-allow-scaling-up-to-meet-pdb-constraints/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-copy-on-write-cow-index-labels-are-still-shared-mutable-state/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-internalerror-too-much-recursion-on-firefox/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-seriesreplace-not-working-on-slices-of-heterogenoues-types/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-set-enableservicelinks-to-false-as-default/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-support-closed-file-diagnostics-in-vs-code/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-support-for-internvl-chat-v15/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-terraform-014--1131-apply-re-creates-existing-aws-resources-vpcsubnetsnat-instead-of-updating-despite-s3-remote-state/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-tracking-issue-for-inherent-unchecked-integer-methods/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-10-typescript-type-annotations-as-comments/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-a-way-to-update-all-downloaded-models/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-add-a-localruntime-for-replacing-runtimelocalset/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-allow-scaling-up-to-meet-pdb-constraints/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-build-hang-on-linux/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-internalerror-too-much-recursion-on-firefox/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-is-there-any-plan-to-support-fingpt/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-kubectl-create-service-should-accept---selector/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-set-enableservicelinks-to-false-as-default/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-suggestion-for-readonly-interface/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-support-closed-file-diagnostics-in-vs-code/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-support-for-internvl-chat-v15/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-tracking-issue-for-inherent-unchecked-integer-methods/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-11-typescript-type-annotations-as-comments/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-add-a-localruntime-for-replacing-runtimelocalset/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-add-length-parameter-to-typed-arrays/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-build-hang-on-linux/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-erroneous-address-mapping-when-using-thread_local-on-unsupported-targets/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-internalerror-too-much-recursion-on-firefox/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-issue-with-ollama-model-download-progress-reverting-during-download/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-kubernetes-publishing-bot-is-broken/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-routes-with-nested-parallel-routes-are-not-correctly-rendered/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-support-a-function-env-to-read-an-environment-variable/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-tracker-getting-started-with-mesonbug-reports/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-12-typescript-type-annotations-as-comments/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-aarch64-pc-windows-gnullvm-cant-build-simple-test-app-fails-with-rust-lld-error-undefined-symbol-__chkstk/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-add-a-localruntime-for-replacing-runtimelocalset/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-erroneous-address-mapping-when-using-thread_local-on-unsupported-targets/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-issue-importing-resources-when-upgraded-to-v1140-from-v1135/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-kubernetes-publishing-bot-is-broken/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-suggestion-for-readonly-interface/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-teuken-7b/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-tracker-getting-started-with-mesonbug-reports/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-ts-58-typeerror-cannot-read-properties-of-undefined-reading-kind/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-turbopack-nextjs-16-pino---cannot-find-module-transport-stream/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/2026-01-13-typescript-type-annotations-as-comments/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-can-we-change-where-the-models-are-stored-in-windows/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-es2018-unicode-property-escapes-not-working/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-es5dts-lib-does-not-match-the-ecmascript-51-spec/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-importing-hub-fails-with-latest039-version/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-nodelifecyclecontroller-all-pods-are-marked-as-not-ready-making-workload-services-unavailable-during-network-partition-bw-master--worker-nodes/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-set-enableservicelinks-to-false-as-default/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-support-a-function-env-to-read-an-environment-variable/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-support-closed-file-diagnostics-in-vs-code/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-turbopack-nextjs-16-pino---cannot-find-module-transport-stream/</loc>
+         <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+         <loc>https://justwe.uk/2026-01-14-very-long-compilation-time-on-apple-silicon-platform/</loc>
+         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
          <loc>https://justwe.uk/tags/</loc>
-         <lastmod>2026-01-12</lastmod>
+         <lastmod>2026-01-13</lastmod>
     </url>
 </urlset>
