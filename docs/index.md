@@ -47,11 +47,16 @@
 
 ## Diagnostics
 
+- [Support closed-file diagnostics in VS Code](2026-01-14-support-closed-file-diagnostics-in-vs-code.md)
 - [Supporting Closed-File Diagnostics in VS Code](2026-01-11-support-closed-file-diagnostics-in-vs-code.md)
 
 ## Disruption Budget
 
 - [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
+
+## ECMAScript
+
+- [Why TypeScript's es5.d.ts library Doesn't Match ECMAScript 5.1](2026-01-14-es5dts-lib-does-not-match-the-ecmascript-51-spec.md)
 
 ## Error Handling
 
@@ -86,6 +91,8 @@
 
 ## Kubernetes
 
+- [NodeLifeCycleController: all pods are marked as not ready making workload services unavailable during network partition b/w master & worker nodes](2026-01-14-nodelifecyclecontroller-all-pods-are-marked-as-not-ready-making-workload-services-unavailable-during-network-partition-bw-master--worker-nodes.md)
+- [Flexibly Pulling Images with Kubernetes](2026-01-14-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md)
 - [Configuring imagePullPolicy to Pull Latest Image or Fall Back to Local Cache](2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md)
 - [Enabling Selector in kubectl Create Service Command](2026-01-11-kubectl-create-service-should-accept---selector.md)
 - [Enabling Scalable PDB Constraints in Kubernetes](2026-01-10-allow-scaling-up-to-meet-pdb-constraints.md)
@@ -133,12 +140,20 @@
 
 - [AIOps: AI-Driven Operations for Enhanced Network Performance](2026-01-11-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
+## Network Partition
+
+- [NodeLifeCycleController: all pods are marked as not ready making workload services unavailable during network partition b/w master & worker nodes](2026-01-14-nodelifecyclecontroller-all-pods-are-marked-as-not-ready-making-workload-services-unavailable-during-network-partition-bw-master--worker-nodes.md)
+
 ## Next.js
 
 - [Routes with 'nested' parallel routes are not correctly rendered](2026-01-12-routes-with-nested-parallel-routes-are-not-correctly-rendered.md)
 - [InternalError: too much recursion on Firefox](2026-01-11-internalerror-too-much-recursion-on-firefox.md)
 - [InternalError: too much recursion on Firefox](2026-01-10-internalerror-too-much-recursion-on-firefox.md)
 - [Functions and buttons from react-big-calendar don't work in next 13.4.9 and upwards](2026-01-10-functions-and-buttons-from-react-big-calendar-dont-work-in-next-1349-and-upwards-but-work-in-1348-and-earlier.md)
+
+## NodeLifeCycleController
+
+- [NodeLifeCycleController: all pods are marked as not ready making workload services unavailable during network partition b/w master & worker nodes](2026-01-14-nodelifecyclecontroller-all-pods-are-marked-as-not-ready-making-workload-services-unavailable-during-network-partition-bw-master--worker-nodes.md)
 
 ## Ollama
 
@@ -272,6 +287,8 @@
 
 ## TypeScript
 
+- [Support closed-file diagnostics in VS Code](2026-01-14-support-closed-file-diagnostics-in-vs-code.md)
+- [Why TypeScript's es5.d.ts library Doesn't Match ECMAScript 5.1](2026-01-14-es5dts-lib-does-not-match-the-ecmascript-51-spec.md)
 - [Enabling Type Checking on Existing JavaScript Projects with Comments](2026-01-13-typescript-type-annotations-as-comments.md)
 - [Enabling Real-Time Type Checking in JavaScript Projects with TypeScript Annotations](2026-01-12-typescript-type-annotations-as-comments.md)
 - [TypeScript Type Annotations as Comments: Revolutionizing Code Reviews and Development](2026-01-11-typescript-type-annotations-as-comments.md)
@@ -290,6 +307,7 @@
 
 ## VS Code
 
+- [Support closed-file diagnostics in VS Code](2026-01-14-support-closed-file-diagnostics-in-vs-code.md)
 - [Supporting Closed-File Diagnostics in VS Code](2026-01-11-support-closed-file-diagnostics-in-vs-code.md)
 - [Support Closed-File Diagnostics in VS Code](2026-01-10-support-closed-file-diagnostics-in-vs-code.md)
 
@@ -311,6 +329,7 @@
 
 ## apple-silicon
 
+- [Slow Compilation Times on Apple Silicon Platforms: A Rust Developer's Dilemma](2026-01-14-very-long-compilation-time-on-apple-silicon-platform.md)
 - [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
 
 ## assert desugaring
@@ -335,6 +354,7 @@
 
 ## automation
 
+- [Terraform's `env()` Function: Simplifying Environment Variable Access](2026-01-14-support-a-function-env-to-read-an-environment-variable.md)
 - [Automate Model Updates with Ollama](2026-01-11-a-way-to-update-all-downloaded-models.md)
 - [Automate Model Updates with Batch Pulling](2026-01-10-a-way-to-update-all-downloaded-models.md)
 - [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
@@ -378,6 +398,10 @@
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-11-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 - [Error from using ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?](2026-01-10-error-from-using-chromadb---valueerror-could-not-connect-to-tenant-default_tenant-are-you-sure-it-exists.md)
 
+## compilation-time
+
+- [Slow Compilation Times on Apple Silicon Platforms: A Rust Developer's Dilemma](2026-01-14-very-long-compilation-time-on-apple-silicon-platform.md)
+
 ## compiler
 
 - [Wrong Architecture Objects Mixed in Self-Built Compiler on Apple Silicon Hosts](2026-01-07-wrong-architecture-objects-mixed-in-self-built-compiler.md)
@@ -389,6 +413,10 @@
 ## conflict
 
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
+
+## container orchestration
+
+- [Flexibly Pulling Images with Kubernetes](2026-01-14-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md)
 
 ## copy-on-write
 
@@ -425,8 +453,13 @@
 
 - [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
 
+## environment variables
+
+- [Customizing Ollama Model Storage in Windows](2026-01-14-can-we-change-where-the-models-are-stored-in-windows.md)
+
 ## environment-variables
 
+- [Terraform's `env()` Function: Simplifying Environment Variable Access](2026-01-14-support-a-function-env-to-read-an-environment-variable.md)
 - [Support for `env()` Function in Terraform](2026-01-12-support-a-function-env-to-read-an-environment-variable.md)
 
 ## error
@@ -445,6 +478,14 @@
 ## errors
 
 - [Resolving 'max retries exceeded' and 'file does not exist' Errors When Pulling Manifest](2026-01-04-pulling-manifest-error.md)
+
+## es2018
+
+- [ES2018 Unicode Property Escapes Not working in Next.js V 10.0.2](2026-01-14-es2018-unicode-property-escapes-not-working.md)
+
+## es5
+
+- [Why TypeScript's es5.d.ts library Doesn't Match ECMAScript 5.1](2026-01-14-es5dts-lib-does-not-match-the-ecmascript-51-spec.md)
 
 ## fetch
 
@@ -496,6 +537,7 @@
 
 ## imagePullPolicy
 
+- [Flexibly Pulling Images with Kubernetes](2026-01-14-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md)
 - [Configuring imagePullPolicy to Pull Latest Image or Fall Back to Local Cache](2026-01-13-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md)
 
 ## immutable objects
@@ -573,6 +615,7 @@
 
 ## kubernetes
 
+- [Disable Service Links by Default in Kubernetes](2026-01-14-set-enableservicelinks-to-false-as-default.md)
 - [kubernetes publishing bot is broken](2026-01-13-kubernetes-publishing-bot-is-broken.md)
 - [kubernetes publishing bot is broken](2026-01-12-kubernetes-publishing-bot-is-broken.md)
 - [Defaulting Service Links to Disabled in Kubernetes](2026-01-11-set-enableservicelinks-to-false-as-default.md)
@@ -644,6 +687,10 @@
 - [Getting Started with Meson/Bug Reports in pandas](2026-01-13-tracker-getting-started-with-mesonbug-reports.md)
 - [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
 
+## model storage
+
+- [Customizing Ollama Model Storage in Windows](2026-01-14-can-we-change-where-the-models-are-stored-in-windows.md)
+
 ## model updates
 
 - [Automate Model Updates with Batch Pulling](2026-01-10-a-way-to-update-all-downloaded-models.md)
@@ -677,6 +724,7 @@
 
 ## nextjs
 
+- [ES2018 Unicode Property Escapes Not working in Next.js V 10.0.2](2026-01-14-es2018-unicode-property-escapes-not-working.md)
 - [Route Interception Issues in Next.js with Duplicate Paths](2026-01-08-route-interception-doesnt-work-with-two-identical-intercepted-paths-in-different-layoutsgroups.md)
 - [Fetch Request Memoization Not Working When Cookies Function Imported](2026-01-05-fetch-request-memoization-not-working-when-cookies-function-imported.md)
 
@@ -686,6 +734,7 @@
 
 ## ollama
 
+- [Customizing Ollama Model Storage in Windows](2026-01-14-can-we-change-where-the-models-are-stored-in-windows.md)
 - [Running Teuken-7b with Ollama: A Step-by-Step Guide](2026-01-13-teuken-7b.md)
 - [Automate Model Updates for Ollama Models](2026-01-09-a-way-to-update-all-downloaded-models.md)
 - [Error When Downloading DeepSeek-R1:7b with Ollama](2026-01-08-error-when-trying-to-download--deepseek-r17b.md)
@@ -715,6 +764,7 @@
 
 ## pandas
 
+- [Pandas Timedelta64 Series Constructor Issue with Unit 's](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
 - [Getting Started with Meson/Bug Reports in pandas](2026-01-13-tracker-getting-started-with-mesonbug-reports.md)
 - [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
@@ -796,6 +846,7 @@
 
 ## rust
 
+- [Slow Compilation Times on Apple Silicon Platforms: A Rust Developer's Dilemma](2026-01-14-very-long-compilation-time-on-apple-silicon-platform.md)
 - [Inherent Unchecked Integer Methods in Rust](2026-01-11-tracking-issue-for-inherent-unchecked-integer-methods.md)
 - [Building Rust from Source with Autodiff on Mac OS](2026-01-06-build-from-source-with-autodiff-fails-on-mac-os.md)
 - [Resolving the 'rustc-docs' Installation Conflict in Rust](2026-01-05-cant-install-rustc-docs-component-detected-conflict-sharedocrusthtmlrustc.md)
@@ -838,6 +889,10 @@
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 
+## series constructor
+
+- [Pandas Timedelta64 Series Constructor Issue with Unit 's](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
+
 ## service creation
 
 - [Enabling Selector in kubectl Create Service Command](2026-01-11-kubectl-create-service-should-accept---selector.md)
@@ -848,6 +903,7 @@
 
 ## service-links
 
+- [Disable Service Links by Default in Kubernetes](2026-01-14-set-enableservicelinks-to-false-as-default.md)
 - [Set enableServiceLinks to False as Default in Kubernetes](2026-01-10-set-enableservicelinks-to-false-as-default.md)
 
 ## static-worker
@@ -869,6 +925,7 @@
 
 ## terraform
 
+- [Terraform's `env()` Function: Simplifying Environment Variable Access](2026-01-14-support-a-function-env-to-read-an-environment-variable.md)
 - [Issue Importing Resources When Upgraded to v1.14.0 from v1.13.5](2026-01-13-issue-importing-resources-when-upgraded-to-v1140-from-v1135.md)
 - [Support for `env()` Function in Terraform](2026-01-12-support-a-function-env-to-read-an-environment-variable.md)
 
@@ -887,6 +944,10 @@
 ## thread safety
 
 - [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
+
+## timedelta64
+
+- [Pandas Timedelta64 Series Constructor Issue with Unit 's](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
 
 ## tokio
 
@@ -936,6 +997,10 @@
 ## undefined symbol __chkstk
 
 - [Fixing `rust-lld` Error in `aarch64-pc-windows-gnullvm` Builds](2026-01-13-aarch64-pc-windows-gnullvm-cant-build-simple-test-app-fails-with-rust-lld-error-undefined-symbol-__chkstk.md)
+
+## unicode-property-escapes
+
+- [ES2018 Unicode Property Escapes Not working in Next.js V 10.0.2](2026-01-14-es2018-unicode-property-escapes-not-working.md)
 
 ## wait-loop
 

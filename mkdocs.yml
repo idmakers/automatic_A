@@ -43,6 +43,18 @@ extra:
 nav:
 - Home: index.md
 - Latest Updates:
+  - 2026-01-14-very-long-compilation-time-on-apple-silicon-platform.md
+  - 2026-01-14-turbopack-nextjs-16-pino---cannot-find-module-transport-stream.md
+  - 2026-01-14-support-closed-file-diagnostics-in-vs-code.md
+  - 2026-01-14-support-a-function-env-to-read-an-environment-variable.md
+  - 2026-01-14-set-enableservicelinks-to-false-as-default.md
+  - 2026-01-14-nodelifecyclecontroller-all-pods-are-marked-as-not-ready-making-workload-services-unavailable-during-network-partition-bw-master--worker-nodes.md
+  - 2026-01-14-importing-hub-fails-with-latest039-version.md
+  - 2026-01-14-imagepullpolicy-to-pull-latest-image-or-use-existing-image-if-repository-unavailable.md
+  - 2026-01-14-es5dts-lib-does-not-match-the-ecmascript-51-spec.md
+  - 2026-01-14-es2018-unicode-property-escapes-not-working.md
+  - 2026-01-14-can-we-change-where-the-models-are-stored-in-windows.md
+  - 2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md
   - 2026-01-13-typescript-type-annotations-as-comments.md
   - 2026-01-13-turbopack-nextjs-16-pino---cannot-find-module-transport-stream.md
   - 2026-01-13-ts-58-typeerror-cannot-read-properties-of-undefined-reading-kind.md
