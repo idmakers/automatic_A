@@ -110,6 +110,7 @@ title: Tags
 - copy-on-write
 - cpu-apple
 - data manipulation
+- datetime
 - debug builds
 - deep-seek-r1
 - deepseek-r1
@@ -211,7 +212,6 @@ title: Tags
 - rustc-docs
 - sensitive attributes
 - series
-- series constructor
 - service creation
 - service links
 - service-links
@@ -225,7 +225,7 @@ title: Tags
 - teuken-7b
 - text-extraction
 - thread safety
-- timedelta64
+- timedelta
 - tokio
 - tokio runtime
 - tokio-1.47

@@ -1,21 +1,21 @@
 ---
-title: "Pandas Timedelta64 Series Constructor Issue with Unit 's'"
+title: "Pandas timedelta64[s] Series Constructor Inequality"
 tags:
   - pandas
-  - timedelta64
-  - series constructor
+  - datetime
+  - timedelta
 
 ---
 
-# Pandas Timedelta64 Series Constructor Issue with Unit 's'
+# The Issue with timedelta64[s] Series Constructor
 
 ## Core Problem
 
-When creating a `timedelta64[s]` series in pandas, the constructor does not behave as expected when using the unit 's'. This results in an unexpected conversion to nanoseconds instead of seconds.
+The `timedelta64[s]` series constructor in pandas seems to ignore the seconds and interpret it as nanoseconds, leading to an inequality when compared to the alternative constructor using `to_timedelta` with unit `'s'`.
 
 ## Solution & Analysis
 
-To reproduce the issue:
+### Reproducible Example
 
 ```python
 import pandas as pd
@@ -25,24 +25,27 @@ import numpy as np
 
 result = Series([1000000, 200000, 3000000], dtype="timedelta64[s]")
 expected = Series(pd.to_timedelta([1000000, 200000, 3000000], unit="s"))
-tm.assert_series_equal(result, expected)
+
+# This code passes for timedelta64[ns]
+result_ns = Series([1000000, 200000, 3000000], dtype="timedelta64[ns]")
+expected_ns = Series(pd.to_timedelta([1000000, 200000, 3000000], unit="ns"))
+tm.assert_series_equal(result_ns, expected_ns)
+
+# But this code fails for timedelta64[s]
+result_fail = np.array([1000000, 200000, 3000000], dtype="timedelta64[s]")
+result_pandas = pd.Series([1000000, 200000, 3000000], dtype="timedelta64[s]")
+tm.assert_numpy_array_equal(result_fail, result_pandas.values)
 ```
 
-However, when using `dtype="timedelta64[ns]"` and `unit="ns"`:
+### Explanation
 
-```python
-result = np.array([1000000, 200000, 3000000], dtype="timedelta64[ns]")
-result_pandas = pd.Series([1000000, 200000, 3000000], dtype="timedelta64[ns]")
-tm.assert_numpy_array_equal(result, result_pandas.values)
-```
+The issue arises from the way pandas handles time units in the `timedelta64` constructor. When using `dtype="timedelta64[ns]"`, pandas correctly interprets nanoseconds. However, when using `dtype="timedelta64[s]"`, pandas seems to interpret seconds as nanoseconds instead.
 
-This should pass, but we seem to ignore the seconds and interpret it as nanoseconds. The issue arises because of a misunderstanding in the conversion between the unit 's' (seconds) and 'ns' (nanoseconds).
+To resolve this issue, we can use the alternative constructor with `to_timedelta` and specify the unit `'s'`. This ensures that pandas correctly interprets the time units.
 
-To resolve this issue, you need to ensure that the correct units are used when creating the `timedelta64` series.
+### Conclusion
 
-## Conclusion
-
-In conclusion, the pandas `timedelta64` series constructor has an issue with interpreting seconds as nanoseconds when using the unit 's'. To fix this, use the correct units in your code.
+The `timedelta64[s]` series constructor in pandas should be updated to correctly handle seconds. Until then, using the alternative constructor with `to_timedelta` and specifying the unit `'s'` provides a reliable workaround.
 
 ## Reference
 - [Source](https://github.com/pandas-dev/pandas/issues/48312)

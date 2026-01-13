@@ -433,6 +433,10 @@
 - [Shared Mutable State in Pandas Index Labels](2026-01-11-copy-on-write-cow-index-labels-are-still-shared-mutable-state.md)
 - [Rounding Errors in Pandas Series: A Potential Pitfall](2026-01-08-bug-rounding-of-an-empty-series-should-return-empty-series.md)
 
+## datetime
+
+- [Pandas timedelta64[s] Series Constructor Inequality](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
+
 ## debug builds
 
 - [A bug in RISC-V compilation with -C force-frame-pointers=yes and opt-level = 'z](2026-01-07--c-force-frame-pointersyes-not-respected-by--z-build-std-or-opt-level--z-on-riscv32imc-unknown-none-elf.md)
@@ -764,7 +768,7 @@
 
 ## pandas
 
-- [Pandas Timedelta64 Series Constructor Issue with Unit 's](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
+- [Pandas timedelta64[s] Series Constructor Inequality](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
 - [Getting Started with Meson/Bug Reports in pandas](2026-01-13-tracker-getting-started-with-mesonbug-reports.md)
 - [Mastering Meson Build Support in pandas](2026-01-12-tracker-getting-started-with-mesonbug-reports.md)
 - [Series.replace not working on slices of heterogeneous types](2026-01-11-seriesreplace-not-working-on-slices-of-heterogenoues-types.md)
@@ -889,10 +893,6 @@
 - [Pandas Series.sum() Examples Fail to Illustrate Actual Results](2026-01-05-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 - [Pandas Series.sum() Misrepresentation in Documentation](2026-01-04-doc-seriessum-has-examples-that-dont-illustrate-the-actual-results.md)
 
-## series constructor
-
-- [Pandas Timedelta64 Series Constructor Issue with Unit 's](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
-
 ## service creation
 
 - [Enabling Selector in kubectl Create Service Command](2026-01-11-kubectl-create-service-should-accept---selector.md)
@@ -945,9 +945,9 @@
 
 - [A catchy, SEO-friendly title](2026-01-06-additional-single-byte-write-syscall-when-future-is-not-spawned-before-block_on-with-current_thread-runtime.md)
 
-## timedelta64
+## timedelta
 
-- [Pandas Timedelta64 Series Constructor Issue with Unit 's](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
+- [Pandas timedelta64[s] Series Constructor Inequality](2026-01-14-bug-timedelta64s-series-constructor-isnt-equal-with-alternative-constructor-using-to_timedelta-units.md)
 
 ## tokio
 
