@@ -43,6 +43,17 @@ extra:
 nav:
 - Home: index.md
 - Latest Updates:
+  - 2026-01-19-tracking-issue-for-alloc_layout_extra.md
+  - 2026-01-19-the-asyncfd-in-tokio-has-a-serious-memory-leak-issue.md
+  - 2026-01-19-support-a-function-env-to-read-an-environment-variable.md
+  - 2026-01-19-new-expiring-members-inside-sets.md
+  - 2026-01-19-issue-cant-import-huggingfacepipeline.md
+  - 2026-01-19-hydration-failure-with-useid-and-ag-grid-enterprise.md
+  - 2026-01-19-hpa-controller-reorders-the-specmetrics-list.md
+  - 2026-01-19-es5dts-lib-does-not-match-the-ecmascript-51-spec.md
+  - 2026-01-19-error-500-internal-server-error-unable-to-load-model-ministral-3.md
+  - 2026-01-19-bug-useid-not-working-inside-suspense.md
+  - 2026-01-19-api-default-to-microseconds-for-timestamptimedelta-creation-from-numeric-input.md
   - 2026-01-14-very-long-compilation-time-on-apple-silicon-platform.md
   - 2026-01-14-turbopack-nextjs-16-pino---cannot-find-module-transport-stream.md
   - 2026-01-14-support-closed-file-diagnostics-in-vs-code.md
